@@ -1,0 +1,198 @@
+<mvc:View 
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    xmlns:cards="sap.f.cards"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz="sap.viz.ui5.controls"
+    >
+
+    <ScrollContainer class="sapUiResponsiveContentPadding" width="100%" horizontal="false" vertical="true" id="dashboard_container">
+        <FlexBox  alignItems="Start" wrap="Wrap" alignContent="Start" columnGap="0.8rem" rowGap="12px" fitContainer="true">
+            
+        <f:Card class="">
+            <f:layoutData>
+                <FlexItemData minWidth="200px"  growFactor="1" shrinkFactor="1" maxWidth="400px" ></FlexItemData>
+            </f:layoutData>
+            <f:header>
+                <cards:Header title="Statistics" subtitle="Stat of products,orders and sales | LIQUIDITY">
+                </cards:Header>
+            </f:header>
+        <f:content>
+            <VBox alignItems="Start" width="100%">
+                <List showSeparators="None" width="100%">
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Orders" />
+                                <Label text="total served orders" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd sapMObjectNumberMedium"
+                                number="1965"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                    <!-- item2 -->
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Regions" />
+                                <Label text="business spread across territories" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd sapMObjectNumberLarge"
+                                number="10"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                    <!-- item 3 -->
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Territories" />
+                                <Label text="business spread across territories" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd"
+                                number="50"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                </List>
+            </VBox>
+        </f:content>
+        </f:Card>
+        <!-- charts -->
+        <f:Card class="" id="charts" width="100%" >
+            <f:layoutData>
+                <FlexItemData minWidth="550px"  growFactor="2.5" shrinkFactor="1.8" ></FlexItemData>
+            </f:layoutData>
+            <f:header>
+                <cards:Header  title="Top 5 Customers" subtitle="Top 5 customers by order value | EUR">
+                </cards:Header>
+            </f:header>
+            <f:content>
+                <viz:VizFrame
+                    id="donutChart"
+                    width="100%"
+                    height="400px"
+                    uiConfig="{applicationSet:'fiori'}"
+                    vizType="donut">
+
+                    <viz:dataset>
+                        <viz.data:FlattenedDataset
+                        data="{/customers}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition
+                            name="Customer"
+                            value="{customerName}" />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition
+                            name="Order Amount"
+                            value="{orderAmount}" />
+                        </viz.data:measures>
+                        </viz.data:FlattenedDataset>
+                    </viz:dataset>
+
+                    <viz:feeds>
+                        <viz.feeds:FeedItem
+                        uid="size"
+                        type="Measure"
+                        values="Order Amount" />
+                        <viz.feeds:FeedItem
+                        uid="color"
+                        type="Dimension"
+                        values="Customer" />
+                    </viz:feeds>
+                </viz:VizFrame>
+            </f:content>
+        </f:Card>
+        <!-- content 3 -->
+        <f:Card id="assets" width="100%">
+            <f:layoutData>
+                <FlexItemData minWidth="270px"  maxWidth="400px" growFactor="1" shrinkFactor="1" ></FlexItemData>
+            </f:layoutData>
+            <f:header>
+                <cards:Header title="Company Stats" subtitle="Statistics of Employees, Officials ,Customers">
+                </cards:Header>
+            </f:header>
+        <f:content>
+            <VBox alignItems="Start" width="100%">
+                <List showSeparators="None" width="100%">
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Orders" />
+                                <Label text="total served orders" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd sapMObjectNumberMedium"
+                                number="1965"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                    <!-- item2 -->
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Regions" />
+                                <Label text="business spread across territories" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd sapMObjectNumberLarge"
+                                number="10"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                    <!-- item 3 -->
+                    <CustomListItem navigated="false" type="Inactive">
+                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto">
+                            <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                                <Text wrapping="false"  text="Total Territories" />
+                                <Label text="business spread across territories" displayOnly="true" wrapping="true" />
+                            </VBox>
+                            <ObjectNumber
+                                class="sapUiTinyMargin sapUiSmallMarginEnd"
+                                number="50"
+                                state="Success">
+                                <layoutData>
+                                    <FlexItemData alignSelf="Center"/>
+                                </layoutData>
+                            </ObjectNumber>
+                        </HBox>
+                    </CustomListItem>
+                </List>
+            </VBox>
+        </f:content>
+        </f:Card>
+
+    </FlexBox>
+    </ScrollContainer>   
+
+    
+</mvc:View>

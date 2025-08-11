@@ -1,0 +1,10 @@
+<mvc:View controllerName="bd.businessportal.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id="app">
+        <pages>
+            
+        </pages>
+    </App>
+</mvc:View>

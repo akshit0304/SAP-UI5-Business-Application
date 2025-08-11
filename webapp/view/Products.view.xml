@@ -1,0 +1,146 @@
+<mvc:View xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:filterbar="sap.ui.comp.filterbar"
+displayBlock="true"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:core="sap.ui.core"
+xmlns:uxap="sap.uxap"
+controllerName="bd.businessportal.controller.Products"
+>
+
+<uxap:ObjectPageLayout id="product_page" class="sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
+    enableLazyLoading="true"
+    useIconTabBar="true"
+    showTitleInHeaderContent="true"
+    upperCaseAnchorBar="true"
+    showAnchorBar="false"
+    >
+
+        <uxap:headerTitle>
+            <uxap:ObjectPageDynamicHeaderTitle >
+                <uxap:snappedHeading>
+                    <Title text="Product Details" wrapping="false" titleStyle="H1" />
+                </uxap:snappedHeading>
+                <uxap:expandedHeading>
+                    <Title text="Product Details" wrapping="false" titleStyle="H3" />
+                </uxap:expandedHeading>
+
+                <uxap:snappedContent>
+                    <Text text="" wrapping="true" maxLines="3" />
+                </uxap:snappedContent>
+                    <uxap:expandedContent>
+                        <Text text="" wrapping="true" maxLines="3" />
+                    </uxap:expandedContent>
+
+                    <uxap:actions>
+                        <Toolbar style="Clear">
+                            <ToolbarSpacer/>
+                                <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
+                        </Toolbar>
+                    </uxap:actions>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+
+        <uxap:headerContent>
+            <!-- entet filter bar -->
+             <filterbar:FilterBar id="filterbar_proudct" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+                    <filterbar:filterGroupItems>
+                        <filterbar:FilterGroupItem  name="product_search" label="" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                <SearchField placeholder="search" showSearchButton="true"/>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                        <!-- 2 -->
+                        <filterbar:FilterGroupItem  name="product_filter" label="Product" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                    </filterbar:filterGroupItems>
+             </filterbar:FilterBar>
+        </uxap:headerContent>
+
+        <!-- block content -->
+         <uxap:sections>
+            <uxap:ObjectPageSection  showTitle="false">
+                <!-- <uxap:customAnchorBarButton>
+                    <Button text="Manager Data"></Button>
+                </uxap:customAnchorBarButton> -->
+                <uxap:ObjectPageSubSection   showTitle="false" >
+                    <uxap:blocks>
+
+                                        <Table 
+                                            id="table_product"
+                                            headerText="Products"
+                                            autoPopinMode="false"
+                                            width="100%"
+                                            inset="false"
+                                            enableBusyIndicator="false"
+                                            busyIndicatorDelay="200"
+                                            items="{PD>/results}"
+                                            core:require="{Formatter:'bd/businessportal/model/Formatter'}"
+                                        >
+                                        
+                                        <columns>
+                                            <Column visible="false">
+                                                <Text wrapping="false" text="Product ID" textAlign="Right"></Text>
+                                            </Column>
+                                            <Column  demandPopin="false" minScreenWidth="Phone">
+                                                <!-- <layoutData>
+                                                    <layout:BlockLayoutCellData lSize="15%" mSize="18%" sSize="auto"></layout:BlockLayoutCellData>
+                                                </layoutData> -->
+                                                <Text wrapping="false" text="Product"></Text>
+                                            </Column>
+                                            <Column width="18rem" demandPopin="true" minScreenWidth="Desktop">
+                                                
+                                                <Text wrapping="false" text="Description">
+                                                    
+                                                </Text>
+                                            </Column>
+                                            <Column  demandPopin="false" minScreenWidth="Phone">
+                                                <layoutData>
+                                                    <layout:BlockLayoutCellData lSize="15%" mSize="auto" sSize="auto"></layout:BlockLayoutCellData>
+                                                </layoutData>
+                                                <Text wrapping="false" text="Supplier"></Text>
+                                            </Column>
+                                            <Column demandPopin="true" width="auto" minScreenWidth="Desktop">
+                                                <Text wrapping="true" text="Quantity Per Unit"></Text>
+                                            </Column>
+                                            <Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet" width="auto">
+                                                <Text wrapping="false" text="Stock"></Text>
+                                            </Column>
+                                            <Column demandPopin="false" minScreenWidth="Phone" width="auto">
+                                                <Text wrapping="false" text="Price"></Text>
+                                            </Column>
+                                            <Column demandPopin="true" styleClass="sapUiNoMargin"  importance="Low" minScreenWidth="Tablet" width="5rem" hAlign="Center">
+                                                <Text wrapping="false" text="Availability" tooltip="Availability"/>
+                                            </Column>
+                                            <!-- <Column class="sapUiTinyMargin" minScreenWidth="Phone" width="auto">
+                                                <Text wrapping="false" text=""></Text>
+                                            </Column> -->
+                                        </columns>
+                                        <items>
+
+                                            <ColumnListItem type="Navigation" press=".overViewPage">
+                                                <cells>
+                                                        <ObjectIdentifier title="{PD>ProductId}" visible="false"></ObjectIdentifier>
+                                                        <ObjectIdentifier text="{PD>ProductName}({PD>Category/CategoryName})"></ObjectIdentifier>
+                                                        <Text text="{PD>Category/Description}" wrapping="true" maxLines="3"></Text>
+                                                        <Text text="{PD>Supplier/CompanyName}({PD>Supplier/City})" wrapping="true" maxLines="3"></Text>
+                                                        <ObjectStatus class="sapMObjectStatusLongText" icon="sap-icon://product" text="{PD>QuantityPerUnit}" state="Success"/>
+                                                        <ObjectNumber number="{path:'PD>UnitsInStock',type:'sap.ui.model.type.Integer'}" />
+                                                        <ObjectNumber  number="{parts:[{path:'PD>UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'Formatter.currency'}"/>
+                                                        
+                                                        <ObjectStatus class="sapMObjectStatusLarge" text="" icon="{path:'PD>Discontinued',formatter:'Formatter.pContinued_'}" 
+                                                        state="{path:'PD>Discontinued',formatter:'Formatter.pContinued_state'}"/>
+                                                        <!-- <Button class="sapUiTinyMargin" icon="sap-icon://detail-more" press=".detailMore"></Button> -->
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                    </uxap:blocks>
+                </uxap:ObjectPageSubSection>
+            </uxap:ObjectPageSection>
+         </uxap:sections>
+    </uxap:ObjectPageLayout>
+
+</mvc:View>
