@@ -1,0 +1,232 @@
+<mvc:View
+xmlns:core="sap.ui.core"
+xmlns:m="sap.m"
+xmlns="sap.uxap"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns:l="sap.ui.layout"
+xmlns:form="sap.ui.layout.form"
+controllerName="bd.businessportal.controller.EmployeesOverview"
+>
+<!-- Page start -->
+<ObjectPageLayout 
+    id="employee_overview"  
+    upperCaseAnchorBar="true" 
+    headerContentPinnable="true" 
+    showAnchorBar="true" 
+    showTitleInHeaderContent="true"
+    busy="false"
+    busyIndicatorDelay="300"
+    
+    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+            sapUiResponsiveContentPadding"
+    >
+
+    <headerTitle >
+        <!-- dymanic binding from controller -->
+        <ObjectPageDynamicHeaderTitle id="e_dynamicPageTitle"
+        busy="false"
+        busyIndicatorDelay="300"
+        >
+            <snappedHeading>
+                <m:HBox width="100%" gap="5px">
+                        <!-- add title -->
+                        <m:Title class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H1" />
+                    </m:HBox>
+            </snappedHeading>
+
+            <expandedHeading>
+                 <m:HBox width="100%" gap="5px">
+                        <m:Title class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H1" />
+                </m:HBox>
+            </expandedHeading>
+            <!-- 123 -->
+            <snappedContent>
+                <m:Text text="{Title}" wrapping="false"></m:Text>
+            </snappedContent>
+
+            <expandedContent>
+                <m:Text text="{Title}" wrapping="false"></m:Text>
+            </expandedContent>
+            <actions>
+                    <m:Toolbar style="Clear">
+                        <m:ToolbarSpacer/>
+                        <m:Button icon="sap-icon://action" iconFirst="true" press=".shareButton">
+                        </m:Button>
+                    </m:Toolbar>
+                </actions>
+        </ObjectPageDynamicHeaderTitle>
+    </headerTitle>
+    <headerContent>
+        <!-- dymanic binding from controller -->
+        <m:VBox visible="true" width="100%" id="e_product_general_info">
+            
+            <m:FlexBox  rowGap="1em" columnGap="1.6rem" fitContainer="true" alignItems="Start" alignContent="Start" wrap="Wrap">
+                <m:Avatar decorative="true" displayShape="Circle" displaySize="XL" imageFitType="Contain" backgroundColor="Transparent"  src=""/>
+                <!-- description card -->
+                <m:VBox wrap="NoWrap" alignItems="Start" height="100%">
+                    <m:layoutData>
+                        <m:FlexItemData alignSelf="Center"></m:FlexItemData>
+                    </m:layoutData>
+                    <m:VBox  gap="1rem">
+                    <m:HBox alignItems="Start">
+                        <m:Label vAlign="Middle" showColon="true" text="First Name" labelFor="ecategory" displayOnly="true" wrapping="false"/>
+                        <m:Text  class="sapUiTinyMarginBeginEnd" text="{TitleOfCourtesy} {FirstName}" id="ecategory"></m:Text>
+                    </m:HBox>
+
+                <m:HBox alignItems="Start">
+                <m:Label vAlign="Middle" showColon="true" text="Last Name" labelFor="elastname" displayOnly="true" wrapping="false"></m:Label>
+                <m:Text  class="sapUiTinyMarginBeginEnd" text="{LastName}" id="elastname"></m:Text>
+                </m:HBox>
+
+                <m:HBox alignItems="Start">
+                            <m:Label vAlign="Middle" showColon="true" text="Position" labelFor="etitle" displayOnly="true" wrapping="false"></m:Label>
+                            <m:Text class="sapUiTinyMarginBeginEnd" text="{Title}" id="etitle"></m:Text>
+
+                        </m:HBox>
+                <!-- description ended -->
+                    </m:VBox>
+                </m:VBox>    
+            </m:FlexBox>
+            <!-- <m:HBox width="2.5rem" wrap="NoWrap" ></m:HBox> -->
+        </m:VBox>
+    </headerContent>
+    <!-- main content -->
+    <sections>
+        <ObjectPageSection titleUppercase="false" title="Employee Info" showTitle="false" anchorBarButtonColor="Tile" >
+            <!-- <customAnchorBarButton>
+            <m:Button text="Product information" type="Attention"/>
+        </customAnchorBarButton> -->
+            <subSections>
+                <ObjectPageSubSection title="Personal Info" showTitle="false" titleUppercase="false">
+                    <blocks>
+                        <l:BlockLayout background="Default" class="sapUiNoMargin">
+                <l:BlockLayoutRow scrollable="false" id="info_employee">
+                   
+                    <l:BlockLayoutCell width="1" class="sapUiNoPadding sapUiSmallMarginEnd" >
+                        <l:layoutData>
+                            <l:BlockLayoutCellData lSize="100%" mSize="100%" sSize="100%"></l:BlockLayoutCellData>
+                        </l:layoutData>
+                    <m:HBox gap="0rem" >
+                        <!-- information  title and meta data -->
+                    <m:Title text="Personal Info" titleStyle="H5" wrapping="true"/>
+                    <m:VBox wrap="NoWrap" gap="1rem" alignItems="Start">
+                    <m:HBox alignItems="Start">
+                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="First Name"  displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" text="{FirstName}" wrapping="false"></m:Text>
+                    </m:HBox>
+
+                    <m:HBox alignItems="Start">
+                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Last Name"  displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" text="{LastName}" wrapping="false"></m:Text>
+                    </m:HBox>
+                    <!-- content -->
+                    <!-- content -->
+                    <m:HBox alignItems="Start">
+                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Birth Date" displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="true" text="{path:'BirthDate',formatter:'.formatter.parseDate'}"></m:Text>
+                    </m:HBox>
+
+                    <m:HBox alignItems="Start">
+                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Phone No" displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="true" text="{HomePhone}"></m:Text>
+                    </m:HBox>
+                    <!-- description ended -->
+                         </m:VBox>
+                </m:HBox>
+                    </l:BlockLayoutCell>
+                    <l:BlockLayoutCell width="1" class="sapUiSmallMarginEnd" >
+                        <l:layoutData>
+                            <l:BlockLayoutCellData sSize="100%" mSize="100%"></l:BlockLayoutCellData>
+                        </l:layoutData>
+                        <m:HBox gap="0rem">
+                        <!-- contact person  title and meta data -->
+                    <m:Title text="Address" titleStyle="H5"  wrapping="true"/>
+                    <m:VBox wrap="NoWrap" gap="1rem" alignItems="Start">
+                    <m:HBox alignItems="Start">
+                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Street Name"  displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" text="{Address}" wrapping="false"></m:Text>
+                    </m:HBox>
+                    <!-- content -->
+                    <m:HBox alignItems="Start">
+                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="City" displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" text="{City}-{Region}" wrapping="false" ></m:Text>
+                    </m:HBox>
+                    <!-- content -->
+                    <m:HBox alignItems="Start">
+                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Country" displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="false" text="{Country}"></m:Text>
+                    </m:HBox>
+                    <!-- description ended -->
+
+                    <m:HBox alignItems="Start">
+                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Postal code"  displayOnly="true" wrapping="false"></m:Label>
+                    <m:Text class="sapUiSmallMarginBeginEnd" text="{PostalCode}" wrapping="false"></m:Text>
+                    </m:HBox>
+                         </m:VBox>
+                </m:HBox>
+                    </l:BlockLayoutCell>
+                </l:BlockLayoutRow>
+            </l:BlockLayout>
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+        <!-- section end -->
+        <!-- section-2 -->
+        <ObjectPageSection titleUppercase="false" anchorBarButtonColor="Default" showTitle="false" title="Employee Info">
+            <subSections>
+                <ObjectPageSubSection title="Office Info" showTitle="false" titleUppercase="false">
+                    <blocks>
+                    <l:BlockLayout background="Default" > 
+                        <l:BlockLayoutRow>
+                        <l:BlockLayoutCell width="1">
+                            <form:Form id="e_form" title="Office Info">
+                                <form:layout>
+                                        <form:ResponsiveGridLayout 
+                                            labelSpanXL="1"
+                                            labelSpanL="1"
+                                            labelSpanM="2"
+                                            labelSpanS="12"
+                                            adjustLabelSpan="false"
+                                            emptySpanXL="0"
+                                            emptySpanL="0"
+                                            emptySpanM="0"
+                                            emptySpanS="0"
+                                            columnsM="12"
+                                            singleContainerFullSize="true"
+                                         />
+                                </form:layout>
+                                <form:FormContainer>
+                                 
+                                    <form:FormElement label="Employee ID">
+                                        <m:Text wrapping="false" text="{EmployeeID}" class="sapUiSmallMarginBottom"/>
+                                    </form:FormElement>
+                                    <form:FormElement label="Position">
+                                        <m:Text text="{Title}" class="sapUiSmallMarginBottom"/>
+                                    </form:FormElement>
+                                    <form:FormElement label="Hire date">
+                                        <m:Text text="{path:'HireDate',formatter:'.formatter.parseDate'}" class="sapUiSmallMarginBottom"/>
+                                    </form:FormElement>
+                            
+                                    <form:FormElement label="Reports to">
+                                        
+                                        <m:Text text="{ReportsTo}" class="sapUiSmallMarginBottom"/>
+                                    </form:FormElement>
+                                    
+                                </form:FormContainer>
+                                
+                                <!-- form layout -->
+                                
+                             </form:Form>
+                        </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                    </l:BlockLayout>
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+        <!-- section end -->
+    </sections>
+</ObjectPageLayout>
+
+</mvc:View>

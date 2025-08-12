@@ -65,7 +65,10 @@
       },
       "nav":{
         "type": "sap.ui.model.json.JSONModel",
-        "uri": "utils/route_navigation.json"
+        "uri": "utils/route_navigation.json",
+        "settings": {
+          "defaultBindingMode": "TwoWay"
+        }
       },
       "MD": {
         "dataSource": "mainService",
@@ -84,7 +87,7 @@
       "config": {
         "routerClass": "sap.m.routing.Router",
         "controlAggregation": "pages",
-        "controlId": "app",
+        "controlId": "navContainer",
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
@@ -110,8 +113,8 @@
       ],
       "targets": {
         "TargetView1": {
-          "id": "View1",
-          "name": "View1"
+          "id": "dashboard_page",
+          "name": "Dashboard"
         },
         "T_o_manager": {
           "id": "shellPage",

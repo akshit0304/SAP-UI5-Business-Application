@@ -12,11 +12,18 @@ sap.ui.define([
     return Controller.extend("bd.businessportal.controller.Products", {
         formatter:Formatter,
         onInit() {
-            console.log("dashboard initialized");
+            console.log("product initialized");
+            // console.log(this.getView().getControllerName());
+            this.component = this.getOwnerComponent();
             this.main_page =this.byId("product_page");
-            console.log(this.getView().getParent());
-            this.component =this.getOwnerComponent();
+            this.root_element =this.component.byId("App");
+            // console.log(this.component);
+            // console.log(this.main_page.getParent().getParent());
+            // this.router =this.component.getRouter();
             this.table =this.byId("table_product");
+            this.oNavContainer = this.component.byId("App--navContainer");
+            // console.log(this.oNavContainer);
+            // console.log(this.byId("navContainer"));
             // this.router = this.component.getRouter();
             // set media ---
             Device.media.attachHandler((oEvent)=>{
@@ -40,49 +47,37 @@ sap.ui.define([
                         "$skip": 0,
                         "$expand":"Category,Supplier"
                     },
-                    success:function (oData) {
+                    success:function (oData){
                         const results =oData["results"];
-                            this.MSJson = new JSONModel();
-                            this.MSJson.setData({"results":results});
-                            this.getView().setModel(this.MSJson,'PD');
+                            let MSJson = new JSONModel();
+                            MSJson.setData({"results":results});
+                            this.getView().setModel(MSJson,'PD');
                             this.table.setBusy();
                     }.bind(this),
                     error:function(oError){
                         console.log(oError);
-                        this.table.setBusy();
+                        this.table.setBusy(false);
                     }.bind(this)
-                }.bind(this)
+                }
             )
-
-            
-        },
-        onExit(){
-            // console.log("dashboard exit");
-        },
-        onAfterRendering:function(){
-            // console.log("application rendered");
-        },
-        onBeforeRendering:function(){
-            // console.log("application before rendered");  
         },
         navbuttonPressed:function(oEvent){
             this.component.navbuttonPressed(oEvent);
         },
         overViewPage:function(oEvent){
-            this.table.setBusy(true);
+            this.oNavContainer.setBusy(true);
             var oContext = oEvent.getSource().getBindingContext("PD");
+            // console.log(oContext);
             const id =oContext.getProperty("ProductID");
-            const index =oContext.getPath().substr("/results/".length);
-            this.router.navTo("p_overview",{
-              query:{
-                "id":encodeURIComponent(id),
-                "index":parseInt(index)
-              }
-            })
+            const model =this.component.getModel("nav");
+            model.setProperty("/idOfBindElement",id);
+            this.root_element.getController()._loadView("ProductsOverview");
+            // this.router.navTo("p_overview",{
+            //   query:{
+            //     "id":encodeURIComponent(id),
+            //     "index":parseInt(index)
+            //   }
+            // })
           },
-          loaderOff:function(oEvent){
-            this.table?.setBusy();
-        }
-
     });
 })

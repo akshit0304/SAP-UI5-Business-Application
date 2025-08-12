@@ -8,9 +8,10 @@
     xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
     xmlns:viz.data="sap.viz.ui5.data"
     xmlns:viz="sap.viz.ui5.controls"
+    controllerName="bd.businessportal.controller.Dashboard"
     >
 
-    <ScrollContainer class="sapUiResponsiveContentPadding" width="100%" horizontal="false" vertical="true" id="dashboard_container">
+    <Page class="sapUiResponsiveContentPadding"  id="dashboard_page">
         <FlexBox  alignItems="Start" wrap="Wrap" alignContent="Start" columnGap="0.8rem" rowGap="12px" fitContainer="true">
             
         <f:Card class="">
@@ -192,7 +193,7 @@
         </f:Card>
 
     </FlexBox>
-    </ScrollContainer>   
+</Page>   
 
     
 </mvc:View>

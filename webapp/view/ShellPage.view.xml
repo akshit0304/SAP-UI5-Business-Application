@@ -8,7 +8,7 @@
     >
 
     <tnt:ToolPage  
-        id="shell_page">
+        id="shell_page2">
 
     <tnt:header>
         <Toolbar style="Clear" class="sapUiContentPadding">
@@ -19,8 +19,8 @@
     <tnt:subHeader>
     </tnt:subHeader>
     <tnt:sideContent>
-        <tnt:SideNavigation visible="true" id="sideNavigation" ariaLabel="side panel for navigating to different pages"  expanded="true">
-			<tnt:NavigationList id="list"  itemSelect=".onItemSelect" >
+        <tnt:SideNavigation visible="true" id="sideNavigation2" ariaLabel="side panel for navigating to different pages"  expanded="true">
+			<tnt:NavigationList id="list2"  itemSelect=".onItemSelect" >
 				<tnt:NavigationListItem key="Dashboard"   text="Dashboard" icon="sap-icon://home" />
 				<tnt:NavigationListItem key="Categories" text="Categories" icon="sap-icon://product" />
 				<tnt:NavigationListItem key="Products" text="Products" icon="sap-icon://add-product" />
@@ -36,7 +36,7 @@
 			</tnt:NavigationList>
 			<tnt:fixedItem>
 				<tnt:NavigationList>
-					<tnt:NavigationListItem key="ImportantLinks" ariaHasPopup="Dialog" id="quickCreate" press=".quickActionPress" text="Important Links" icon="sap-icon://chain-link"  design="Default" selectable="false" />
+					<tnt:NavigationListItem key="ImportantLinks" ariaHasPopup="Dialog" id="quickCreate2" press=".quickActionPress" text="Important Links" icon="sap-icon://chain-link"  design="Default" selectable="false" />
 					<tnt:NavigationListItem key='Legal' selectable="false" href="#" text="Legal"  icon="sap-icon://compare"/>
 				</tnt:NavigationList>
 			</tnt:fixedItem>
@@ -53,9 +53,9 @@
 
     <!-- main content -->
      <tnt:mainContents>
-       <NavContainer id="navContainer" autoFocus="true"  initialPage="dashboard_page" class="sapUiResponsiveContentPadding" >
+       <NavContainer id="navContainer2" autoFocus="true"  initialPage="dashboard_page" class="sapUiResponsiveContentPadding" >
         <pages>
-            <mvc:XMLView id="dashboard_page" viewName="bd.businessportal.view.Dashboard" />
+            <mvc:XMLView id="dashboard_page2" viewName="bd.businessportal.view.Dashboard" />
         </pages>
        </NavContainer>
      </tnt:mainContents>

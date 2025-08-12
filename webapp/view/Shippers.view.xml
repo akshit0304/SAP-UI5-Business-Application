@@ -1,0 +1,113 @@
+<mvc:View xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:filterbar="sap.ui.comp.filterbar"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:uxap="sap.uxap"
+    controllerName="bd.businessportal.controller.Shippers"
+    >
+    <uxap:ObjectPageLayout id="shipper_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
+    enableLazyLoading="true"
+    beforeNavigate=".navbuttonPressed"
+    useIconTabBar="true"
+    showTitleInHeaderContent="true"
+    upperCaseAnchorBar="true"
+    showAnchorBar="false"
+    >
+
+        <uxap:headerTitle>
+            <uxap:ObjectPageDynamicHeaderTitle >
+                <uxap:snappedHeading>
+                    <Title text="Shipper" wrapping="false" titleStyle="H1" />
+                </uxap:snappedHeading>
+                <uxap:expandedHeading>
+                    <Title text="Shipper" wrapping="false" titleStyle="H3" />
+                </uxap:expandedHeading>
+
+                <uxap:snappedContent>
+                    <Text text="" wrapping="true" maxLines="3" />
+                </uxap:snappedContent>
+                    <uxap:expandedContent>
+                        <Text text="" wrapping="true" maxLines="3" />
+                    </uxap:expandedContent>
+
+                    <uxap:actions>
+                        <Toolbar style="Clear">
+                            <ToolbarSpacer/>
+                                <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
+                        </Toolbar>
+                    </uxap:actions>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+
+        <uxap:headerContent>
+            <!-- entet filter bar -->
+             <filterbar:FilterBar id="filterbar_shipper" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+                    <filterbar:filterGroupItems>
+                        <filterbar:FilterGroupItem  name="shipper_search" label="" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                <SearchField placeholder="search" showSearchButton="true"/>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                        <!-- 2 -->
+                        <filterbar:FilterGroupItem  name="shipper_role" label="Shipper" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+
+                    </filterbar:filterGroupItems>
+             </filterbar:FilterBar>
+        </uxap:headerContent>
+
+        <!-- block content -->
+         <uxap:sections>
+            <uxap:ObjectPageSection class="sapUiNoMargin" showTitle="false">
+                <!-- <uxap:customAnchorBarButton>
+                    <Button text="Manager Data"></Button>
+                </uxap:customAnchorBarButton> -->
+                <uxap:ObjectPageSubSection class="sapUiNoMargin"  showTitle="false" >
+                    <uxap:blocks>
+
+                                        <Table 
+                                            id="table_shipper"
+                                            headerText="Shippers"
+                                            autoPopinMode="false"
+                                            width="100%"
+                                            inset="false"
+                                            busy="false"
+                                            busyIndicatorDelay="100"
+                                            items="{MD>/Shippers}"
+                                        >
+                                        
+                                        <columns>
+                                            <Column visible="true"  minScreenWidth="Phone" width="10%" hAlign="Right">
+                                                <Text wrapping="true" text="Id" maxLines="3" tooltip="Shipper ID"/>
+                                            </Column>
+
+                                            <Column  demandPopin="false" minScreenWidth="Phone" width="20%">
+                                                <Text wrapping="false" text="Name"></Text>
+                                            </Column>
+
+                                            <Column  demandPopin="true" minScreenWidth="Phone" width="20%" hAlign="Center">
+                                                <Text wrapping="true" text="Phone"/>
+                                            </Column>
+
+                                        </columns>
+                                        <items>
+
+                                            <ColumnListItem type="Navigation" vAlign="Middle" press=".overViewPage">
+                                                <cells>
+                                                    <ObjectNumber number="{MD>ShipperID}" unit="" state="None"></ObjectNumber>
+                                                    <Text text="{MD>CompanyName}" maxLines="3"/>
+                                                    <Text text="{MD>Phone}" />
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                    </uxap:blocks>
+                </uxap:ObjectPageSubSection>
+            </uxap:ObjectPageSection>
+         </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>

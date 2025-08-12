@@ -9,12 +9,27 @@ sap.ui.define([
     Device
 )=>{
     "use strict"
+     const oData = {
+        customers: [
+          { customerName: "Customer A", orderAmount: 1200 },
+          { customerName: "Customer B", orderAmount: 950 },
+          { customerName: "Customer C", orderAmount: 875 },
+          { customerName: "Customer D", orderAmount: 600 },
+          { customerName: "Customer E", orderAmount: 450 }
+        ]
+      };
     return Controller.extend("bd.businessportal.controller.Dashboard", {
         formatter:Formatter,
         onInit() {
-           
+            console.log('Dashboard page is loaded');
             // this.main_page =this.byId("");
             this.component =this.getOwnerComponent();
+            // console.log(this.component);
+            this.main_page =this.byId("dashboard_container");
+            this.oNavContainer = this.component.byId("App--navContainer");
+
+            const oModel = new sap.ui.model.json.JSONModel(oData);
+            this.getView().setModel(oModel);
             // set media ---
             Device.media.attachHandler((oEvent)=>{
                 if(oEvent.name=='Phone' || oEvent.name=='Tablet'){
@@ -26,6 +41,7 @@ sap.ui.define([
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
                     // before show
+                    this.component._buttonExpandLogic(1,1);
                 }.bind(this)
             });
         },

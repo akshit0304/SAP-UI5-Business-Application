@@ -1,0 +1,116 @@
+<mvc:View
+xmlns:core="sap.ui.core"
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns:l="sap.ui.layout"
+xmlns:form="sap.ui.layout.form"
+controllerName="bd.businessportal.controller.ShippersOverview"
+>
+<!-- Page start -->
+<Page 
+    id="shipper_overview"  
+    title="{CompanyName}" 
+    busyIndicatorDelay="300"
+    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+            sapUiResponsiveContentPadding"
+    >
+    <Panel id="sh_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="Shipper Detail" width="auto" >
+        <!-- <headerToolbar>
+            <OverflowToolbar design="Transparent">
+                <Title text="Territory Data"/>
+                <ToolbarSpacer />
+                <Button icon="sap-icon://action" iconFirst="true" press=".shareButton"/>
+            </OverflowToolbar>
+        </headerToolbar> -->
+        <content>
+            <!-- dymanic binding from controller -->
+        <VBox visible="true" width="100%" id="sh_product_general_info" class="sapUiMarginBegin sapUiResponsivePadding">
+            
+        <FlexBox  rowGap="1rem" columnGap="2.5rem" fitContainer="true" alignItems="Start" alignContent="Start" wrap="Wrap" class="sapUiSmallMarginBegin">
+            <!-- description card -->
+            <VBox wrap="NoWrap" alignItems="Start" height="100%">
+                <layoutData>
+                    <FlexItemData alignSelf="Center"></FlexItemData>
+                </layoutData>
+                <VBox  gap="1rem">
+                    <Label vAlign="Middle"  text="ID" labelFor="shipperid" displayOnly="true" wrapping="false"/>
+                    <ObjectNumber class="sapMObjectNumberLarge" unit=""  state="Success"  number="{ShipperID}" id="shipperid"/>
+            <!-- description ended -->
+                </VBox>
+            </VBox>    
+            <!-- supplier contact inforamtion -->
+            <VBox wrap="NoWrap" alignItems="Start" height="100%">
+                <VBox  gap="1rem">
+                    <Label vAlign="Middle"  text="Company name" labelFor="shdetail" displayOnly="true" wrapping="false"/>
+                    <Text text="{CompanyName}" id="shdetail"/>
+            <!-- description ended -->
+                </VBox>
+            </VBox> 
+            <!-- product portfolio -->
+            <VBox wrap="NoWrap" alignItems="Start" height="100%">
+                <VBox  gap="1rem">
+                    <Label vAlign="Middle"  text="Contact Detail" labelFor="shphone" displayOnly="true" wrapping="false"/>
+                    <Text text="{Phone}" id="shphone"></Text>
+                </VBox>
+            </VBox>
+        </FlexBox>
+        <!-- <HBox width="2.5rem" wrap="NoWrap" ></HBox> -->
+    </VBox>
+    <!-- table data -->
+    <Table 
+    id="table_shipperoverview"
+    headerText="Shippers"
+    autoPopinMode="false"
+    width="100%"
+    inset="false"
+    busy="false"
+    busyIndicatorDelay="100"
+    items="{/results/0/Orders/results}"
+    growing="true"
+    growingThreshold="8"
+    
+>
+<columns>
+    <Column   demandPopin="true" minScreenWidth="Phone" width="auto" >
+        <Text wrapping="true" text="Order Date"/>
+    </Column>
+    <Column   demandPopin="true" minScreenWidth="Phone" width="auto" >
+        <Text wrapping="true" text="Shipped Date"/>
+    </Column>
+
+    <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center" >
+        <Text wrapping="true" text="Region"/>
+    </Column>
+
+    <Column   demandPopin="true" minScreenWidth="Tablet" width="auto">
+        <Text wrapping="true" text="City"/>
+    </Column>
+
+    <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
+        <Text wrapping="true" text="Postal Code"/>
+    </Column>
+</columns>
+<items>
+
+    <ColumnListItem >
+        <cells>
+          
+            <!-- <Text text="{Customer/ContactName}" maxLines="3"/>
+            <Text text="{Employee/FirstName}" maxLines="3"/> -->
+            <Text text="{path:'OrderDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+            <Text text="{path:'ShippedDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+            <Text text="{path:'ShipRegion',formatter:'.formatter.emptyDataHandle'}" maxLines="3"/>
+            <Text text="{ShipCity}"/>
+            <Text text="{ShipPostalCode}"/>
+
+            
+        </cells>
+    </ColumnListItem>
+</items>
+</Table>
+        </content>
+    </Panel>
+   
+</Page>
+
+</mvc:View>

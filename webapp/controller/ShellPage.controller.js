@@ -50,6 +50,7 @@ sap.ui.define([
             // console.log(this.getLocalId(control.getSelectedKey(control)));
         },
         onInit() {
+            console.log("shell page is loaded");
             this.main_page =this.byId("shell_page");
             this.oNavContainer = this.byId("navContainer");
             this.component =this.getOwnerComponent();
