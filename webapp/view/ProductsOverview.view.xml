@@ -69,7 +69,7 @@
                             <m:FlexItemData alignSelf="Center" baseSize="auto" maxWidth="35%"></m:FlexItemData>
                         </m:layoutData>
                         <m:Title text="Product Description" wrapping="true" titleStyle="H5"></m:Title>
-                        <m:Text wrapping="true" text="{Category/Description}"></m:Text>
+                        <m:Text wrapping="true" text="{Category/Description}"/>
                     </m:VBox>
 
                     <!-- avialability -->

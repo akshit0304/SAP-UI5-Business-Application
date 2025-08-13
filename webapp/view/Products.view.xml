@@ -98,14 +98,14 @@ controllerName="bd.businessportal.controller.Products"
                                                 </Text>
                                             </Column>
                                             <Column  demandPopin="false" minScreenWidth="Phone">
-                                                <layoutData>
+                                                <!-- <layoutData>
                                                     <layout:BlockLayoutCellData lSize="15%" mSize="auto" sSize="auto"></layout:BlockLayoutCellData>
-                                                </layoutData>
+                                                </layoutData> -->
                                                 <Text wrapping="false" text="Supplier"></Text>
                                             </Column>
-                                            <Column demandPopin="true" width="auto" minScreenWidth="Desktop">
+                                            <!-- <Column demandPopin="true" width="auto" minScreenWidth="Desktop">
                                                 <Text wrapping="true" maxLines="3" text="Quantity Per Unit"></Text>
-                                            </Column>
+                                            </Column> -->
                                             <Column demandPopin="true" hAlign="Center" minScreenWidth="Desktop" width="auto">
                                                 <Text wrapping="false" text="Stock"></Text>
                                             </Column>
@@ -126,8 +126,8 @@ controllerName="bd.businessportal.controller.Products"
                                                         <ObjectIdentifier title="{PD>ProductId}" visible="false"></ObjectIdentifier>
                                                         <ObjectIdentifier  text="{PD>ProductName}({PD>Category/CategoryName})"></ObjectIdentifier>
                                                         <Text text="{PD>Category/Description}" wrapping="true" maxLines="3"></Text>
-                                                        <Text text="{PD>Supplier/CompanyName}({PD>Supplier/City})" wrapping="true" maxLines="3"></Text>
-                                                        <ObjectStatus reactiveAreaMode="Overlay" class="sapMObjectStatusLongText" icon="sap-icon://product" text="{PD>QuantityPerUnit}" state="Success"/>
+                                                        <Text text="{PD>Supplier/CompanyName}({PD>Supplier/City})" wrapping="true" maxLines="3"/>
+                                                        <!-- <ObjectStatus reactiveAreaMode="Overlay" class="sapMObjectStatusLongText" icon="sap-icon://product" text="{PD>QuantityPerUnit}" state="Success"/> -->
                                                         <ObjectNumber number="{path:'PD>UnitsInStock',type:'sap.ui.model.type.Integer'}" />
                                                         <ObjectNumber  number="{parts:[{path:'PD>UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'Formatter.currency'}"/>
                                                         

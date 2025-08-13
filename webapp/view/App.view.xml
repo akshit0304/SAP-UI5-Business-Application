@@ -17,7 +17,7 @@
             <tnt:subHeader>
                 <Toolbar class="sapUiContentPadding">
 
-                <Button id="backButton" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://menu" badgeStyle="Default" type="Transparent" press=".backButton"/>
+                <Button id="backButton" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://nav-back" badgeStyle="Default" type="Transparent" press=".backButton"/>
                 <Button id="hamburgerMenu" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://menu2" badgeStyle="Default" type="Transparent" press=".hamburgerMenu"/>
                 </Toolbar>
             </tnt:subHeader>
@@ -40,7 +40,7 @@
                     <tnt:fixedItem>
                         <tnt:NavigationList>
                             <tnt:NavigationListItem key="ImportantLinks" ariaHasPopup="Dialog" id="quickCreate" press=".quickActionPress" text="Important Links" icon="sap-icon://chain-link" design="Default" selectable="false" />
-                            <tnt:NavigationListItem key='Legal' selectable="false" href="#" text="Legal" icon="sap-icon://compare"/>
+                            <tnt:NavigationListItem key='Legal' ariaHasPopup="Dialog" selectable="false" text="Legal" icon="sap-icon://compare" press=".dialogPress"/>
                         </tnt:NavigationList>
                     </tnt:fixedItem>
                 </tnt:SideNavigation>

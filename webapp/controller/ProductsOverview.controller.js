@@ -45,13 +45,13 @@ sap.ui.define([
             let id = model.getProperty("/idOfBindElement");
             checkProductId.call(this, id)
                 .then((valid_index) => {
+                    this.main_page.setBusy(false);
                     if (valid_index == null) return null
                     const bind_path = "/results/" + valid_index;
                     const bind_elements_id = ['dynamicPageTitle', 'product_general_info', 'form', 'info_supplier'];
                     for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                     }
-                    this.main_page.setBusy(false);
                 })
             // const router =this.component.getRouter();
             // const route =router.getRoute("p_overview");
@@ -68,13 +68,13 @@ sap.ui.define([
                         let id = model.getProperty("/idOfBindElement");
                         checkProductId.call(this, id)
                             .then((valid_index) => {
+                                this.main_page.setBusy(false);
                                 if (valid_index == null) return null;
                                 // const bind_path = "/results/" + valid_index;
                                 // const bind_elements_id = ['dynamicPageTitle', 'product_general_info', 'form', 'info_supplier'];
                                 // for (const element of bind_elements_id) {
                                 //     this.byId(element)?.bindElement(bind_path);
                                 // }
-                                this.main_page.setBusy(false);
                             })
                     }
                     this.component._buttonExpandLogic(1, 0);

@@ -48,7 +48,7 @@ sap.ui.define([
                         "$expand":"Category,Supplier"
                     },
                     success:function (oData){
-                        const results =oData["results"];
+                            const results =oData["results"];
                             let MSJson = new JSONModel();
                             MSJson.setData({"results":results});
                             this.getView().setModel(MSJson,'PD');

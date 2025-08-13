@@ -62,7 +62,7 @@
                                             inset="false"
                                             enableBusyIndicator="true"
                                             busyIndicatorDelay="200"
-                                            items="{MD>/Categories}"
+                                           items="{/results}"
                                             core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >
                                         
@@ -88,10 +88,12 @@
 
                                             <ColumnListItem type="Navigation" press=".overViewPage">
                                                 <cells>
-                                                        <ObjectIdentifier title="{MD>CategoryID}" visible="true"></ObjectIdentifier>
-                                                        <ObjectIdentifier text="{MD>CategoryName}"></ObjectIdentifier>
-                                                        <Text text="{MD>Description}" wrapping="true" maxLines="3"/>
-                                                       <ObjectNumber number="{=${MD>Products}.length}" unit="" state="None" inverted="true"/>
+                                                        <ObjectIdentifier title="{CategoryID}" visible="true"></ObjectIdentifier>
+                                                        <ObjectIdentifier text="{CategoryName}"></ObjectIdentifier>
+                                                        <Text text="{Description}" wrapping="true" maxLines="3"/>
+                                                       <ObjectNumber 
+                                                       number="{:=%{path:'Products/results'}.length}" 
+                                                       unit="" state="None" inverted="true"/>
                                                 </cells>
                                             </ColumnListItem>
                                         </items>

@@ -33,6 +33,27 @@ sap.ui.define([],
                 } catch (error) {
                     throw new Error(error);
                 }
+            },
+            countData: function (keyName, data) {
+                let flag = 0;
+                if (!Array.isArray(data)) return null;
+                for (const obj of data) {
+                    if (!flag) {
+                        flag=1;
+                        if (!keyName) return null;
+                        let _keys = Object.keys(obj);
+                        var found = _keys.find((element) => {
+                            if (element.toLowerCase() == keyName || element == keyName) {
+                                return element
+                            }
+                            return null;
+                        });
+                    }
+                    if (found) {
+                        obj[found] = obj[found]['results'].length;
+                    }
+                }
+                return data
             }
         }
     }
