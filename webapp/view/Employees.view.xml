@@ -77,7 +77,7 @@
                                             inset="false"
                                             busy="false"
                                             busyIndicatorDelay="0"
-                                            items="{MD>/Employees}"
+                                            items="{/results}"
                                             core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >
                                         
@@ -110,11 +110,11 @@
 
                                             <ColumnListItem type="Navigation" press=".overViewPage">
                                                 <cells>
-                                                    <Text text="{MD>EmployeeID}"  />
-                                                    <Text text="{MD>TitleOfCourtesy} {MD>FirstName} {MD>LastName}" maxLines="3"/>
-                                                    <ObjectStatus text="{MD>Title}" state="Success" />
-                                                    <Text text="{MD>HomePhone}" wrapping="false" />
-                                                    <Text text="{path:'MD>HireDate',type:'sap.ui.model.type.String',formatter:'Formatter.parseDate'}" maxLines="3"/>
+                                                    <Text text="{EmployeeID}"  />
+                                                    <Text text="{TitleOfCourtesy} {FirstName} {LastName}" maxLines="3"/>
+                                                    <ObjectStatus text="{Title}" state="Success" />
+                                                    <Text text="{HomePhone}" wrapping="false" />
+                                                    <Text text="{path:'HireDate',type:'sap.ui.model.type.String',formatter:'Formatter.parseDate'}" maxLines="3"/>
                                                 </cells>
                                             </ColumnListItem>
                                         </items>

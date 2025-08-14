@@ -1,10 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "bd/businessportal/model/Formatter",
-    "sap/ui/Device"
+    "sap/ui/Device",
+    "bd/businessportal/utils/setModel"
 ],(Controller,
     Formatter,
-    Device
+    Device,
+    setModel
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Employees", {
@@ -31,22 +33,20 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    setModel.configureModel.call(this,"Employees.json");
                 }.bind(this)
             });
-        },
-        onExit(){
-            // console.log("employee exit");
         },
         navbuttonPressed:function(oEvent){
             this.component.navbuttonPressed(oEvent);
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
-            var oContext = oEvent.getSource().getBindingContext("MD");
+            var oContext = oEvent.getSource().getBindingContext().getPath();
             // console.log(oContext);
-            const id =oContext.getProperty("EmployeeID");
+            // const id =oContext.getProperty("EmployeeID");
             const model =this.component.getModel("nav");
-            model.setProperty("/idOfBindElement",id);
+            model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("EmployeesOverview");
           },
     });

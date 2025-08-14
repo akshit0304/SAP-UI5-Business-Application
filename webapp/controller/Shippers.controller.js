@@ -1,10 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "bd/businessportal/model/Formatter",
-    "sap/ui/Device"
+    "sap/ui/Device",
+    "bd/businessportal/utils/setModel",
 ],(Controller,
     Formatter,
-    Device
+    Device,
+    setModel
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Shippers", {
@@ -28,15 +30,9 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    setModel.configureModel.call(this,"Shippers.json");
                 }.bind(this)
-            });
-            // set event
-            // sap.ui.getCore().getEventBus().subscribe("product_loading", "myEvent",this.loaderOff,this);
-
-            // fetch data from 0-data/v2
-            // this.model_data =this.component.getModel("MS");
-            // this.component._bshow(100); 
-            // this.table.setBusy(true);   
+            });   
         },
         
         navbuttonPressed:function(oEvent){
@@ -44,11 +40,11 @@ sap.ui.define([
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
-            var oContext = oEvent.getSource().getBindingContext("MD");
+            var oContext = oEvent.getSource().getBindingContext().getPath();
             // console.log(oContext);
-            const id =oContext.getProperty("ShipperID");
+            // const id =oContext.getProperty("ShipperID");
             const model =this.component.getModel("nav");
-            model.setProperty("/idOfBindElement",id);
+            model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("ShippersOverview");
             // this.router.navTo("p_overview",{
             //   query:{

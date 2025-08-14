@@ -26,6 +26,7 @@ sap.ui.define([
 
       // enable routing
       this.getRouter().initialize();
+      this.loaded_model =undefined;
     },
     getContentDensityClass: function () {
       if (!this._sContentDensityClass) {

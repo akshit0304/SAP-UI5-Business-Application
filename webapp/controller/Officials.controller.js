@@ -2,11 +2,13 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/utils/General",
+    "bd/businessportal/utils/setModel",
     "bd/businessportal/model/Formatter",
     "sap/ui/Device"
 ],(Controller,
     JSONModel,
     General,
+    setModel,
     Formatter,
     Device
 )=>{
@@ -21,6 +23,7 @@ sap.ui.define([
             this.table =this.byId("table_manager");
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
+            this.model_officials =this.component.getModel();
 
             // set media ---
             Device.media.attachHandler((oEvent)=>{
@@ -34,31 +37,38 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+
+                    setModel.configureModel.call(this,"Employees.json");
+                    let officials_json_data =this.model_officials.getJSON();
+                    General.parseManager(officials_json_data['results']).then((managers)=>{
+                           
+                    });
                 }.bind(this)
             });
             // set event
 
             // fetch data from 0-data/v2
-            this.model_data =this.component.getModel("MD");
+            
             // this.component._bshow(100); 
             this.table.setBusy(true);           
-            this.model_data.read("/Employees",
+            this.model_data.read("/Shippers",
                 {
                     urlParameters: {
                         "$skip": 0,
                     },
                     success:function (oData) {
                         const results =oData["results"];
-                        const managers =General.parseManager(results).then((managers)=>{
-                            this.MSJson = new JSONModel();
-                            this.MSJson.setData({"results":managers});
-                            this.getView().setModel(this.MSJson);
-                            this.table.setBusy();
+                        console.log(results);
+                        // const managers =General.parseManager(results).then((managers)=>{
+                        //     this.MSJson = new JSONModel();
+                        //     this.MSJson.setData({"results":managers});
+                        //     this.getView().setModel(this.MSJson);
+                        //     this.table.setBusy();
                             // console.log(this.getView().getModel());
                             // console.log(this.table.getItems());
                             // this.table.bindItems("{/results}");
                             // this.table.invalidate();
-                        });
+                        // });
                         
                         // this.table.bindElement("/results");
                         // console.log(this.MSJson.getJSON());

@@ -58,3 +58,8 @@ sap.ui.define([],
         }
     }
 )
+
+
+// for (const ele of results) {
+//                         ele["Territories"] = Object.getPrototypeOf(ele["Territories"]["results"]) ==Array.prototype? ele["Territories"]["results"].length:"fisshy activity"
+//                     }

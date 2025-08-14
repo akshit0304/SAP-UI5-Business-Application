@@ -3,10 +3,13 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
+    "bd/businessportal/utils/setModel",
+    
 ],(Controller,
     JSONModel,
     Formatter,
-    Device
+    Device,
+    setModel
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Suppliers", {
@@ -31,32 +34,10 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
-                    // this.component._bhide();
-                    // this.main_page.setBusy();
+                    setModel.configureModel.call(this,"Suppliers.json");
                 }.bind(this)
             });
 
-            // fetch data from 0-data/v2
-            this.model_data =this.component.getModel("MD");
-            this.table.setBusy(true);
-            this.model_data.read("/Suppliers",{
-                urlParameters:{
-                   
-                },
-                success:function(oData){
-                    const results =oData["results"];
-                    // console.log(results);
-                    this.Json = new JSONModel();
-                    this.Json.setData({"results":results});
-                    // console.log(this.Json.getJSON());
-                    this.getView().setModel(this.Json);
-                    this.table.setBusy();
-                }.bind(this),
-                error:function(oError){
-                    console.log(oError);
-                    this.table.setBusy();
-                }.bind(this)
-            })       
         },
         onExit(){
             console.log("dashboard exit");
@@ -66,11 +47,11 @@ sap.ui.define([
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
-            var oContext = oEvent.getSource().getBindingContext();
+            var oContext = oEvent.getSource().getBindingContext().getPath();
             // console.log(oContext);
-            const id =oContext.getProperty("SupplierID");
+            // const id =oContext.getProperty("SupplierID");
             const model =this.component.getModel("nav");
-            model.setProperty("/idOfBindElement",id);
+            model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("SuppliersOverview");
           },
     

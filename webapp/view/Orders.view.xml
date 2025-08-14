@@ -77,6 +77,8 @@
                                             busy="false"
                                             busyIndicatorDelay="100"
                                             items="{/results}"
+                                            sticky="ColumnHeaders"
+                                            rememberSelections="true"
                                         >
                                         <columns>
                                             <Column  demandPopin="false" minScreenWidth="Phone">

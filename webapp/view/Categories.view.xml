@@ -61,7 +61,6 @@
                                             width="100%"
                                             inset="false"
                                             enableBusyIndicator="true"
-                                            busyIndicatorDelay="200"
                                            items="{/results}"
                                             core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >

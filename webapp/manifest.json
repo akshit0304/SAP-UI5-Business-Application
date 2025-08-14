@@ -70,6 +70,13 @@
           "defaultBindingMode": "TwoWay"
         }
       },
+       "":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Odata/Default.json",
+        "settings": {
+          "defaultBindingMode": "TwoWay"
+        }
+      },
       "MD": {
         "dataSource": "mainService",
         "preload": true,

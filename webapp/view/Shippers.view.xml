@@ -77,7 +77,7 @@
                                             inset="false"
                                             busy="false"
                                             busyIndicatorDelay="100"
-                                            items="{MD>/Shippers}"
+                                            items="{/resutls}"
                                         >
                                         
                                         <columns>
@@ -98,9 +98,9 @@
 
                                             <ColumnListItem type="Navigation" vAlign="Middle" press=".overViewPage">
                                                 <cells>
-                                                    <ObjectNumber number="{MD>ShipperID}" unit="" state="None"></ObjectNumber>
-                                                    <Text text="{MD>CompanyName}" maxLines="3"/>
-                                                    <Text text="{MD>Phone}" />
+                                                    <ObjectNumber number="{ShipperID}" unit="" state="None"></ObjectNumber>
+                                                    <Text text="{CompanyName}" maxLines="3"/>
+                                                    <Text text="{Phone}" />
                                                 </cells>
                                             </ColumnListItem>
                                         </items>

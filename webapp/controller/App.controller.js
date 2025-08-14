@@ -4,7 +4,7 @@ sap.ui.define([
   "bd/businessportal/model/Formatter",
   'sap/ui/core/Fragment',
   'bd/businessportal/controller/DialogBox',
-  'sap/m/BusyIndicator'
+  'sap/ui/core/BusyIndicator'
 
 ], (BaseController,
   XMLView,
@@ -41,7 +41,7 @@ sap.ui.define([
         .find(p => p.getViewName && p.getViewName().endsWith(sViewName));
 
       if (oExistingPage) {
-        this.oNavContainer.setBusy();
+        BusyIndicator.hide();
         this.oNavContainer.to(oExistingPage);
         return;
       }
@@ -56,7 +56,7 @@ sap.ui.define([
             // sap.ui.core.Component.setOwnerComponentFor(oView,this.component);
             this.oNavContainer.addPage(oView);
             this.oNavContainer.to(oView);
-            this.oNavContainer.setBusy();
+            BusyIndicator.hide();
           });
         }.bind(this)
       )
@@ -107,7 +107,7 @@ sap.ui.define([
       const lastKey =this.CURRENT_ITEM;
       const oItemKey = oItem.getKey();
       if (lastKey!==oItemKey){
-          this.oNavContainer.setBusy(true);
+          BusyIndicator.show(200);
           // this._setNavModelData("/current_item",oItemKey);
           this.CURRENT_ITEM =oItemKey;
           this.HISTORY.push(lastKey);

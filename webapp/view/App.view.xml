@@ -56,7 +56,7 @@
 
             <!-- main content -->
             <tnt:mainContents>
-                <NavContainer id="navContainer" autoFocus="true"  class="sapUiResponsiveContentPadding" busyIndicatorDelay="250">
+                <NavContainer id="navContainer" autoFocus="true"  class="sapUiResponsiveContentPadding" busyIndicatorDelay="500">
                     <pages>
                         <!-- <mvc:XMLView id="dashboard_page" viewName="bd.businessportal.view.Dashboard" /> -->
                     </pages>

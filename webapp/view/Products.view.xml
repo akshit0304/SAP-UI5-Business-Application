@@ -70,14 +70,15 @@ controllerName="bd.businessportal.controller.Products"
                     <uxap:blocks>
 
                                         <Table 
+                                            class="sapUxAPObjectPageSubSectionAlignContent"
                                             id="table_product"
                                             headerText="Products"
                                             autoPopinMode="false"
-                                            width="100%"
+                                            width="auto"
                                             inset="false"
                                             enableBusyIndicator="false"
-                                            busyIndicatorDelay="200"
-                                            items="{PD>/results}"
+                                            busyIndicatorDelay="500"
+                                            items="{/results}"
                                             core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >
                                         
@@ -123,16 +124,16 @@ controllerName="bd.businessportal.controller.Products"
 
                                             <ColumnListItem type="Navigation" press=".overViewPage">
                                                 <cells>
-                                                        <ObjectIdentifier title="{PD>ProductId}" visible="false"></ObjectIdentifier>
-                                                        <ObjectIdentifier  text="{PD>ProductName}({PD>Category/CategoryName})"></ObjectIdentifier>
-                                                        <Text text="{PD>Category/Description}" wrapping="true" maxLines="3"></Text>
-                                                        <Text text="{PD>Supplier/CompanyName}({PD>Supplier/City})" wrapping="true" maxLines="3"/>
-                                                        <!-- <ObjectStatus reactiveAreaMode="Overlay" class="sapMObjectStatusLongText" icon="sap-icon://product" text="{PD>QuantityPerUnit}" state="Success"/> -->
-                                                        <ObjectNumber number="{path:'PD>UnitsInStock',type:'sap.ui.model.type.Integer'}" />
-                                                        <ObjectNumber  number="{parts:[{path:'PD>UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'Formatter.currency'}"/>
+                                                        <ObjectIdentifier title="{ProductId}" visible="false"></ObjectIdentifier>
+                                                        <ObjectIdentifier  text="{ProductName}({Category/CategoryName})"></ObjectIdentifier>
+                                                        <Text text="{Category/Description}" wrapping="true" maxLines="3"></Text>
+                                                        <Text text="{Supplier/CompanyName}({Supplier/City})" wrapping="true" maxLines="3"/>
+                                                        <!-- <ObjectStatus reactiveAreaMode="Overlay" class="sapMObjectStatusLongText" icon="sap-icon://product" text="{QuantityPerUnit}" state="Success"/> -->
+                                                        <ObjectNumber number="{path:'UnitsInStock',type:'sap.ui.model.type.Integer'}" />
+                                                        <ObjectNumber  number="{parts:[{path:'UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'Formatter.currency'}"/>
                                                         
-                                                        <ObjectStatus class="sapMObjectStatusLarge" text="" icon="{path:'PD>Discontinued',formatter:'Formatter.pContinued_'}" 
-                                                        state="{path:'PD>Discontinued',formatter:'Formatter.pContinued_state'}"/>
+                                                        <ObjectStatus class="sapMObjectStatusLarge" text="" icon="{path:'Discontinued',formatter:'Formatter.pContinued_'}" 
+                                                        state="{path:'Discontinued',formatter:'Formatter.pContinued_state'}"/>
                                                         <!-- <Button class="sapUiTinyMargin" icon="sap-icon://detail-more" press=".detailMore"></Button> -->
                                                 </cells>
                                             </ColumnListItem>

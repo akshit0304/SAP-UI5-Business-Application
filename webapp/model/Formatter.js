@@ -7,6 +7,9 @@ sap.ui.define(["sap/ui/core/format/NumberFormat"],
                 return cinst.format(cur,"EUR")
             },
             parseDate:function(date){
+                if (typeof date=="string"){
+                    date =new Date(date);
+                }
                 if(!date) return ''
                 const map_month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
                 let month =map_month[date.getMonth()];

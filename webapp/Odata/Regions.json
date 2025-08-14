@@ -1,0 +1,45 @@
+{
+    "endpoint":"regions",
+    "results":[
+    {
+        "__metadata": {
+            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
+            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
+            "type": "NorthwindModel.Region"
+        },
+        "Territories": 19,
+        "RegionID": 1,
+        "RegionDescription": "Eastern                                           "
+    },
+    {
+        "__metadata": {
+            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
+            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
+            "type": "NorthwindModel.Region"
+        },
+        "Territories": 15,
+        "RegionID": 2,
+        "RegionDescription": "Western                                           "
+    },
+    {
+        "__metadata": {
+            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
+            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
+            "type": "NorthwindModel.Region"
+        },
+        "Territories": 11,
+        "RegionID": 3,
+        "RegionDescription": "Northern                                          "
+    },
+    {
+        "__metadata": {
+            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
+            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
+            "type": "NorthwindModel.Region"
+        },
+        "Territories": 8,
+        "RegionID": 4,
+        "RegionDescription": "Southern                                          "
+    }
+]
+}

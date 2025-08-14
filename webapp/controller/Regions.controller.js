@@ -3,10 +3,12 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
+    "bd/businessportal/utils/setModel",
 ],(Controller,
     JSONModel,
     Formatter,
-    Device
+    Device,
+    setModel
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Regions", {
@@ -17,6 +19,7 @@ sap.ui.define([
             this.component =this.getOwnerComponent();
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
+            this.model_data =this.component.getModel();
             // set media ---
             Device.media.attachHandler((oEvent)=>{
                 if(oEvent.name=='Phone' || oEvent.name=='Tablet'){
@@ -28,35 +31,9 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    setModel.configureModel.call(this,"Regions.json");
                 }.bind(this)
             });
-
-            // fetch data from 0-data/v2
-            this.model_data =this.component.getModel("MD");
-            this.table.setBusy(true);
-            this.model_data.read("/Regions",{
-                urlParameters:{
-                    "$expand":"Territories"
-                },
-                success:function(oData){
-                    const results =oData["results"];
-                    for (const ele of results) {
-                        ele["Territories"] = Object.getPrototypeOf(ele["Territories"]["results"]) ==Array.prototype? ele["Territories"]["results"].length:"fisshy activity"
-                    }
-                    this.Json = new JSONModel();
-                    this.Json.setData({"results":results});
-                    this.getView().setModel(this.Json);
-                    this.table.setBusy();
-                }.bind(this),
-                error:function(oError){
-                    console.log(oError);
-                    this.table.setBusy();
-                }.bind(this)
-            })
-            
-            
-
-            
         },
         onExit(){
         },
@@ -65,11 +42,11 @@ sap.ui.define([
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
-            var oContext = oEvent.getSource().getBindingContext();
+            var oContext = oEvent.getSource().getBindingContext().getPath();
             // console.log(oContext);
-            const id =oContext.getProperty("RegionID");
+            // const id =oContext.getProperty("RegionID");
             const model =this.component.getModel("nav");
-            model.setProperty("/idOfBindElement",id);
+            model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("RegionsOverview");
           },
     });
