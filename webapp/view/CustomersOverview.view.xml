@@ -213,7 +213,6 @@ controllerName="bd.businessportal.controller.CustomersOverview"
                                                 </m:cells>
                                             </m:ColumnListItem>
                                         </m:items>
-
                 </m:Table>
                 </blocks>
             </ObjectPageSubSection>

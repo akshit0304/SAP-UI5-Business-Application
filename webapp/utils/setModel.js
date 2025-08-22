@@ -16,7 +16,8 @@ sap.ui.define([
                 if(fileSplit.pop()=="json" && Array.isArray(fileSplit)){
                         table?.setBusy(true);
                         const model = component.getModel();
-                        model.loadData("../Odata/"+fileName).then((info)=>{
+                        // model.loadData("../Odata/"+fileName).then((info)=>{
+                       model.loadData(sap.ui.require.toUrl("bd/businessportal/Odata/"+fileName)).then((info)=>{
                         // console.log(info);
                         component.setModel(model);
                         component.loaded_model = fileSplit.pop();
@@ -42,7 +43,8 @@ sap.ui.define([
                 if(fileSplit.pop()=="json" && Array.isArray(fileSplit)){
                         busyControl?.setBusy(true);
                         const model = component.getModel();
-                        model.loadData("../Odata/"+fileName).then((info)=>{
+                        // model.loadData("../Odata/"+fileName).then((info)=>{
+                        model.loadData(sap.ui.require.toUrl("bd/businessportal/Odata/"+fileName)).then((info)=>{
                         // console.log(info);
                         component.setModel(model);
                         component.loaded_model = fileSplit.pop();
@@ -84,7 +86,8 @@ sap.ui.define([
             // this.product_table.setBusy(true);
             table?.setBusy(true);
             let Model = new JSONModel();
-            Model.loadData("../Odata/"+fileName).then(() => {
+            // Model.loadData("../Odata/"+fileName).then(() => {
+                Model.loadData(sap.ui.require.toUrl("bd/businessportal/Odata/"+fileName)).then((info)=>{
                 this.getView().setModel(Model, modelName);
                 let oBinding = table.getBinding("items");
                 // let bind_path = this.model?.getProperty("/idOfBindElement");
