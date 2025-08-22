@@ -162,6 +162,66 @@ controllerName="bd.businessportal.controller.EmployeesOverview"
                 </ObjectPageSubSection>
             </subSections>
         </ObjectPageSection>
+
+        <ObjectPageSection title="Orders" showTitle="false">
+            <ObjectPageSubSection  title="Orders" showTitle="false">
+                <blocks>
+                    <m:Table 
+                        id="o_e_orders"
+                        autoPopinMode="true"
+                        growing="true"
+                        growingThreshold="10"
+                        class="sapUiSmallMarginBottom"
+                        busyIndicatorDelay="100"
+                        headerText="Orders"
+                        items="{od>/results}"
+                    >
+                    <m:infoToolbar>
+                        <m:OverflowToolbar design="Info">
+                            <m:Label text="Orders list managed by Employee {TitleOfCourtesy} {FirstName}" wrapping="true"/>
+                        </m:OverflowToolbar>
+                    </m:infoToolbar>
+
+                    <m:columns>
+                         <m:Column>
+                            <m:Label wrapping="false" text="Order ID"/>
+                        </m:Column>
+
+                        <m:Column>
+                            <m:Label wrapping="false" text="Customer ID"/>
+                        </m:Column>
+
+                         <m:Column>
+                            <m:Label wrapping="false" text="Order Date"/>
+                        </m:Column>
+
+                        <m:Column>
+                            <m:Label wrapping="false" text="Shipped Date"/>
+                        </m:Column>
+
+                        <m:Column autoPopinWidth="15em">
+                            <m:Label wrapping="true" text="Product Name"/>
+                        </m:Column>
+
+                        <m:Column>
+                            <m:Label wrapping="false" text="Address"/>
+                        </m:Column>
+                    </m:columns>
+
+                    <m:ColumnListItem type="Navigation" press=".detailPress" >
+                        <m:cells>
+                            <m:ObjectIdentifier title="{od>OrderID}" />
+                            <m:Text text="{od>CustomerID}" />
+                             <m:Text text="{path:'od>OrderDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+                             <m:Text text="{path:'od>ShippedDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+                            <m:Text text="{od>ShipName}" maxLines="3" />
+                            <m:Text text="{od>ShipCity} ({od>ShipCountry})" />
+                        </m:cells>
+                    </m:ColumnListItem>
+                </m:Table>
+                </blocks>
+            </ObjectPageSubSection>
+        </ObjectPageSection>
         <!-- section end -->
         <!-- section-2 -->
         <!-- <ObjectPageSection titleUppercase="false" anchorBarButtonColor="Default" showTitle="false" title="Employee Info">

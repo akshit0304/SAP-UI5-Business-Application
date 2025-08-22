@@ -35,7 +35,11 @@ sap.ui.define([
                 onBeforeShow:function(){
                     this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Customers.json");
-                }.bind(this)
+
+
+                }.bind(this),
+                onAfterShow:function(){
+                }
             });
         },
         navbuttonPressed:function(oEvent){

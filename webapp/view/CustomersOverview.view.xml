@@ -41,11 +41,11 @@ controllerName="bd.businessportal.controller.CustomersOverview"
             </expandedHeading>
             <!-- 123 -->
             <snappedContent>
-                <m:Text text="" wrapping="false"></m:Text>
+                <m:Text text="{CompanyName}" wrapping="false"></m:Text>
             </snappedContent>
 
             <expandedContent>
-                <m:Text text="" wrapping="false"></m:Text>
+                <m:Text text="{CompanyName}" wrapping="false"></m:Text>
             </expandedContent>
             <!-- <actions>
                     <m:Toolbar style="Clear">
@@ -61,14 +61,13 @@ controllerName="bd.businessportal.controller.CustomersOverview"
         <m:VBox visible="true" width="100%" id="c_product_general_info">
             
             <m:FlexBox  rowGap="1em" columnGap="1.6rem" fitContainer="true" alignItems="Start" alignContent="Start" wrap="Wrap">
-                <m:VBox alignItems="Center">
+                <!-- <m:VBox alignItems="Center"> -->
                     <m:Avatar decorative="true" displayShape="Circle" displaySize="XL" imageFitType="Contain" backgroundColor="Transparent"  src=""/>
-                    <m:ObjectStatus text="{CompanyName}" inverted="true" >
-                        <m:layoutData>
+                        <!-- <m:layoutData>
                             <m:FlexItemData alignSelf="Start" maxWidth="8rem"></m:FlexItemData>
-                        </m:layoutData>
-                        </m:ObjectStatus>
-                </m:VBox>
+                        </m:layoutData> -->
+                        <!-- </m:ObjectStatus> -->
+                <!-- </m:VBox> -->
                 <!-- description card -->
                 <m:HBox wrap="Wrap" alignItems="Start" height="100%" gap="1rem">
                     <m:layoutData>

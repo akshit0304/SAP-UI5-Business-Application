@@ -42,15 +42,37 @@ sap.ui.define([
                         // console.log(bind_path);
                     }
                     // condition end
-                        const bind_elements_id =['e_dynamicPageTitle','e_form','info_employee','e_product_general_info'];
+                        const bind_elements_id =['e_dynamicPageTitle','e_form','info_employee','e_product_general_info',"o_e_orders"];
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                        }
+                    // orders table
+                    setModel.loadTable.call(this,
+                        "Orders.json",
+                        "o_e_orders",
+                        {
+                            "modelName":"od",
+                            "labelID":"EmployeeID",
+                            "labelParameter":null,
+                            "bindElementID":"info_employee"
+                        }
+                    )
                 });
                     this.component._buttonExpandLogic(1, 0);
                 }.bind(this),
             });
         },
+
+         detailPress:function(oEvent){
+            this.oNavContainer.setBusy(true);
+            var id = oEvent.getSource().getBindingContext('od').getProperty("EmployeeID");
+            // console.log(this.component);
+            this.component.second_binding=true;
+            // set id in nav model in idOfBindElementSecond
+            this.model.setProperty("/idOfBindElementSecond",id);
+             this.root_element.getController()._loadView("OrdersOverview");
+
+        }
         
 
     });

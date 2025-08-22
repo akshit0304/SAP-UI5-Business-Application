@@ -96,8 +96,8 @@
                                             <Column   demandPopin="true" minScreenWidth="Tablet" >
                                                 <Text wrapping="true" text="Phone No."></Text>
                                             </Column>
-                                            <Column demandPopin="true"  minScreenWidth="Tablet" hAlign="Center">
-                                                <Text wrapping="true" text="Placed Orders"/>
+                                            <Column demandPopin="true"  minScreenWidth="Tablet">
+                                                <Text wrapping="true" text="Postal Code"/>
                                             </Column>
                                            
                                         </columns>
@@ -109,7 +109,8 @@
                                                     <Text text="{ContactName}" maxLines="3"/>
                                                     <Text text="{City}({Country})" maxLines="3"/>
                                                     <Text text="{Phone}" wrapping="false" />
-                                                    <ObjectNumber number="{:=%{path:'Orders/results'}.length}"  emptyIndicatorMode="On" />
+                                                    <Text text="{PostalCode}" wrapping="false" />
+                                                    <!-- <ObjectNumber number="{:=%{path:'Orders/results'}.length}"  emptyIndicatorMode="On" /> -->
                                                 </cells>
                                             </ColumnListItem>
                                         </items>
