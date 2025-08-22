@@ -2,11 +2,13 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
-    "sap/ui/Device"
+    "sap/ui/Device",
+    'sap/ui/core/BusyIndicator'
 ],(Controller,
     JSONModel,
     Formatter,
-    Device
+    Device,
+    BusyIndicator
 )=>{
     "use strict"
      const oData = {
@@ -44,6 +46,9 @@ sap.ui.define([
                     this.component._buttonExpandLogic(1,1);
                 }.bind(this)
             });
+        },
+        onAfterRendering:function () {
+            BusyIndicator.hide();
         },
         onExit(){
             console.log("dashboard exit");

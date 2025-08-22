@@ -1,15 +1,14 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
     "bd/businessportal/utils/setModel",
     
+    
 ],(Controller,
-    JSONModel,
     Formatter,
     Device,
-    setModel
+    setModel,
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Suppliers", {
@@ -34,7 +33,11 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Suppliers.json");
+                }.bind(this),
+                onAfterShow:function(){
+                    this.oNavContainer.setBusy();
                 }.bind(this)
             });
 

@@ -4,6 +4,7 @@ sap.ui.define([
     "bd/businessportal/utils/General",
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/utils/setModel",
+    
 ],(Controller,
     Formatter,
     General,
@@ -26,7 +27,9 @@ sap.ui.define([
             this.getView().addStyleClass(this.component.getContentDensityClass());
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Categories.json");
+                    
                 }.bind(this)
             })
              // fetch data from 0-data/v2

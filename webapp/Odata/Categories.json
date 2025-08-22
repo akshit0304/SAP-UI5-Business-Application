@@ -1,36 +1,9 @@
-{
+  {
     "endpoint":"categories",
     "results":[
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)/Supplier"
-                        }
-                    },
-                    "ProductID": 1,
+                {                    "ProductID": 1,
                     "ProductName": "Chai",
                     "SupplierID": 1,
                     "CategoryID": 1,
@@ -41,28 +14,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)/Supplier"
-                        }
-                    },
-                    "ProductID": 2,
+                {                    "ProductID": 2,
                     "ProductName": "Chang",
                     "SupplierID": 1,
                     "CategoryID": 1,
@@ -73,28 +25,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(24)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(24)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(24)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(24)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(24)/Supplier"
-                        }
-                    },
-                    "ProductID": 24,
+                {                    "ProductID": 24,
                     "ProductName": "Guaraná Fantástica",
                     "SupplierID": 10,
                     "CategoryID": 1,
@@ -105,28 +36,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(34)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(34)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(34)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(34)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(34)/Supplier"
-                        }
-                    },
-                    "ProductID": 34,
+                {                    "ProductID": 34,
                     "ProductName": "Sasquatch Ale",
                     "SupplierID": 16,
                     "CategoryID": 1,
@@ -137,28 +47,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(35)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(35)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(35)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(35)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(35)/Supplier"
-                        }
-                    },
-                    "ProductID": 35,
+                {                    "ProductID": 35,
                     "ProductName": "Steeleye Stout",
                     "SupplierID": 16,
                     "CategoryID": 1,
@@ -169,28 +58,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(38)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(38)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(38)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(38)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(38)/Supplier"
-                        }
-                    },
-                    "ProductID": 38,
+                {                    "ProductID": 38,
                     "ProductName": "Côte de Blaye",
                     "SupplierID": 18,
                     "CategoryID": 1,
@@ -201,28 +69,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(39)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(39)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(39)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(39)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(39)/Supplier"
-                        }
-                    },
-                    "ProductID": 39,
+                {                    "ProductID": 39,
                     "ProductName": "Chartreuse verte",
                     "SupplierID": 18,
                     "CategoryID": 1,
@@ -233,28 +80,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(43)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(43)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(43)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(43)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(43)/Supplier"
-                        }
-                    },
-                    "ProductID": 43,
+                {                    "ProductID": 43,
                     "ProductName": "Ipoh Coffee",
                     "SupplierID": 20,
                     "CategoryID": 1,
@@ -265,28 +91,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(67)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(67)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(67)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(67)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(67)/Supplier"
-                        }
-                    },
-                    "ProductID": 67,
+                {                    "ProductID": 67,
                     "ProductName": "Laughing Lumberjack Lager",
                     "SupplierID": 16,
                     "CategoryID": 1,
@@ -297,28 +102,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(70)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(70)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(70)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(70)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(70)/Supplier"
-                        }
-                    },
-                    "ProductID": 70,
+                {                    "ProductID": 70,
                     "ProductName": "Outback Lager",
                     "SupplierID": 7,
                     "CategoryID": 1,
@@ -329,28 +113,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(75)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(75)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(75)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(75)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(75)/Supplier"
-                        }
-                    },
-                    "ProductID": 75,
+                {                    "ProductID": 75,
                     "ProductName": "Rhönbräu Klosterbier",
                     "SupplierID": 12,
                     "CategoryID": 1,
@@ -361,28 +124,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(76)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(76)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(76)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(76)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(76)/Supplier"
-                        }
-                    },
-                    "ProductID": 76,
+                {                    "ProductID": 76,
                     "ProductName": "Lakkalikööri",
                     "SupplierID": 23,
                     "CategoryID": 1,
@@ -397,39 +139,10 @@
         },
         "CategoryID": 1,
         "CategoryName": "Beverages",
-        "Description": "Soft drinks, coffees, teas, beers, and ales"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Soft drinks, coffees, teas, beers, and ales"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)/Supplier"
-                        }
-                    },
-                    "ProductID": 3,
+                {                    "ProductID": 3,
                     "ProductName": "Aniseed Syrup",
                     "SupplierID": 1,
                     "CategoryID": 2,
@@ -440,28 +153,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)/Supplier"
-                        }
-                    },
-                    "ProductID": 4,
+                {                    "ProductID": 4,
                     "ProductName": "Chef Anton's Cajun Seasoning",
                     "SupplierID": 2,
                     "CategoryID": 2,
@@ -472,28 +164,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)/Supplier"
-                        }
-                    },
-                    "ProductID": 5,
+                {                    "ProductID": 5,
                     "ProductName": "Chef Anton's Gumbo Mix",
                     "SupplierID": 2,
                     "CategoryID": 2,
@@ -504,28 +175,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)/Supplier"
-                        }
-                    },
-                    "ProductID": 6,
+                {                    "ProductID": 6,
                     "ProductName": "Grandma's Boysenberry Spread",
                     "SupplierID": 3,
                     "CategoryID": 2,
@@ -536,28 +186,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)/Supplier"
-                        }
-                    },
-                    "ProductID": 8,
+                {                    "ProductID": 8,
                     "ProductName": "Northwoods Cranberry Sauce",
                     "SupplierID": 3,
                     "CategoryID": 2,
@@ -568,28 +197,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)/Supplier"
-                        }
-                    },
-                    "ProductID": 15,
+                {                    "ProductID": 15,
                     "ProductName": "Genen Shouyu",
                     "SupplierID": 6,
                     "CategoryID": 2,
@@ -600,28 +208,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(44)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(44)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(44)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(44)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(44)/Supplier"
-                        }
-                    },
-                    "ProductID": 44,
+                {                    "ProductID": 44,
                     "ProductName": "Gula Malacca",
                     "SupplierID": 20,
                     "CategoryID": 2,
@@ -632,28 +219,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(61)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(61)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(61)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(61)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(61)/Supplier"
-                        }
-                    },
-                    "ProductID": 61,
+                {                    "ProductID": 61,
                     "ProductName": "Sirop d'érable",
                     "SupplierID": 29,
                     "CategoryID": 2,
@@ -664,28 +230,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(63)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(63)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(63)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(63)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(63)/Supplier"
-                        }
-                    },
-                    "ProductID": 63,
+                {                    "ProductID": 63,
                     "ProductName": "Vegie-spread",
                     "SupplierID": 7,
                     "CategoryID": 2,
@@ -696,28 +241,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(65)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(65)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(65)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(65)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(65)/Supplier"
-                        }
-                    },
-                    "ProductID": 65,
+                {                    "ProductID": 65,
                     "ProductName": "Louisiana Fiery Hot Pepper Sauce",
                     "SupplierID": 2,
                     "CategoryID": 2,
@@ -728,28 +252,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(66)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(66)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(66)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(66)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(66)/Supplier"
-                        }
-                    },
-                    "ProductID": 66,
+                {                    "ProductID": 66,
                     "ProductName": "Louisiana Hot Spiced Okra",
                     "SupplierID": 2,
                     "CategoryID": 2,
@@ -760,28 +263,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(77)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(77)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(77)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(77)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(77)/Supplier"
-                        }
-                    },
-                    "ProductID": 77,
+                {                    "ProductID": 77,
                     "ProductName": "Original Frankfurter grüne Soße",
                     "SupplierID": 12,
                     "CategoryID": 2,
@@ -796,39 +278,10 @@
         },
         "CategoryID": 2,
         "CategoryName": "Condiments",
-        "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)/Supplier"
-                        }
-                    },
-                    "ProductID": 16,
+                {                    "ProductID": 16,
                     "ProductName": "Pavlova",
                     "SupplierID": 7,
                     "CategoryID": 3,
@@ -839,28 +292,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)/Supplier"
-                        }
-                    },
-                    "ProductID": 19,
+                {                    "ProductID": 19,
                     "ProductName": "Teatime Chocolate Biscuits",
                     "SupplierID": 8,
                     "CategoryID": 3,
@@ -871,28 +303,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)/Supplier"
-                        }
-                    },
-                    "ProductID": 20,
+                {                    "ProductID": 20,
                     "ProductName": "Sir Rodney's Marmalade",
                     "SupplierID": 8,
                     "CategoryID": 3,
@@ -903,28 +314,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(21)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(21)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(21)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(21)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(21)/Supplier"
-                        }
-                    },
-                    "ProductID": 21,
+                {                    "ProductID": 21,
                     "ProductName": "Sir Rodney's Scones",
                     "SupplierID": 8,
                     "CategoryID": 3,
@@ -935,28 +325,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(25)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(25)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(25)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(25)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(25)/Supplier"
-                        }
-                    },
-                    "ProductID": 25,
+                {                    "ProductID": 25,
                     "ProductName": "NuNuCa Nuß-Nougat-Creme",
                     "SupplierID": 11,
                     "CategoryID": 3,
@@ -967,28 +336,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(26)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(26)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(26)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(26)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(26)/Supplier"
-                        }
-                    },
-                    "ProductID": 26,
+                {                    "ProductID": 26,
                     "ProductName": "Gumbär Gummibärchen",
                     "SupplierID": 11,
                     "CategoryID": 3,
@@ -999,28 +347,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(27)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(27)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(27)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(27)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(27)/Supplier"
-                        }
-                    },
-                    "ProductID": 27,
+                {                    "ProductID": 27,
                     "ProductName": "Schoggi Schokolade",
                     "SupplierID": 11,
                     "CategoryID": 3,
@@ -1031,28 +358,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(47)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(47)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(47)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(47)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(47)/Supplier"
-                        }
-                    },
-                    "ProductID": 47,
+                {                    "ProductID": 47,
                     "ProductName": "Zaanse koeken",
                     "SupplierID": 22,
                     "CategoryID": 3,
@@ -1063,28 +369,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(48)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(48)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(48)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(48)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(48)/Supplier"
-                        }
-                    },
-                    "ProductID": 48,
+                {                    "ProductID": 48,
                     "ProductName": "Chocolade",
                     "SupplierID": 22,
                     "CategoryID": 3,
@@ -1095,28 +380,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(49)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(49)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(49)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(49)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(49)/Supplier"
-                        }
-                    },
-                    "ProductID": 49,
+                {                    "ProductID": 49,
                     "ProductName": "Maxilaku",
                     "SupplierID": 23,
                     "CategoryID": 3,
@@ -1127,28 +391,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(50)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(50)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(50)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(50)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(50)/Supplier"
-                        }
-                    },
-                    "ProductID": 50,
+                {                    "ProductID": 50,
                     "ProductName": "Valkoinen suklaa",
                     "SupplierID": 23,
                     "CategoryID": 3,
@@ -1159,28 +402,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(62)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(62)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(62)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(62)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(62)/Supplier"
-                        }
-                    },
-                    "ProductID": 62,
+                {                    "ProductID": 62,
                     "ProductName": "Tarte au sucre",
                     "SupplierID": 29,
                     "CategoryID": 3,
@@ -1191,28 +413,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(68)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(68)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(68)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(68)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(68)/Supplier"
-                        }
-                    },
-                    "ProductID": 68,
+                {                    "ProductID": 68,
                     "ProductName": "Scottish Longbreads",
                     "SupplierID": 8,
                     "CategoryID": 3,
@@ -1227,39 +428,10 @@
         },
         "CategoryID": 3,
         "CategoryName": "Confections",
-        "Description": "Desserts, candies, and sweet breads"
-    
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Desserts, candies, and sweet breads"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)/Supplier"
-                        }
-                    },
-                    "ProductID": 11,
+                {                    "ProductID": 11,
                     "ProductName": "Queso Cabrales",
                     "SupplierID": 5,
                     "CategoryID": 4,
@@ -1270,28 +442,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)/Supplier"
-                        }
-                    },
-                    "ProductID": 12,
+                {                    "ProductID": 12,
                     "ProductName": "Queso Manchego La Pastora",
                     "SupplierID": 5,
                     "CategoryID": 4,
@@ -1302,28 +453,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(31)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(31)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(31)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(31)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(31)/Supplier"
-                        }
-                    },
-                    "ProductID": 31,
+                {                    "ProductID": 31,
                     "ProductName": "Gorgonzola Telino",
                     "SupplierID": 14,
                     "CategoryID": 4,
@@ -1334,28 +464,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(32)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(32)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(32)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(32)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(32)/Supplier"
-                        }
-                    },
-                    "ProductID": 32,
+                {                    "ProductID": 32,
                     "ProductName": "Mascarpone Fabioli",
                     "SupplierID": 14,
                     "CategoryID": 4,
@@ -1366,28 +475,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(33)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(33)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(33)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(33)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(33)/Supplier"
-                        }
-                    },
-                    "ProductID": 33,
+                {                    "ProductID": 33,
                     "ProductName": "Geitost",
                     "SupplierID": 15,
                     "CategoryID": 4,
@@ -1398,28 +486,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(59)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(59)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(59)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(59)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(59)/Supplier"
-                        }
-                    },
-                    "ProductID": 59,
+                {                    "ProductID": 59,
                     "ProductName": "Raclette Courdavault",
                     "SupplierID": 28,
                     "CategoryID": 4,
@@ -1430,28 +497,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(60)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(60)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(60)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(60)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(60)/Supplier"
-                        }
-                    },
-                    "ProductID": 60,
+                {                    "ProductID": 60,
                     "ProductName": "Camembert Pierrot",
                     "SupplierID": 28,
                     "CategoryID": 4,
@@ -1462,28 +508,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(69)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(69)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(69)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(69)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(69)/Supplier"
-                        }
-                    },
-                    "ProductID": 69,
+                {                    "ProductID": 69,
                     "ProductName": "Gudbrandsdalsost",
                     "SupplierID": 15,
                     "CategoryID": 4,
@@ -1494,28 +519,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(71)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(71)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(71)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(71)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(71)/Supplier"
-                        }
-                    },
-                    "ProductID": 71,
+                {                    "ProductID": 71,
                     "ProductName": "Flotemysost",
                     "SupplierID": 15,
                     "CategoryID": 4,
@@ -1526,28 +530,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(72)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(72)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(72)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(72)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(72)/Supplier"
-                        }
-                    },
-                    "ProductID": 72,
+                {                    "ProductID": 72,
                     "ProductName": "Mozzarella di Giovanni",
                     "SupplierID": 14,
                     "CategoryID": 4,
@@ -1562,39 +545,10 @@
         },
         "CategoryID": 4,
         "CategoryName": "Dairy Products",
-        "Description": "Cheeses"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(5)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(5)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Cheeses"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(22)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(22)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(22)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(22)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(22)/Supplier"
-                        }
-                    },
-                    "ProductID": 22,
+                {                    "ProductID": 22,
                     "ProductName": "Gustaf's Knäckebröd",
                     "SupplierID": 9,
                     "CategoryID": 5,
@@ -1605,28 +559,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(23)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(23)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(23)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(23)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(23)/Supplier"
-                        }
-                    },
-                    "ProductID": 23,
+                {                    "ProductID": 23,
                     "ProductName": "Tunnbröd",
                     "SupplierID": 9,
                     "CategoryID": 5,
@@ -1637,28 +570,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(42)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(42)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(42)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(42)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(42)/Supplier"
-                        }
-                    },
-                    "ProductID": 42,
+                {                    "ProductID": 42,
                     "ProductName": "Singaporean Hokkien Fried Mee",
                     "SupplierID": 20,
                     "CategoryID": 5,
@@ -1669,28 +581,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(52)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(52)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(52)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(52)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(52)/Supplier"
-                        }
-                    },
-                    "ProductID": 52,
+                {                    "ProductID": 52,
                     "ProductName": "Filo Mix",
                     "SupplierID": 24,
                     "CategoryID": 5,
@@ -1701,28 +592,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(56)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(56)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(56)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(56)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(56)/Supplier"
-                        }
-                    },
-                    "ProductID": 56,
+                {                    "ProductID": 56,
                     "ProductName": "Gnocchi di nonna Alice",
                     "SupplierID": 26,
                     "CategoryID": 5,
@@ -1733,28 +603,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(57)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(57)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(57)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(57)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(57)/Supplier"
-                        }
-                    },
-                    "ProductID": 57,
+                {                    "ProductID": 57,
                     "ProductName": "Ravioli Angelo",
                     "SupplierID": 26,
                     "CategoryID": 5,
@@ -1765,28 +614,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(64)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(64)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(64)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(64)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(64)/Supplier"
-                        }
-                    },
-                    "ProductID": 64,
+                {                    "ProductID": 64,
                     "ProductName": "Wimmers gute Semmelknödel",
                     "SupplierID": 12,
                     "CategoryID": 5,
@@ -1801,39 +629,10 @@
         },
         "CategoryID": 5,
         "CategoryName": "Grains/Cereals",
-        "Description": "Breads, crackers, pasta, and cereal"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Breads, crackers, pasta, and cereal"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)/Supplier"
-                        }
-                    },
-                    "ProductID": 9,
+                {                    "ProductID": 9,
                     "ProductName": "Mishi Kobe Niku",
                     "SupplierID": 4,
                     "CategoryID": 6,
@@ -1844,28 +643,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)/Supplier"
-                        }
-                    },
-                    "ProductID": 17,
+                {                    "ProductID": 17,
                     "ProductName": "Alice Mutton",
                     "SupplierID": 7,
                     "CategoryID": 6,
@@ -1876,28 +654,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(29)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(29)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(29)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(29)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(29)/Supplier"
-                        }
-                    },
-                    "ProductID": 29,
+                {                    "ProductID": 29,
                     "ProductName": "Thüringer Rostbratwurst",
                     "SupplierID": 12,
                     "CategoryID": 6,
@@ -1908,28 +665,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(53)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(53)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(53)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(53)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(53)/Supplier"
-                        }
-                    },
-                    "ProductID": 53,
+                {                    "ProductID": 53,
                     "ProductName": "Perth Pasties",
                     "SupplierID": 24,
                     "CategoryID": 6,
@@ -1940,28 +676,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(54)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(54)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(54)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(54)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(54)/Supplier"
-                        }
-                    },
-                    "ProductID": 54,
+                {                    "ProductID": 54,
                     "ProductName": "Tourtière",
                     "SupplierID": 25,
                     "CategoryID": 6,
@@ -1972,28 +687,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(55)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(55)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(55)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(55)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(55)/Supplier"
-                        }
-                    },
-                    "ProductID": 55,
+                {                    "ProductID": 55,
                     "ProductName": "Pâté chinois",
                     "SupplierID": 25,
                     "CategoryID": 6,
@@ -2008,39 +702,10 @@
         },
         "CategoryID": 6,
         "CategoryName": "Meat/Poultry",
-        "Description": "Prepared meats"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Prepared meats"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)/Supplier"
-                        }
-                    },
-                    "ProductID": 7,
+                {                    "ProductID": 7,
                     "ProductName": "Uncle Bob's Organic Dried Pears",
                     "SupplierID": 3,
                     "CategoryID": 7,
@@ -2051,28 +716,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)/Supplier"
-                        }
-                    },
-                    "ProductID": 14,
+                {                    "ProductID": 14,
                     "ProductName": "Tofu",
                     "SupplierID": 6,
                     "CategoryID": 7,
@@ -2083,28 +727,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(28)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(28)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(28)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(28)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(28)/Supplier"
-                        }
-                    },
-                    "ProductID": 28,
+                {                    "ProductID": 28,
                     "ProductName": "Rössle Sauerkraut",
                     "SupplierID": 12,
                     "CategoryID": 7,
@@ -2115,28 +738,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": true
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(51)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(51)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(51)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(51)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(51)/Supplier"
-                        }
-                    },
-                    "ProductID": 51,
+                {                    "ProductID": 51,
                     "ProductName": "Manjimup Dried Apples",
                     "SupplierID": 24,
                     "CategoryID": 7,
@@ -2147,28 +749,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(74)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(74)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(74)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(74)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(74)/Supplier"
-                        }
-                    },
-                    "ProductID": 74,
+                {                    "ProductID": 74,
                     "ProductName": "Longlife Tofu",
                     "SupplierID": 4,
                     "CategoryID": 7,
@@ -2183,39 +764,10 @@
         },
         "CategoryID": 7,
         "CategoryName": "Produce",
-        "Description": "Dried fruit and bean curd"
-        
-    },
-    {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-            "type": "NorthwindModel.Category"
-        },
-        "Products": {
+        "Description": "Dried fruit and bean curd"    },
+    {        "Products": {
             "results": [
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)/Supplier"
-                        }
-                    },
-                    "ProductID": 10,
+                {                    "ProductID": 10,
                     "ProductName": "Ikura",
                     "SupplierID": 4,
                     "CategoryID": 8,
@@ -2226,28 +778,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)/Supplier"
-                        }
-                    },
-                    "ProductID": 13,
+                {                    "ProductID": 13,
                     "ProductName": "Konbu",
                     "SupplierID": 6,
                     "CategoryID": 8,
@@ -2258,28 +789,7 @@
                     "ReorderLevel": 5,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)/Supplier"
-                        }
-                    },
-                    "ProductID": 18,
+                {                    "ProductID": 18,
                     "ProductName": "Carnarvon Tigers",
                     "SupplierID": 7,
                     "CategoryID": 8,
@@ -2290,28 +800,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(30)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(30)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(30)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(30)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(30)/Supplier"
-                        }
-                    },
-                    "ProductID": 30,
+                {                    "ProductID": 30,
                     "ProductName": "Nord-Ost Matjeshering",
                     "SupplierID": 13,
                     "CategoryID": 8,
@@ -2322,28 +811,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(36)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(36)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(36)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(36)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(36)/Supplier"
-                        }
-                    },
-                    "ProductID": 36,
+                {                    "ProductID": 36,
                     "ProductName": "Inlagd Sill",
                     "SupplierID": 17,
                     "CategoryID": 8,
@@ -2354,28 +822,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(37)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(37)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(37)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(37)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(37)/Supplier"
-                        }
-                    },
-                    "ProductID": 37,
+                {                    "ProductID": 37,
                     "ProductName": "Gravad lax",
                     "SupplierID": 17,
                     "CategoryID": 8,
@@ -2386,28 +833,7 @@
                     "ReorderLevel": 25,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(40)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(40)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(40)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(40)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(40)/Supplier"
-                        }
-                    },
-                    "ProductID": 40,
+                {                    "ProductID": 40,
                     "ProductName": "Boston Crab Meat",
                     "SupplierID": 19,
                     "CategoryID": 8,
@@ -2418,28 +844,7 @@
                     "ReorderLevel": 30,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(41)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(41)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(41)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(41)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(41)/Supplier"
-                        }
-                    },
-                    "ProductID": 41,
+                {                    "ProductID": 41,
                     "ProductName": "Jack's New England Clam Chowder",
                     "SupplierID": 19,
                     "CategoryID": 8,
@@ -2450,28 +855,7 @@
                     "ReorderLevel": 10,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(45)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(45)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(45)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(45)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(45)/Supplier"
-                        }
-                    },
-                    "ProductID": 45,
+                {                    "ProductID": 45,
                     "ProductName": "Rogede sild",
                     "SupplierID": 21,
                     "CategoryID": 8,
@@ -2482,28 +866,7 @@
                     "ReorderLevel": 15,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(46)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(46)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(46)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(46)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(46)/Supplier"
-                        }
-                    },
-                    "ProductID": 46,
+                {                    "ProductID": 46,
                     "ProductName": "Spegesild",
                     "SupplierID": 21,
                     "CategoryID": 8,
@@ -2514,28 +877,7 @@
                     "ReorderLevel": 0,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(58)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(58)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(58)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(58)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(58)/Supplier"
-                        }
-                    },
-                    "ProductID": 58,
+                {                    "ProductID": 58,
                     "ProductName": "Escargots de Bourgogne",
                     "SupplierID": 27,
                     "CategoryID": 8,
@@ -2546,28 +888,7 @@
                     "ReorderLevel": 20,
                     "Discontinued": false
                 },
-                {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(73)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(73)",
-                        "type": "NorthwindModel.Product"
-                    },
-                    "Category": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(73)/Category"
-                        }
-                    },
-                    "Order_Details": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(73)/Order_Details"
-                        }
-                    },
-                    "Supplier": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(73)/Supplier"
-                        }
-                    },
-                    "ProductID": 73,
+                {                    "ProductID": 73,
                     "ProductName": "Röd Kaviar",
                     "SupplierID": 17,
                     "CategoryID": 8,
@@ -2582,8 +903,6 @@
         },
         "CategoryID": 8,
         "CategoryName": "Seafood",
-        "Description": "Seaweed and fish"
-        
-    }
+        "Description": "Seaweed and fish"    }
 ]
 }

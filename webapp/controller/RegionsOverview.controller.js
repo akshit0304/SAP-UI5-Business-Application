@@ -17,14 +17,15 @@ sap.ui.define([
             this.model = this.component.getModel("nav");
 
             this.oNavContainer.setBusy();
-            setModel.configureModel.call(this,"Products.json");
+            
             this.getView().addEventDelegate({
                 onAfterShow: function () {
                     this.oNavContainer.setBusy();
                 }.bind(this),
 
                 onBeforeShow: function () {
-                        let bind_path = this.model.getProperty("/idOfBindElement");
+                setModel.configureModel.call(this,"Regions.json");
+                let bind_path = this.model.getProperty("/idOfBindElement");
                 const bind_elements_id =['r_dynamicPageTitle','info_employee','r_product_general_info',"region_overview"];
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);

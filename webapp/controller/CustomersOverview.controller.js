@@ -1,16 +1,15 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "bd/businessportal/utils/setModel"
-  ], (BaseController,JSONModel,Formatter,setModel) => {
+  ], (BaseController,Formatter,setModel) => {
     "use strict";
-    return BaseController.extend("bd.businessportal.controller.EmployeesOverview", {
+    return BaseController.extend("bd.businessportal.controller.CustomersOverview", {
         formatter:Formatter,
 
         onInit:function() {
             
-            this.main_page =this.byId("employee_overview");
+            this.main_page =this.byId("customer_overview");
             this.component =this.getOwnerComponent();
             this.model = this.component.getModel("nav");
             this.root_element =this.component.byId("App");
@@ -25,13 +24,13 @@ sap.ui.define([
                 }.bind(this),
 
                 onBeforeShow: function () {
-                    setModel.configureModel2.call(this,"Employees.json").then(()=>{
+                    setModel.configureModel2.call(this,"Customers.json").then(()=>{
                             // start
                     let bind_path;
                     if(this.component.second_binding){
                         this.component.second_binding =false;
                         const id =this.model.getProperty("/idOfBindElementSecond");
-                        let index = setModel.idToIndex(this.component,"EmployeeID",id);
+                        let index = setModel.idToIndex(this.component,"CustomerID",id);
                         index =index!=-1?index:0;
                         // find index using the id if not exist then set is index zero
                         bind_path="/results/"+index;
@@ -42,7 +41,7 @@ sap.ui.define([
                         // console.log(bind_path);
                     }
                     // condition end
-                        const bind_elements_id =['e_dynamicPageTitle','e_form','info_employee','e_product_general_info'];
+                        const bind_elements_id =['c_dynamicPageTitle','info_customer','c_product_general_info','placed_orders_subsection'];
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                        }
@@ -51,6 +50,15 @@ sap.ui.define([
                 }.bind(this),
             });
         },
+        detailPress:function(oEvent){
+            this.oNavContainer.setBusy(true);
+            var id = oEvent.getSource().getBindingContext().getProperty("Orders/OrderID");
+            // console.log(this.component);
+            this.component.second_binding=true;
+            // set id in nav model in idOfBindElementSecond
+            this.model.setProperty("/idOfBindElementSecond",id);
+            this.root_element.getController()._loadView("OrdersOverview");
+        }
         
 
     });

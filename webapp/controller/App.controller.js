@@ -4,14 +4,16 @@ sap.ui.define([
   "bd/businessportal/model/Formatter",
   'sap/ui/core/Fragment',
   'bd/businessportal/controller/DialogBox',
-  'sap/ui/core/BusyIndicator'
+  'sap/ui/core/BusyIndicator',
+  'sap/ui/Device'
 
 ], (BaseController,
   XMLView,
   Formatter,
   Fragment,
   DialogBox,
-  BusyIndicator
+  BusyIndicator,
+  Device
 
 ) => {
   "use strict";
@@ -19,6 +21,7 @@ sap.ui.define([
   return BaseController.extend("bd.businessportal.controller.App", {
     formatter: Formatter,
     onInit() {
+      BusyIndicator.show(0);
       console.log("app controller is initialized");
       // initial setup
       this.main_page = this.byId("shell_page");
@@ -27,15 +30,37 @@ sap.ui.define([
       this.router = this.component.getRouter();
       this.HISTORY =[];
       this.CURRENT_ITEM ="Dashboard"
-
       this.getView().addEventDelegate({
         onAfterShow: function () {
-          this._setFocus("dashboard");
-          this._setNavigationList('list');
+          this._setFocus("hamburgerMenu");
+          // this._setNavigationList('list');
+        }.bind(this),
+        onBeforeShow:function(){
+          this.component._buttonExpandLogic(1, 1);
         }.bind(this)
       });
+      // device model change
+      if(Device.support.touch){
+         this.component._buttonExpandLogic(1,0);
+      }
     },
     _loadView: function (sViewName) {
+      if(this.oNavContainer.getCurrentPage().getViewName().split('.').at(-1)==sViewName){
+        this.component.getModel().refresh();
+        BusyIndicator.hide();
+        return 0;
+      }
+      // this.oNavContainer.getCurrentPage()
+      var history_tag_flag =sViewName.search(/Overview/);
+      var history_tag;
+      if(history_tag_flag!=-1) history_tag =sViewName.slice(0,history_tag_flag);
+      else history_tag =sViewName;
+      const last_tag =this.CURRENT_ITEM;
+      this.CURRENT_ITEM =history_tag;
+      this.HISTORY.push(last_tag);
+      console.log(this.CURRENT_ITEM);
+      console.log(this.HISTORY);
+      // navigation logic end
       if (!sViewName || typeof sViewName != 'string') return "error";
       let oExistingPage = this.oNavContainer.getPages()
         .find(p => p.getViewName && p.getViewName().endsWith(sViewName));
@@ -49,11 +74,7 @@ sap.ui.define([
         function () {
           XMLView.create({
             viewName: "bd.businessportal.view." + sViewName,
-            id: "container-bd.businessportal---App--navContainer--" + sViewName.toLowerCase()
           }).then(oView => {
-            // sap.ui.core.Component.(oView, oComponent);
-            // console.log(sap.ui.core.Component.getOwnerComponentFor(oView));
-            // sap.ui.core.Component.setOwnerComponentFor(oView,this.component);
             this.oNavContainer.addPage(oView);
             this.oNavContainer.to(oView);
             BusyIndicator.hide();
@@ -62,20 +83,24 @@ sap.ui.define([
       )
 
     },
-    _setNavigationList: function (id,flag=0,keyName=null) {
+    _setNavigationList: function (id,keyName=null) {
       const control = this.byId(id);
-      // console.log(control.getItems());
-      const list_items = control.getItems();
-      let select_item =list_items[0];
-      if(flag){
-        if(!keyName) select_item =list_items[0];
-        else{
-          select_item =list_items.find(function (item) {
-                return item.getKey() === keyName;
-          });
+      if(!keyName) {
+          keyName ="Dashboard";
         }
-      }
-      control.setSelectedItem(select_item);
+      // console.log(control.getItems());
+      // const list_items = control.getItems();
+      // let select_item =list_items[0];
+      // if(flag){
+        
+      //   // else{
+      //   //   //   select_item =list_items.find(function (item) {
+      //   //   //     return item.getKey() == keyName;
+      //   //   // });
+      //   // }
+      // }
+      control.setSelectedKey(keyName);
+      
       // console.log(this.getLocalId(control.getSelectedKey(control)));
     },
     _setFocus: function (id) {
@@ -104,15 +129,12 @@ sap.ui.define([
     onItemSelect: function (oEvent) {
       const oItem = oEvent.getParameter("item");
       // const lastKey =this._getNavModelData("/current_item");
-      const lastKey =this.CURRENT_ITEM;
+      // const lastKey =this.CURRENT_ITEM;
       const oItemKey = oItem.getKey();
-      if (lastKey!==oItemKey){
+
           BusyIndicator.show(200);
-          // this._setNavModelData("/current_item",oItemKey);
-          this.CURRENT_ITEM =oItemKey;
-          this.HISTORY.push(lastKey);
           this._loadView(oItemKey);
-      }
+          // this._setNavModelData("/current_item",oItemKey);
      
     },
     hamburgerMenu: function (oEvent) {
@@ -120,13 +142,15 @@ sap.ui.define([
       this.component._buttonExpandLogic();
     },
     backButton: function (oEvent) {
-      // console.log("back button pressed");
+      if(this.HISTORY.length==1) this.CURRENT_ITEM="Dashboard";
       let back_item =this.HISTORY.pop();
+      this._setNavigationList("sideNavigation",back_item);
+      // console.log(this.HISTORY);
+      // if(!back_item){this._setNavModelData("/last_item","Dashboard"); return 1;}
       // this._setNavModelData("/current_item",back_item);
-      this.CURRENT_ITEM =back_item;
-      back_item? this._setNavigationList("list",1,back_item):this._setNavigationList("list",1,"Dashboard");
-      this.oNavContainer.back();
-      
+      // this.CURRENT_ITEM =back_item;
+      this.oNavContainer.back(); 
+      // this._setNavModelData("/last_item",back_item);
       
     },
     dialogPress: function (oEvent) {
@@ -147,7 +171,7 @@ sap.ui.define([
                     value:"Company legal notes generally cover the formation, regulation, and dissolution of companies, with a focus on corporate governance, shareholder rights, and legal compliance. Key aspects include the Memorandum of Association (MOA) and Articles of Association (AOA), corporate personality, director duties, and financial structure. The Companies Act, 2013, is the primary legislation governing companies in India.",
                     editable:false,
                     growing:true,
-                    width:"97%",
+                    width:"100%",
                     height:"250px"
 
                   })

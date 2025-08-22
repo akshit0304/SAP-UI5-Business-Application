@@ -39,7 +39,7 @@ sap.ui.define(["sap/ui/core/format/NumberFormat"],
                 }
             },
             employeeStatus:function(num){
-                console.log(num);
+                // console.log(num);
                 return num?"Success":"Warning"
             },
             emptyDataHandle:function(data){

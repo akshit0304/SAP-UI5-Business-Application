@@ -1,4 +1,198 @@
 {
-    "endpoint":"Oficials",
-    "results":"same as employees"
+    "endpoint": "Oficials",
+    "results": [
+        {
+            "EmployeeID": 2,
+            "LastName": "Fuller",
+            "FirstName": "Andrew",
+            "Title": "Vice President, Sales",
+            "TitleOfCourtesy": "Dr.",
+            "BirthDate": "1952-02-19T00:00:00.000Z",
+            "HireDate": "1992-08-14T00:00:00.000Z",
+            "Address": "908 W. Capital Way",
+            "City": "Tacoma",
+            "Region": "WA",
+            "PostalCode": "98401",
+            "Country": "USA",
+            "HomePhone": "(206) 555-9482",
+            "Extension": "3457",
+            "Notes": "Andrew received his BTS commercial in 1974 and a Ph.D. in international marketing from the University of Dallas in 1981.  He is fluent in French and Italian and reads German.  He joined the company as a sales representative, was promoted to sales manager in January 1992 and to vice president of sales in March 1993.  Andrew is a member of the Sales Management Roundtable, the Seattle Chamber of Commerce, and the Pacific Rim Importers Association.",
+            "ReportsTo": null,
+            "PhotoPath": "http://accweb/emmployees/fuller.bmp",
+            "Territories": {
+                "results": [
+                    {
+                        "TerritoryID": "01581",
+                        "TerritoryDescription": "Westboro                                          ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "01730",
+                        "TerritoryDescription": "Bedford                                           ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "01833",
+                        "TerritoryDescription": "Georgetow                                         ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "02116",
+                        "TerritoryDescription": "Boston                                            ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "02139",
+                        "TerritoryDescription": "Cambridge                                         ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "02184",
+                        "TerritoryDescription": "Braintree                                         ",
+                        "RegionID": 1
+                    },
+                    {
+                        "TerritoryID": "40222",
+                        "TerritoryDescription": "Louisville                                        ",
+                        "RegionID": 1
+                    }
+                ]
+            }
+        },
+        {
+            "EmployeeID": 5,
+            "LastName": "Buchanan",
+            "FirstName": "Steven",
+            "Title": "Sales Manager",
+            "TitleOfCourtesy": "Mr.",
+            "BirthDate": "1955-03-04T00:00:00.000Z",
+            "HireDate": "1993-10-17T00:00:00.000Z",
+            "Address": "14 Garrett Hill",
+            "City": "London",
+            "Region": null,
+            "PostalCode": "SW1 8JR",
+            "Country": "UK",
+            "HomePhone": "(71) 555-4848",
+            "Extension": "3453",
+            "Notes": "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London.  He was promoted to sales manager in March 1993.  Mr. Buchanan has completed the courses \"Successful Telemarketing\" and \"International Sales Management.\"  He is fluent in French.",
+            "ReportsTo": 2,
+            "PhotoPath": "http://accweb/emmployees/buchanan.bmp",
+            "Territories": {
+      "results": [
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02903')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02903')/Employees"
+            }
+          },
+          "TerritoryID": "02903",
+          "TerritoryDescription": "Providence                                        ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('07960')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('07960')/Employees"
+            }
+          },
+          "TerritoryID": "07960",
+          "TerritoryDescription": "Morristown                                        ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('08837')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('08837')/Employees"
+            }
+          },
+          "TerritoryID": "08837",
+          "TerritoryDescription": "Edison                                            ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10019')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10019')/Employees"
+            }
+          },
+          "TerritoryID": "10019",
+          "TerritoryDescription": "New York                                          ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10038')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10038')/Employees"
+            }
+          },
+          "TerritoryID": "10038",
+          "TerritoryDescription": "New York                                          ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('11747')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('11747')/Employees"
+            }
+          },
+          "TerritoryID": "11747",
+          "TerritoryDescription": "Mellvile                                          ",
+          "RegionID": 1
+        },
+        {
+          
+          "Region": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('14450')/Region"
+            }
+          },
+          "Employees": {
+            "__deferred": {
+              "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('14450')/Employees"
+            }
+          },
+          "TerritoryID": "14450",
+          "TerritoryDescription": "Fairport                                          ",
+          "RegionID": 1
+        }
+      ]
+    }
+        }
+    ]
 }

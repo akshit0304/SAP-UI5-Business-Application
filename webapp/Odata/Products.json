@@ -1,44 +1,22 @@
-{
+
+    
+    {
     "endpoint":"products",
    "results": [
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)/Products"
-                }
-            },
+            
+
             "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(1)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)/Products"
-                }
-            },
+            
+
             "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
@@ -64,43 +42,18 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)",
-            "type": "NorthwindModel.Product"
-        },
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(1)/Products"
-                }
-            },
+            
+
             "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(2)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)/Products"
-                }
-            },
+           
+
             "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
@@ -126,43 +79,18 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(3)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(1)/Products"
-                }
-            },
+            
+
             "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
@@ -188,43 +116,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
+
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(4)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)/Products"
-                }
-            },
+            
+
             "SupplierID": 2,
             "CompanyName": "New Orleans Cajun Delights",
             "ContactName": "Shelley Burke",
@@ -250,43 +154,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
+
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(5)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(2)/Products"
-                }
-            },
+            
+
             "SupplierID": 2,
             "CompanyName": "New Orleans Cajun Delights",
             "ContactName": "Shelley Burke",
@@ -312,43 +192,19 @@
         "Discontinued": true
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
+
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(6)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)/Products"
-                }
-            },
+            
+
             "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
@@ -374,43 +230,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)/Products"
-                }
-            },
+            
+
             "CategoryID": 7,
             "CategoryName": "Produce",
             "Description": "Dried fruit and bean curd"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(7)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)/Products"
-                }
-            },
+            
+
             "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
@@ -436,43 +268,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
+
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(8)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(3)/Products"
-                }
-            },
+            
+
             "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
@@ -498,43 +306,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)/Products"
-                }
-            },
+            
+
             "CategoryID": 6,
             "CategoryName": "Meat/Poultry",
             "Description": "Prepared meats"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(9)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)/Products"
-                }
-            },
+            
+
             "SupplierID": 4,
             "CompanyName": "Tokyo Traders",
             "ContactName": "Yoshi Nagase",
@@ -560,43 +344,19 @@
         "Discontinued": true
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)/Products"
-                }
-            },
+            
+
             "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(10)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(4)/Products"
-                }
-            },
+            
+
             "SupplierID": 4,
             "CompanyName": "Tokyo Traders",
             "ContactName": "Yoshi Nagase",
@@ -622,43 +382,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)/Products"
-                }
-            },
+            
+
             "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(11)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)/Products"
-                }
-            },
+            
+
             "SupplierID": 5,
             "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
             "ContactName": "Antonio del Valle Saavedra",
@@ -684,43 +420,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(4)/Products"
-                }
-            },
+            
+
             "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(12)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(5)/Products"
-                }
-            },
+            
+
             "SupplierID": 5,
             "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
             "ContactName": "Antonio del Valle Saavedra",
@@ -746,43 +458,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)/Products"
-                }
-            },
+            
+
             "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(13)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)/Products"
-                }
-            },
+            
+
             "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
@@ -808,43 +496,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(7)/Products"
-                }
-            },
+            
+
             "CategoryID": 7,
             "CategoryName": "Produce",
             "Description": "Dried fruit and bean curd"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(14)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)/Products"
-                }
-            },
+            
+
             "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
@@ -870,43 +534,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(2)/Products"
-                }
-            },
+            
+
             "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(15)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(6)/Products"
-                }
-            },
+            
+
             "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
@@ -932,43 +572,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)/Products"
-                }
-            },
+            
+
             "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(16)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)/Products"
-                }
-            },
+            
+
             "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
@@ -994,43 +610,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(6)/Products"
-                }
-            },
+            
+
             "CategoryID": 6,
             "CategoryName": "Meat/Poultry",
             "Description": "Prepared meats"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(17)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)/Products"
-                }
-            },
+            
+
             "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
@@ -1056,43 +648,19 @@
         "Discontinued": true
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(8)/Products"
-                }
-            },
+            
+
             "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(18)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(7)/Products"
-                }
-            },
+            
+
             "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
@@ -1118,43 +686,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)/Products"
-                }
-            },
+            
+
             "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(19)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)/Products"
-                }
-            },
+            
+
             "SupplierID": 8,
             "CompanyName": "Specialty Biscuits, Ltd.",
             "ContactName": "Peter Wilson",
@@ -1180,43 +724,19 @@
         "Discontinued": false
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)",
-            "type": "NorthwindModel.Product"
-        },
+        
         "Category": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)",
-                "type": "NorthwindModel.Category"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Categories(3)/Products"
-                }
-            },
+            
+
             "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
-        "Order_Details": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Products(20)/Order_Details"
-            }
-        },
+
         "Supplier": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)",
-                "type": "NorthwindModel.Supplier"
-            },
-            "Products": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Suppliers(8)/Products"
-                }
-            },
+            
+
             "SupplierID": 8,
             "CompanyName": "Specialty Biscuits, Ltd.",
             "ContactName": "Peter Wilson",
@@ -1240,6 +760,766 @@
         "UnitsOnOrder": 0,
         "ReorderLevel": 0,
         "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 3,
+            "CategoryName": "Confections",
+            "Description": "Desserts, candies, and sweet breads"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 8,
+            "CompanyName": "Specialty Biscuits, Ltd.",
+            "ContactName": "Peter Wilson",
+            "ContactTitle": "Sales Representative",
+            "Address": "29 King's Way",
+            "City": "Manchester",
+            "Region": null,
+            "PostalCode": "M14 GSD",
+            "Country": "UK",
+            "Phone": "(161) 555-4448",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 21,
+        "ProductName": "Sir Rodney's Scones",
+        "SupplierID": 8,
+        "CategoryID": 3,
+        "QuantityPerUnit": "24 pkgs. x 4 pieces",
+        "UnitPrice": "10.0000",
+        "UnitsInStock": 3,
+        "UnitsOnOrder": 40,
+        "ReorderLevel": 5,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 5,
+            "CategoryName": "Grains/Cereals",
+            "Description": "Breads, crackers, pasta, and cereal"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 9,
+            "CompanyName": "PB Knckebrd AB",
+            "ContactName": "Lars Peterson",
+            "ContactTitle": "Sales Agent",
+            "Address": "Kaloadagatan 13",
+            "City": "Gteborg",
+            "Region": null,
+            "PostalCode": "S-345 67",
+            "Country": "Sweden",
+            "Phone": "031-987 65 43",
+            "Fax": "031-987 65 91",
+            "HomePage": null
+        },
+        "ProductID": 22,
+        "ProductName": "Gustaf's Knckebrd",
+        "SupplierID": 9,
+        "CategoryID": 5,
+        "QuantityPerUnit": "24 - 500 g pkgs.",
+        "UnitPrice": "21.0000",
+        "UnitsInStock": 104,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 5,
+            "CategoryName": "Grains/Cereals",
+            "Description": "Breads, crackers, pasta, and cereal"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 9,
+            "CompanyName": "PB Knckebrd AB",
+            "ContactName": "Lars Peterson",
+            "ContactTitle": "Sales Agent",
+            "Address": "Kaloadagatan 13",
+            "City": "Gteborg",
+            "Region": null,
+            "PostalCode": "S-345 67",
+            "Country": "Sweden",
+            "Phone": "031-987 65 43",
+            "Fax": "031-987 65 91",
+            "HomePage": null
+        },
+        "ProductID": 23,
+        "ProductName": "Tunnbrd",
+        "SupplierID": 9,
+        "CategoryID": 5,
+        "QuantityPerUnit": "12 - 250 g pkgs.",
+        "UnitPrice": "9.0000",
+        "UnitsInStock": 61,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 10,
+            "CompanyName": "Refrescos Americanas LTDA",
+            "ContactName": "Carlos Diaz",
+            "ContactTitle": "Marketing Manager",
+            "Address": "Av. das Americanas 12.890",
+            "City": "Sao Paulo",
+            "Region": null,
+            "PostalCode": "5442",
+            "Country": "Brazil",
+            "Phone": "(11) 555 4640",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 24,
+        "ProductName": "Guaran Fantstica",
+        "SupplierID": 10,
+        "CategoryID": 1,
+        "QuantityPerUnit": "12 - 355 ml cans",
+        "UnitPrice": "4.5000",
+        "UnitsInStock": 20,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true
+    },
+    {
+        "Category": {
+            
+
+            "CategoryID": 3,
+            "CategoryName": "Confections",
+            "Description": "Desserts, candies, and sweet breads"
+            
+        },
+        "Supplier": {
+            
+
+            "SupplierID": 11,
+            "CompanyName": "Heli Swaren GmbH & Co. KG",
+            "ContactName": "Petra Winkler",
+            "ContactTitle": "Sales Manager",
+            "Address": "Tiergartenstrae 5",
+            "City": "Berlin",
+            "Region": null,
+            "PostalCode": "10785",
+            "Country": "Germany",
+            "Phone": "(010) 9984510",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 25,
+        "ProductName": "NuNuCa Nu-Nougat-Creme",
+        "SupplierID": 11,
+        "CategoryID": 3,
+        "QuantityPerUnit": "20 - 450 g glasses",
+        "UnitPrice": "14.0000",
+        "UnitsInStock": 76,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 3,
+            "CategoryName": "Confections",
+            "Description": "Desserts, candies, and sweet breads"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 11,
+            "CompanyName": "Heli Swaren GmbH & Co. KG",
+            "ContactName": "Petra Winkler",
+            "ContactTitle": "Sales Manager",
+            "Address": "Tiergartenstrae 5",
+            "City": "Berlin",
+            "Region": null,
+            "PostalCode": "10785",
+            "Country": "Germany",
+            "Phone": "(010) 9984510",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 26,
+        "ProductName": "Gumbr Gummibrchen",
+        "SupplierID": 11,
+        "CategoryID": 3,
+        "QuantityPerUnit": "100 - 250 g bags",
+        "UnitPrice": "31.2300",
+        "UnitsInStock": 15,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 3,
+            "CategoryName": "Confections",
+            "Description": "Desserts, candies, and sweet breads"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 11,
+            "CompanyName": "Heli Swaren GmbH & Co. KG",
+            "ContactName": "Petra Winkler",
+            "ContactTitle": "Sales Manager",
+            "Address": "Tiergartenstrae 5",
+            "City": "Berlin",
+            "Region": null,
+            "PostalCode": "10785",
+            "Country": "Germany",
+            "Phone": "(010) 9984510",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 27,
+        "ProductName": "Schoggi Schokolade",
+        "SupplierID": 11,
+        "CategoryID": 3,
+        "QuantityPerUnit": "100 - 100 g pieces",
+        "UnitPrice": "43.9000",
+        "UnitsInStock": 49,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 7,
+            "CategoryName": "Produce",
+            "Description": "Dried fruit and bean curd"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 12,
+            "CompanyName": "Plutzer Lebensmittelgromrkte AG",
+            "ContactName": "Martin Bein",
+            "ContactTitle": "International Marketing Mgr.",
+            "Address": "Bogenallee 51",
+            "City": "Frankfurt",
+            "Region": null,
+            "PostalCode": "60439",
+            "Country": "Germany",
+            "Phone": "(069) 992755",
+            "Fax": null,
+            "HomePage": "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#"
+        },
+        "ProductID": 28,
+        "ProductName": "Rssle Sauerkraut",
+        "SupplierID": 12,
+        "CategoryID": 7,
+        "QuantityPerUnit": "25 - 825 g cans",
+        "UnitPrice": "45.6000",
+        "UnitsInStock": 26,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 6,
+            "CategoryName": "Meat/Poultry",
+            "Description": "Prepared meats"
+        
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 12,
+            "CompanyName": "Plutzer Lebensmittelgromrkte AG",
+            "ContactName": "Martin Bein",
+            "ContactTitle": "International Marketing Mgr.",
+            "Address": "Bogenallee 51",
+            "City": "Frankfurt",
+            "Region": null,
+            "PostalCode": "60439",
+            "Country": "Germany",
+            "Phone": "(069) 992755",
+            "Fax": null,
+            "HomePage": "Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#"
+        },
+        "ProductID": 29,
+        "ProductName": "Thringer Rostbratwurst",
+        "SupplierID": 12,
+        "CategoryID": 6,
+        "QuantityPerUnit": "50 bags x 30 sausgs.",
+        "UnitPrice": "123.7900",
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 8,
+            "CategoryName": "Seafood",
+            "Description": "Seaweed and fish"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 13,
+            "CompanyName": "Nord-Ost-Fisch Handelsgesellschaft mbH",
+            "ContactName": "Sven Petersen",
+            "ContactTitle": "Coordinator Foreign Markets",
+            "Address": "Frahmredder 112a",
+            "City": "Cuxhaven",
+            "Region": null,
+            "PostalCode": "27478",
+            "Country": "Germany",
+            "Phone": "(04721) 8713",
+            "Fax": "(04721) 8714",
+            "HomePage": null
+        },
+        "ProductID": 30,
+        "ProductName": "Nord-Ost Matjeshering",
+        "SupplierID": 13,
+        "CategoryID": 8,
+        "QuantityPerUnit": "10 - 200 g glasses",
+        "UnitPrice": "25.8900",
+        "UnitsInStock": 10,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 4,
+            "CategoryName": "Dairy Products",
+            "Description": "Cheeses"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 14,
+            "CompanyName": "Formaggi Fortini s.r.l.",
+            "ContactName": "Elio Rossi",
+            "ContactTitle": "Sales Representative",
+            "Address": "Viale Dante, 75",
+            "City": "Ravenna",
+            "Region": null,
+            "PostalCode": "48100",
+            "Country": "Italy",
+            "Phone": "(0544) 60323",
+            "Fax": "(0544) 60603",
+            "HomePage": "#FORMAGGI.HTM#"
+        },
+        "ProductID": 31,
+        "ProductName": "Gorgonzola Telino",
+        "SupplierID": 14,
+        "CategoryID": 4,
+        "QuantityPerUnit": "12 - 100 g pkgs",
+        "UnitPrice": "12.5000",
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 70,
+        "ReorderLevel": 20,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 4,
+            "CategoryName": "Dairy Products",
+            "Description": "Cheeses"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 14,
+            "CompanyName": "Formaggi Fortini s.r.l.",
+            "ContactName": "Elio Rossi",
+            "ContactTitle": "Sales Representative",
+            "Address": "Viale Dante, 75",
+            "City": "Ravenna",
+            "Region": null,
+            "PostalCode": "48100",
+            "Country": "Italy",
+            "Phone": "(0544) 60323",
+            "Fax": "(0544) 60603",
+            "HomePage": "#FORMAGGI.HTM#"
+        },
+        "ProductID": 32,
+        "ProductName": "Mascarpone Fabioli",
+        "SupplierID": 14,
+        "CategoryID": 4,
+        "QuantityPerUnit": "24 - 200 g pkgs.",
+        "UnitPrice": "32.0000",
+        "UnitsInStock": 9,
+        "UnitsOnOrder": 40,
+        "ReorderLevel": 25,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 4,
+            "CategoryName": "Dairy Products",
+            "Description": "Cheeses"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 15,
+            "CompanyName": "Norske Meierier",
+            "ContactName": "Beate Vileid",
+            "ContactTitle": "Marketing Manager",
+            "Address": "Hatlevegen 5",
+            "City": "Sandvika",
+            "Region": null,
+            "PostalCode": "1320",
+            "Country": "Norway",
+            "Phone": "(0)2-953010",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 33,
+        "ProductName": "Geitost",
+        "SupplierID": 15,
+        "CategoryID": 4,
+        "QuantityPerUnit": "500 g",
+        "UnitPrice": "2.5000",
+        "UnitsInStock": 112,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 16,
+            "CompanyName": "Bigfoot Breweries",
+            "ContactName": "Cheryl Saylor",
+            "ContactTitle": "Regional Account Rep.",
+            "Address": "3400 - 8th Avenue Suite 210",
+            "City": "Bend",
+            "Region": "OR",
+            "PostalCode": "97101",
+            "Country": "USA",
+            "Phone": "(503) 555-9931",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 34,
+        "ProductName": "Sasquatch Ale",
+        "SupplierID": 16,
+        "CategoryID": 1,
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": "14.0000",
+        "UnitsInStock": 111,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 16,
+            "CompanyName": "Bigfoot Breweries",
+            "ContactName": "Cheryl Saylor",
+            "ContactTitle": "Regional Account Rep.",
+            "Address": "3400 - 8th Avenue Suite 210",
+            "City": "Bend",
+            "Region": "OR",
+            "PostalCode": "97101",
+            "Country": "USA",
+            "Phone": "(503) 555-9931",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 35,
+        "ProductName": "Steeleye Stout",
+        "SupplierID": 16,
+        "CategoryID": 1,
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": "18.0000",
+        "UnitsInStock": 20,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 8,
+            "CategoryName": "Seafood",
+            "Description": "Seaweed and fish"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 17,
+            "CompanyName": "Svensk Sjfda AB",
+            "ContactName": "Michael Bjrn",
+            "ContactTitle": "Sales Representative",
+            "Address": "Brovallavgen 231",
+            "City": "Stockholm",
+            "Region": null,
+            "PostalCode": "S-123 45",
+            "Country": "Sweden",
+            "Phone": "08-123 45 67",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 36,
+        "ProductName": "Inlagd Sill",
+        "SupplierID": 17,
+        "CategoryID": 8,
+        "QuantityPerUnit": "24 - 250 g  jars",
+        "UnitPrice": "19.0000",
+        "UnitsInStock": 112,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 8,
+            "CategoryName": "Seafood",
+            "Description": "Seaweed and fish"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 17,
+            "CompanyName": "Svensk Sjfda AB",
+            "ContactName": "Michael Bjrn",
+            "ContactTitle": "Sales Representative",
+            "Address": "Brovallavgen 231",
+            "City": "Stockholm",
+            "Region": null,
+            "PostalCode": "S-123 45",
+            "Country": "Sweden",
+            "Phone": "08-123 45 67",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 37,
+        "ProductName": "Gravad lax",
+        "SupplierID": 17,
+        "CategoryID": 8,
+        "QuantityPerUnit": "12 - 500 g pkgs.",
+        "UnitPrice": "26.0000",
+        "UnitsInStock": 11,
+        "UnitsOnOrder": 50,
+        "ReorderLevel": 25,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 18,
+            "CompanyName": "Aux joyeux ecclsiastiques",
+            "ContactName": "Guylne Nodier",
+            "ContactTitle": "Sales Manager",
+            "Address": "203, Rue des Francs-Bourgeois",
+            "City": "Paris",
+            "Region": null,
+            "PostalCode": "75004",
+            "Country": "France",
+            "Phone": "(1) 03.83.00.68",
+            "Fax": "(1) 03.83.00.62",
+            "HomePage": null
+        },
+        "ProductID": 38,
+        "ProductName": "Cte de Blaye",
+        "SupplierID": 18,
+        "CategoryID": 1,
+        "QuantityPerUnit": "12 - 75 cl bottles",
+        "UnitPrice": "263.5000",
+        "UnitsInStock": 17,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 18,
+            "CompanyName": "Aux joyeux ecclsiastiques",
+            "ContactName": "Guylne Nodier",
+            "ContactTitle": "Sales Manager",
+            "Address": "203, Rue des Francs-Bourgeois",
+            "City": "Paris",
+            "Region": null,
+            "PostalCode": "75004",
+            "Country": "France",
+            "Phone": "(1) 03.83.00.68",
+            "Fax": "(1) 03.83.00.62",
+            "HomePage": null
+        },
+        "ProductID": 39,
+        "ProductName": "Chartreuse verte",
+        "SupplierID": 18,
+        "CategoryID": 1,
+        "QuantityPerUnit": "750 cc per bottle",
+        "UnitPrice": "18.0000",
+        "UnitsInStock": 69,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false
+    },
+    {
+        
+        "Category": {
+            
+
+            "CategoryID": 8,
+            "CategoryName": "Seafood",
+            "Description": "Seaweed and fish"
+            
+        },
+
+        "Supplier": {
+            
+
+            "SupplierID": 19,
+            "CompanyName": "New England Seafood Cannery",
+            "ContactName": "Robb Merchant",
+            "ContactTitle": "Wholesale Account Agent",
+            "Address": "Order Processing Dept. 2100 Paul Revere Blvd.",
+            "City": "Boston",
+            "Region": "MA",
+            "PostalCode": "02134",
+            "Country": "USA",
+            "Phone": "(617) 555-3267",
+            "Fax": "(617) 555-3389",
+            "HomePage": null
+        },
+        "ProductID": 40,
+        "ProductName": "Boston Crab Meat",
+        "SupplierID": 19,
+        "CategoryID": 8,
+        "QuantityPerUnit": "24 - 4 oz tins",
+        "UnitPrice": "18.4000",
+        "UnitsInStock": 123,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false
     }
+
 ]
 }
+

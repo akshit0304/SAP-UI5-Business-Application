@@ -94,7 +94,8 @@
                     width="100%"
                     height="400px"
                     uiConfig="{applicationSet:'fiori'}"
-                    vizType="donut">
+                    vizType="donut"
+                    >
 
                     <viz:dataset>
                         <viz.data:FlattenedDataset

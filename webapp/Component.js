@@ -27,6 +27,8 @@ sap.ui.define([
       // enable routing
       this.getRouter().initialize();
       this.loaded_model =undefined;
+      // this variable is use for second navigation eg: category->categorydetails->productdetails (set boolean value if true then use /idOfBindElementSecond else use /idOfBindElement present in nav model)
+      this.second_binding=false;
     },
     getContentDensityClass: function () {
       if (!this._sContentDensityClass) {

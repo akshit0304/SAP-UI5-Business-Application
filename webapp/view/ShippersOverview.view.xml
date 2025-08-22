@@ -9,12 +9,12 @@ controllerName="bd.businessportal.controller.ShippersOverview"
 <!-- Page start -->
 <Page 
     id="shipper_overview"  
-    title="{CompanyName}" 
+    title="Shipper Detail" 
     busyIndicatorDelay="300"
-    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+    class="sapUiResponsiveMargin--content 
             sapUiResponsiveContentPadding"
     >
-    <Panel id="sh_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="Shipper Detail" width="auto" >
+    <Panel id="sh_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="Shipper {CompanyName}" width="auto" >
         <!-- <headerToolbar>
             <OverflowToolbar design="Transparent">
                 <Title text="Territory Data"/>
@@ -57,51 +57,52 @@ controllerName="bd.businessportal.controller.ShippersOverview"
         <!-- <HBox width="2.5rem" wrap="NoWrap" ></HBox> -->
     </VBox>
     <!-- table data -->
+     <!-- sod -> shipper order detail (table item bind) -->
     <Table 
-    id="table_shipperoverview"
-    headerText="Shippers"
-    autoPopinMode="false"
-    width="100%"
-    inset="false"
-    busy="false"
+    id="o_orders_table"
+    headerText="Order List"
+    autoPopinMode="true"
     busyIndicatorDelay="100"
-    items="{/results/0/Orders/results}"
+    items="{sod>/results}"
     growing="true"
-    growingThreshold="8"
+    growingThreshold="10"
+    class="sapUiSmallMarginTopBottom"
     
 >
+<infoToolbar>
+    <OverflowToolbar >
+        <Label text="Orders Manage by Shipper {CompanyName} (one shipper handles multiple orders)" displayOnly="true" wrapping="true"></Label>
+    </OverflowToolbar>
+</infoToolbar>
 <columns>
-    <Column   demandPopin="true" minScreenWidth="Phone" width="auto" >
-        <Text wrapping="true" text="Order Date"/>
+    <Column width="6em" hAlign="Right">
+        <Label  text="Order ID" displayOnly="true"/>
     </Column>
-    <Column   demandPopin="true" minScreenWidth="Phone" width="auto" >
-        <Text wrapping="true" text="Shipped Date"/>
-    </Column>
-
-    <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center" >
-        <Text wrapping="true" text="Region"/>
+    <Column width="6em" hAlign="Right">
+        <Label text="Customer ID" displayOnly="true"/>
     </Column>
 
-    <Column   demandPopin="true" minScreenWidth="Tablet" width="auto">
-        <Text wrapping="true" text="City"/>
+    <Column>
+        <Label text="Order Date" displayOnly="true"/>
     </Column>
 
-    <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
-        <Text wrapping="true" text="Postal Code"/>
+    <Column>
+         <Label text="Ship Name" displayOnly="true"/>
+    </Column>
+
+    <Column>
+         <Label text="Ship Place" displayOnly="true"/>
     </Column>
 </columns>
 <items>
 
-    <ColumnListItem >
+    <ColumnListItem  type="Navigation" press=".detailPress">
         <cells>
-          
-            <!-- <Text text="{Customer/ContactName}" maxLines="3"/>
-            <Text text="{Employee/FirstName}" maxLines="3"/> -->
-            <Text text="{path:'OrderDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
-            <Text text="{path:'ShippedDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
-            <Text text="{path:'ShipRegion',formatter:'.formatter.emptyDataHandle'}" maxLines="3"/>
-            <Text text="{ShipCity}"/>
-            <Text text="{ShipPostalCode}"/>
+            <ObjectIdentifier title="{sod>OrderID}"  />
+            <Text text="{sod>CustomerID}"  wrapping="false"/>
+            <Text text="{path:'sod>OrderDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+            <Text text="{sod>ShipName}" />
+            <Text text="{sod>ShipCity} ({sod>ShipCountry})"/>
 
             
         </cells>

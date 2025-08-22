@@ -1,125 +1,267 @@
-<mvc:View
+<mvc:View xmlns:table="sap.ui.table"
 xmlns:core="sap.ui.core"
 xmlns="sap.m"
 xmlns:mvc="sap.ui.core.mvc"
 xmlns:l="sap.ui.layout"
 xmlns:form="sap.ui.layout.form"
+xmlns:cards="sap.f.cards"
+xmlns:f="sap.f"
 controllerName="bd.businessportal.controller.OrdersOverview"
 >
 <!-- Page start -->
 <Page 
     id="order_overview"  
-    title="Order Detail" 
-    busyIndicatorDelay="300"
+    title="Orders Detail" 
+    busyIndicatorDelay="100"
     showNavButton="false"
-    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+    class="sapUiResponsiveMargin--content
             sapUiResponsiveContentPadding"
     >
-    <Panel id="o_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="OrderID {OrderID}" width="auto">
-        <!-- <headerToolbar>
-            <OverflowToolbar design="Transparent">
-                <Title text="Territory Data"/>
-                <ToolbarSpacer />
-                <Button icon="sap-icon://action" iconFirst="true" press=".shareButton"/>
-            </OverflowToolbar>
-        </headerToolbar> -->
+    <Panel id="order_overview_panel" expandable="false" stickyHeader="false" headerText="Order #{OrderID}" width="auto">
         <content>
             <!-- dymanic binding from controller -->
-            <VBox visible="true" width="auto" id="o_product_general_info" class="sapUiSmallMarginBegin">
-            
-            <FlexBox  rowGap="0.8rem" columnGap="3rem" fitContainer="true" alignItems="Start" alignContent="Start" wrap="Wrap">
-                <!-- description card -->
-                <VBox wrap="NoWrap" alignItems="Start" height="100%">
-                    <layoutData>
-                        <FlexItemData alignSelf="Center"></FlexItemData>
-                    </layoutData>
-                    <VBox  gap="1rem">
-                    <HBox alignItems="Start">
-                        <Label vAlign="Middle" showColon="true" text="ID" labelFor="orderid" displayOnly="true" wrapping="false"/>
-                        <Text class="sapUiTinyMarginBegin" text="{OrderID}" id="orderid"></Text>
-                    </HBox>
+             <form:SimpleForm 
+                    layout="ColumnLayout" id="info_order"
+                        columnsXL="-1"
+                        columnsL="2"
+                        columnsM="2"
+                        labelSpanXL="-1"
+                        labelSpanL="3"
+                        labelSpanM="2"
+                        labelSpanS="12"
+                        emptySpanXL="0"
+                        adjustLabelSpan="false"
+                        width="auto"
+                >
+               
+                <!-- <form:title>
+                    <core:Title text="" />
+                </form:title> -->
+                    <form:content>
+                        <Label text="ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{OrderID}" class="sapUiTinyMarginBottom"/>
+                        <Label text="Customer ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{CustomerID}" class="sapUiTinyMarginBottom"/>
+                        <Label text="Employee ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{EmployeeID}" class="sapUiTinyMarginBottom"/>
 
-                <HBox alignItems="Start">
-                <Label vAlign="Middle" showColon="true" text="Customer ID"  displayOnly="true" wrapping="false"></Label>
-                <Text class="sapUiTinyMarginBegin" text="{CustomerID}"></Text>
-                </HBox>
+                    </form:content>
 
-                <HBox alignItems="Start">
-                    <Label vAlign="Middle" showColon="true" text="Employee ID"  displayOnly="true" wrapping="false"></Label>
-                    <Text class="sapUiTinyMarginBegin" text="{EmployeeID}"></Text>
-                    </HBox>
-                <!-- description ended -->
-                    </VBox>
-                </VBox>    
-                <!-- supplier contact inforamtion -->
-                <VBox wrap="NoWrap" alignItems="Start" height="100%">
-                    <VBox  gap="1rem">
-                        <HBox alignItems="Start">
-                            <Label vAlign="Middle" showColon="true" text="Order Date"  displayOnly="true" wrapping="false"></Label>
-                            <Text class="sapUiTinyMarginBegin" text="{path:'OrderDate',formatter:'.formatter.parseDate'}"></Text>
-                            </HBox>
+                    <!-- column 2 -->
+                     <form:content>
+                        <Label text="Order Date" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{path:'OrderDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
+                        <Label text="Last Date" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{path:'RequiredDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
+                        <Label text="Shipped Date" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{path:'ShippedDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
 
-                            <HBox alignItems="Start">
-                                <Label vAlign="Middle" showColon="true" text="Required Date"  displayOnly="true" wrapping="false"></Label>
-                                <Text class="sapUiTinyMarginBegin" text="{path:'RequiredDate',formatter:'.formatter.parseDate'}"></Text>
-                                </HBox>
+                    </form:content>
+                </form:SimpleForm>
+    <!-- customer data -->
+     <HBox width="100%">
+        <form:SimpleForm 
+                        layout="ColumnLayout" id="o_customer"
+                        columnsXL="-1"
+                        columnsL="2"
+                        columnsM="2"
+                        labelSpanXL="-1"
+                        labelSpanL="3"
+                        labelSpanM="2"
+                        labelSpanS="12"
+                        emptySpanXL="0"
+                        adjustLabelSpan="false"
+                            width="auto"
+                >
 
-                                <HBox alignItems="Start">
-                                    <Label vAlign="Middle" showColon="true" text="Ship Date"  displayOnly="true" wrapping="false"></Label>
-                                    <Text class="sapUiTinyMarginBegin" text="{path:'ShippedDate',formatter:'.formatter.parseDate'}"></Text>
-                                    </HBox>
-                <!-- description ended -->
-                    </VBox>
-                </VBox> 
-            </FlexBox>
-            <!-- <HBox width="2.5rem" wrap="NoWrap" ></HBox> -->
-        </VBox>
-    <!-- forms data -->
-    <form:SimpleForm id="info_orders"
-                                    layout="ResponsiveGridLayout"
-                                    columnsXL="2"
-                                    columnsL="2"
-                                    columnsM="1"
-                                    labelSpanXL="1"
-                                    labelSpanL="2" labelSpanM="4" labelSpanS="5" class="sapUiMediumMarginTop"
->
-    <form:title>
-        <core:Title text="Order Info"/>
-    </form:title>
-    <form:content>
-        <core:Title text="Attribute"/>
-        
-        <Label text="Order Date" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom"  text="{path:'OrderDate',formatter:'.formatter.parseDate'}" />
+                 <form:title>
+                    <core:Title text="Customer Info" />
+                </form:title>
+                <form:content>
+                        <Label text="Company" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Customer/CompanyName}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Shipped Date" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" wrapping="false" text="{path:'ShippedDate',formatter:'.formatter.parseDate'}"/>
+                        <Label text="Contact Person" showColon="true" vAlign="Middle"  displayOnly="true" wrapping="true" />
+                        <Text  text="{Customer/ContactName}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Ship Via" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" wrapping="false"  text="{ShipVia}" />
+                        <Label text="Phone" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Customer/Phone}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Freight" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" text="{Freight}"/>
-    </form:content>
-    <form:content>
-        <core:Title text="Shipment Detail"></core:Title>
-        <Label text="Ship Name" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" text="{ShipName}" />
+                        <Label text="Location" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Customer/City} ({Customer/Country})" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Ship Address" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" text="{ShipAddress}" />
+                        <Label text="ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Customer/CustomerID}" class="sapUiTinyMarginBottom"/>
+                </form:content>
+            </form:SimpleForm>
+     </HBox>
+    
+    <!-- forms data shipments -->
+            <HBox width="100%">
+               <form:SimpleForm 
+                    layout="ColumnLayout" id="shipments"
+                        columnsXL="-1"
+                        columnsL="2"
+                        columnsM="2"
+                        labelSpanXL="-1"
+                        labelSpanL="3"
+                        labelSpanM="2"
+                        labelSpanS="12"
+                        emptySpanXL="0"
+                        adjustLabelSpan="false"
+                            width="auto"
+                >
+               
+                <form:title>
+                    <core:Title text="Shipment Info" />
+                </form:title>
+                    <form:content>
+                       
+                        <Label text="Shipper Name" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipName}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Ship City" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" wrapping="false" text="{ShipCity}"/>
+                        <Label text="Item Freight" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Freight}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Ship P-Code" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle" tooltip="ship postal code"></Label>
-        <Text class="sapUiTinyMarginBottom" wrapping="false"  text="{ShipPostalCode}" />
+                         <Label text="Shipper ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipVia}" class="sapUiTinyMarginBottom"/>
 
-        <Label text="Ship Country" showColon="true" wrapping="true" displayOnly="true" vAlign="Middle"></Label>
-        <Text class="sapUiTinyMarginBottom" text="{ShipCountry}"/>
-    </form:content>
-</form:SimpleForm>
+                        <Label text="Address" showColon="true" vAlign="Middle"  displayOnly="true" tooltip="Delievery Address" />
+                        <Text  text="{ShipAddress}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="City" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipCity}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="Country" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipCountry}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="Region" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipRegion}" class="sapUiTinyMarginBottom" emptyIndicatorMode="On"/>
+
+                        <Label text="Postal Code" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{ShipPostalCode}" class="sapUiTinyMarginBottom"/>
+                    </form:content>
+                </form:SimpleForm> 
+            </HBox>
         <!-- form end -->
+
+        <!-- order processing specialist -->
+         <HBox width="100%">
+             <form:SimpleForm 
+                    layout="ColumnLayout" id="o_employee"
+                        columnsXL="-1"
+                        columnsL="2"
+                        columnsM="2"
+                        labelSpanXL="-1"
+                        labelSpanL="3"
+                        labelSpanM="2"
+                        labelSpanS="12"
+                        emptySpanXL="0"
+                        adjustLabelSpan="false"
+                            width="auto"
+                >
+                <form:layoutData>
+                    <FlexItemData growFactor="1" shrinkFactor="1" />
+                </form:layoutData>
+                 <form:title>
+                    <core:Title tooltip="order managed by this employee" text="Order Processing Specialist" />
+                </form:title>
+                <form:content>
+                        <Label text="Name" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Employee/TitleOfCourtesy} {Employee/FirstName}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="Role" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Employee/Title}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Text  text="{Employee/EmployeeID}" class="sapUiTinyMarginBottom"/>
+
+                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                        <!-- <Text  text="{Employee/EmployeeID}" class="sapUiTinyMarginBottom"/> -->
+                </form:content>
+                </form:SimpleForm>
+         </HBox>
+
+         <!-- order processing specialist -->
+          <!-- <VBox class="sapUiSmallMarginTopBottom">
+              <Title text="Additional Info" class="sapUiSmallMarginBottom sapUiSmallMarginBegin"  titleStyle="H5"/>
+              <HBox wrap="Wrap" alignContent="Start" id="o_add_info" gap="16px">
+                
+                  <f:Card  height="280px">
+                    <f:layoutData>
+                        <FlexItemData maxWidth="320px" />
+                    </f:layoutData>
+                      <f:header>
+                          <cards:Header title="Employee" subtitle="Order Processing Specialist"  class="myCardBG"/>
+                        </f:header>
+                <f:content>
+                   
+                </f:content>
+            </f:Card>
+             <f:Card  height="280px">
+                <f:layoutData>
+                        <FlexItemData maxWidth="320px" />
+                    </f:layoutData>
+                <f:header>
+                    <cards:Header  title="Customer Detail" subtitle="Associate Customer"  class="myCardBG"/>
+                </f:header>
+                <f:content>
+                    <ScrollContainer horizontal="false" vertical="true">
+
+                        
+        </ScrollContainer>
+                </f:content>
+            </f:Card>
+        </HBox>
+    </VBox> -->
+
+    <!-- order detail table -->
+     <!-- <Table 
+        id="order_detail_table"
+        busyIndicatorDelay="100"
+        autoPopinMode="true"
+        growing="true"
+        growingScrollToLoad="true"
+        headerText="Order Detail"
+        items="{od>/results}"
+     >
+     <infoToolbar>
+					<OverflowToolbar>
+						<Label wrapping="true" displayOnly="true" text="Order Details (Each order has many order-details)"/>
+					</OverflowToolbar>
+                	</infoToolbar>
+        <columns>
+            <Column hAlign="Right" width="6em">
+                <Label displayOnly="true" text="Product ID" />
+            </Column>
+
+            <Column>
+                <Label displayOnly="true" text="Unit Price" wrapping="true" />
+            </Column>
+
+            <Column  hAlign="Center">
+                <Label displayOnly="true" text="Quantity" />
+            </Column>
+
+            <Column>
+                <Label displayOnly="true" text="Discount"  />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem >
+                <cells>
+                    <ObjectIdentifier title="{od>ProductID}" />
+                    <Text wrapping="false" text="{path:'od>UnitPrice',formatter:'.formatter.currency'}"/>
+                    <Text text="{od>Quantity}"  />
+                    <ObjectNumber number="{:= %{od>Discount}*100}" unit="%" state="{path:'od>Discount',formatter:'.formatter.employeeStatus'}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    
+    </Table> -->
         </content>
     </Panel>
    

@@ -18,10 +18,10 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="{nav>/pageTitles/category} Details" wrapping="false" titleStyle="H1" />
+                    <Title text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H1" />
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="{nav>/pageTitles/category} Details" wrapping="false" titleStyle="H3" />
+                    <Title text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H3" />
                 </uxap:expandedHeading>
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
@@ -66,8 +66,8 @@
                                         >
                                         
                                         <columns>
-                                            <Column visible="true">
-                                                <Text wrapping="false" text="Category ID" ></Text>
+                                            <Column visible="true" width="6em">
+                                                <Text wrapping="true" text="Category ID" wrappingType="Hyphenated" ></Text>
                                             </Column>
                                             <Column  demandPopin="false" minScreenWidth="Phone">
                                                 <Text wrapping="false" text="Category"></Text>
@@ -88,10 +88,10 @@
                                             <ColumnListItem type="Navigation" press=".overViewPage">
                                                 <cells>
                                                         <ObjectIdentifier title="{CategoryID}" visible="true"></ObjectIdentifier>
-                                                        <ObjectIdentifier text="{CategoryName}"></ObjectIdentifier>
+                                                        <Text text="{CategoryName}"/>
                                                         <Text text="{Description}" wrapping="true" maxLines="3"/>
                                                        <ObjectNumber 
-                                                       number="{:=%{path:'Products/results'}.length}" 
+                                                       number="{=${path:'Products/results'}.length}" 
                                                        unit="" state="None" inverted="true"/>
                                                 </cells>
                                             </ColumnListItem>

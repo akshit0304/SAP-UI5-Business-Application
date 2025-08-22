@@ -4,6 +4,7 @@ sap.ui.define([
     "bd/businessportal/model/Formatter",
     "bd/businessportal/utils/setModel",
     "sap/ui/Device"
+    
 ],(Controller,
     JSONModel,
     Formatter,
@@ -27,8 +28,13 @@ sap.ui.define([
             // _set contetn density class
             this.getView().addStyleClass(this.component.getContentDensityClass());
             this.getView().addEventDelegate({
-                onBeforeShow:function(){
+                onBeforeShow:function(obj){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Products.json");
+                    // console.log(obj.data);
+                    this.oNavContainer.setBusy();
+                    
+
                 }.bind(this)
             })
         },

@@ -29,13 +29,6 @@
                     <uxap:expandedContent>
                         <Text text="" wrapping="true" maxLines="3" />
                     </uxap:expandedContent>
-
-                    <uxap:actions>
-                        <Toolbar style="Clear">
-                            <ToolbarSpacer/>
-                                <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
-                        </Toolbar>
-                    </uxap:actions>
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
 
@@ -79,6 +72,7 @@
                                             items="{/results}"
                                             sticky="ColumnHeaders"
                                             rememberSelections="true"
+                                            growing="true"
                                         >
                                         <columns>
                                             <Column  demandPopin="false" minScreenWidth="Phone">

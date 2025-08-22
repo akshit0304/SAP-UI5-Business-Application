@@ -17,7 +17,7 @@ controllerName="bd.businessportal.controller.EmployeesOverview"
     busy="false"
     busyIndicatorDelay="300"
     
-    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+    class="sapUiResponsivePadding--header
             sapUiResponsiveContentPadding"
     >
 
@@ -47,13 +47,13 @@ controllerName="bd.businessportal.controller.EmployeesOverview"
             <expandedContent>
                 <m:Text text="{Title}" wrapping="false"></m:Text>
             </expandedContent>
-            <actions>
+            <!-- <actions>
                     <m:Toolbar style="Clear">
                         <m:ToolbarSpacer/>
                         <m:Button icon="sap-icon://action" iconFirst="true" press=".shareButton">
                         </m:Button>
                     </m:Toolbar>
-                </actions>
+                </actions> -->
         </ObjectPageDynamicHeaderTitle>
     </headerTitle>
     <headerContent>
@@ -92,139 +92,93 @@ controllerName="bd.businessportal.controller.EmployeesOverview"
     </headerContent>
     <!-- main content -->
     <sections>
-        <ObjectPageSection titleUppercase="false" title="Employee Info" showTitle="false" anchorBarButtonColor="Tile" >
+        <ObjectPageSection titleUppercase="false" title="Person Info" showTitle="false" anchorBarButtonColor="Tile" >
             <!-- <customAnchorBarButton>
             <m:Button text="Product information" type="Attention"/>
         </customAnchorBarButton> -->
             <subSections>
-                <ObjectPageSubSection title="Personal Info" showTitle="false" titleUppercase="false">
+                <ObjectPageSubSection title="Person Info" showTitle="false" titleUppercase="false">
                     <blocks>
-                        <l:BlockLayout background="Default" class="sapUiNoMargin">
-                <l:BlockLayoutRow scrollable="false" id="info_employee">
-                   
-                    <l:BlockLayoutCell width="1" class="sapUiNoPadding sapUiSmallMarginEnd" >
-                        <l:layoutData>
-                            <l:BlockLayoutCellData lSize="100%" mSize="100%" sSize="100%"></l:BlockLayoutCellData>
-                        </l:layoutData>
-                    <m:HBox gap="0rem" >
-                        <!-- information  title and meta data -->
-                    <m:Title text="Personal Info" titleStyle="H5" wrapping="true"/>
-                    <m:VBox wrap="NoWrap" gap="1rem" alignItems="Start">
-                    <m:HBox alignItems="Start">
-                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="First Name"  displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" text="{FirstName}" wrapping="false"></m:Text>
-                    </m:HBox>
+                         <form:SimpleForm layout="ColumnLayout" id="info_employee"
+                            columnsXL="3"
+                            columnsL="3"
+                            columnsM="2"
+                            labelSpanXL="-1"
+                            labelSpanL="3"
+                            labelSpanM="4"
+                            labelSpanS="6"
+                            emptySpanXL="2"
+                           >
+                            <!-- <form:title>
+                                <core:Title  text="Product Info"/>
+                            </form:title> -->
 
-                    <m:HBox alignItems="Start">
-                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Last Name"  displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" text="{LastName}" wrapping="false"></m:Text>
-                    </m:HBox>
-                    <!-- content -->
-                    <!-- content -->
-                    <m:HBox alignItems="Start">
-                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Birth Date" displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="true" text="{path:'BirthDate',formatter:'.formatter.parseDate'}"></m:Text>
-                    </m:HBox>
+                            <form:content>
+                                <core:Title emphasized="false"  text="Personal Info"/>
+                                <m:Label text="First Name" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true" textAlign="Left" />
+                                 <m:Text text="{FirstName}" class="sapUiTinyMarginBottom" wrapping="false"/>
 
-                    <m:HBox alignItems="Start">
-                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Phone No" displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="true" text="{HomePhone}"></m:Text>
-                    </m:HBox>
-                    <!-- description ended -->
-                         </m:VBox>
-                </m:HBox>
-                    </l:BlockLayoutCell>
-                    <l:BlockLayoutCell width="1" class="sapUiSmallMarginEnd" >
-                        <l:layoutData>
-                            <l:BlockLayoutCellData sSize="100%" mSize="100%"></l:BlockLayoutCellData>
-                        </l:layoutData>
-                        <m:HBox gap="0rem">
-                        <!-- contact person  title and meta data -->
-                    <m:Title text="Address" titleStyle="H5"  wrapping="true"/>
-                    <m:VBox wrap="NoWrap" gap="1rem" alignItems="Start">
-                    <m:HBox alignItems="Start">
-                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Street Name"  displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" text="{Address}" wrapping="false"></m:Text>
-                    </m:HBox>
-                    <!-- content -->
-                    <m:HBox alignItems="Start">
-                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="City" displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" text="{City}-{Region}" wrapping="false" ></m:Text>
-                    </m:HBox>
-                    <!-- content -->
-                    <m:HBox alignItems="Start">
-                    <m:Label width="7rem" textAlign="End" vAlign="Middle" showColon="true" text="Country" displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" wrapping="false" text="{Country}"></m:Text>
-                    </m:HBox>
-                    <!-- description ended -->
+                                 <m:Label text="Last Name" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true"  />
+                                 <m:Text text="{LastName}" class="sapUiTinyMarginBottom"/>
 
-                    <m:HBox alignItems="Start">
-                    <m:Label textAlign="End" width="7rem" vAlign="Middle" showColon="true" text="Postal code"  displayOnly="true" wrapping="false"></m:Label>
-                    <m:Text class="sapUiSmallMarginBeginEnd" text="{PostalCode}" wrapping="false"></m:Text>
-                    </m:HBox>
-                         </m:VBox>
-                </m:HBox>
-                    </l:BlockLayoutCell>
-                </l:BlockLayoutRow>
-            </l:BlockLayout>
+                                 <m:Label text="Birth Date" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true"  />
+                                 <m:Text text="{path:'BirthDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
+
+                                 <m:Label text="Phone No" showColon="true" vAlign="Middle" displayOnly="true" wrapping="true" />
+                                 <m:ObjectStatus text="{HomePhone}"  icon="sap-icon://contacts" inverted="true"/>
+                            </form:content>
+
+                            <form:content>
+                                 <core:Title emphasized="false"  text="Address"/>
+                                  <m:Label text="Street Name" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true"  />
+                                 <m:Text text="{Address}" class="sapUiTinyMarginBottom"/>
+
+                                  <m:Label text="City" showColon="true" vAlign="Middle" wrapping="false" displayOnly="true"  />
+                                 <m:Text text="{City}" class="sapUiTinyMarginBottom"/>
+
+                                  <m:Label text="Country" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                                 <m:Text text="{Country}" class="sapUiTinyMarginBottom"/>
+
+                                 <m:Label text="Postal code" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                                 <m:Text text="{PostalCode}" class="sapUiTinyMarginBottom"/>
+                            </form:content>
+
+                            <form:content>
+                                <core:Title emphasized="false"  text="Office Info"/>
+                                <m:Label text="Employee ID" showColon="true" vAlign="Middle"  displayOnly="true" wrapping="true" />
+                                 <m:Text text="{EmployeeID}" class="sapUiTinyMarginBottom"/>
+
+                                 <m:Label text="Position" showColon="true" vAlign="Middle"  displayOnly="true"  />
+                                 <m:Text text="{Title}" class="sapUiTinyMarginBottom"/>
+
+                                 <m:Label text="Hire date" showColon="true" vAlign="Middle"  displayOnly="true" wrapping="true" />
+                                 <m:Text text="{path:'HireDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
+
+                                 <m:Label text="Reports to" showColon="true" vAlign="Middle"  displayOnly="true" wrapping="true" />
+                                 <m:Text text="{ReportsTo}" emptyIndicatorMode="On" class="sapUiTinyMarginBottom"/>
+                            </form:content>
+                            </form:SimpleForm>
                     </blocks>
                 </ObjectPageSubSection>
             </subSections>
         </ObjectPageSection>
         <!-- section end -->
         <!-- section-2 -->
-        <ObjectPageSection titleUppercase="false" anchorBarButtonColor="Default" showTitle="false" title="Employee Info">
+        <!-- <ObjectPageSection titleUppercase="false" anchorBarButtonColor="Default" showTitle="false" title="Employee Info">
             <subSections>
                 <ObjectPageSubSection title="Office Info" showTitle="false" titleUppercase="false">
                     <blocks>
                     <l:BlockLayout background="Default" > 
                         <l:BlockLayoutRow>
                         <l:BlockLayoutCell width="1">
-                            <form:Form id="e_form" title="Office Info">
-                                <form:layout>
-                                        <form:ResponsiveGridLayout 
-                                            labelSpanXL="1"
-                                            labelSpanL="1"
-                                            labelSpanM="2"
-                                            labelSpanS="12"
-                                            adjustLabelSpan="false"
-                                            emptySpanXL="0"
-                                            emptySpanL="0"
-                                            emptySpanM="0"
-                                            emptySpanS="0"
-                                            columnsM="12"
-                                            singleContainerFullSize="true"
-                                         />
-                                </form:layout>
-                                <form:FormContainer>
-                                 
-                                    <form:FormElement label="Employee ID">
-                                        <m:Text wrapping="false" text="{EmployeeID}" class="sapUiSmallMarginBottom"/>
-                                    </form:FormElement>
-                                    <form:FormElement label="Position">
-                                        <m:Text text="{Title}" class="sapUiSmallMarginBottom"/>
-                                    </form:FormElement>
-                                    <form:FormElement label="Hire date">
-                                        <m:Text text="{path:'HireDate',formatter:'.formatter.parseDate'}" class="sapUiSmallMarginBottom"/>
-                                    </form:FormElement>
                             
-                                    <form:FormElement label="Reports to">
-                                        
-                                        <m:Text text="{ReportsTo}" class="sapUiSmallMarginBottom"/>
-                                    </form:FormElement>
-                                    
-                                </form:FormContainer>
-                                
-                                <!-- form layout -->
-                                
-                             </form:Form>
                         </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                     </l:BlockLayout>
                     </blocks>
                 </ObjectPageSubSection>
             </subSections>
-        </ObjectPageSection>
+        </ObjectPageSection> -->
         <!-- section end -->
     </sections>
 </ObjectPageLayout>

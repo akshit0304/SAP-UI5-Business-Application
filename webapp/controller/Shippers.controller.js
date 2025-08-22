@@ -19,17 +19,18 @@ sap.ui.define([
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
             // set media ---
-            Device.media.attachHandler((oEvent)=>{
-                if(oEvent.name=='Phone' || oEvent.name=='Tablet'){
-                  // console.log(table_ref.getWidth());
-                }
-              },this);
+            // Device.media.attachHandler((oEvent)=>{
+            //     if(oEvent.name=='Phone' || oEvent.name=='Tablet'){
+            //       // console.log(table_ref.getWidth());
+            //     }
+            //   },this);
             // _set contetn density class
             this.getView().addStyleClass(this.component.getContentDensityClass());
             
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Shippers.json");
                 }.bind(this)
             });   

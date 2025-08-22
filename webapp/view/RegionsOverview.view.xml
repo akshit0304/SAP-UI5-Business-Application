@@ -44,7 +44,7 @@ controllerName="bd.businessportal.controller.RegionsOverview"
                     <Avatar displaySize="S" src="sap-icon://activity-items" displayShape="Circle" imageFitType="Cover"/>
                     <HBox columnGap="10px" alignItems="Center" wrap="Wrap" alignContent="Center">
                         <ObjectStatus stateAnnouncementText="No Territories" class="sapMObjectStatusLongText" text="No. Territories"/>
-                        <ObjectStatus class="sapMObjectStatusLongText" inverted="false" state="Information" text="{noTerritories}"/>
+                        <ObjectStatus class="sapMObjectStatusLongText" inverted="false" state="Information" text="{=%{Territories/results}.length}"/>
                     </HBox>
                 </VBox>
                 
@@ -53,19 +53,19 @@ controllerName="bd.businessportal.controller.RegionsOverview"
             <Table 
                         id="table_1_region_overview"
                         headerText="Associate Territories"
-                        autoPopinMode="false"
-                        inset="false"
+                        autoPopinMode="true"
+                        inset="true"
                         busy="false"
-                        busyIndicatorDelay="100"
-                        items="{/results/0/Territories/results}"
+                        busyIndicatorDelay="500"
+                        items="{Territories/results}"
                         
                     >
                     <columns>
-                        <Column visible="true"  minScreenWidth="Phone" width="30px" hAlign="Right">
+                        <Column width="5em">
                             <Text wrapping="true" text="Id" maxLines="3" tooltip="Territory ID"/>
                         </Column>
 
-                        <Column  demandPopin="false" minScreenWidth="Phone" width="60px">
+                        <Column >
                             <Text wrapping="false" text="Name"/>
                         </Column>
                     </columns>

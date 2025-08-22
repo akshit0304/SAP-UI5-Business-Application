@@ -1,9 +1,8 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "bd/businessportal/utils/setModel",
-  ], (BaseController,JSONModel,Formatter,setModel) => {
+  ], (BaseController,Formatter,setModel) => {
     "use strict";
     return BaseController.extend("bd.businessportal.controller.OfficialsOverview", {
         formatter:Formatter,
@@ -17,22 +16,46 @@ sap.ui.define([
             this.model = this.component.getModel("nav");
 
             this.oNavContainer.setBusy();
-            setModel.configureModel.call(this,"Officials.json");
+           
             this.getView().addEventDelegate({
                 onAfterShow: function () {
                     this.oNavContainer.setBusy();
                 }.bind(this),
 
                 onBeforeShow: function () {
+                        setModel.configureModel2.call(this,"Officials.json").then(()=>{
                         let bind_path = this.model.getProperty("/idOfBindElement");
-                    const bind_elements_id =['m_dynamicPageTitle','m_form','info_manager','m_product_general_info'];
+                    const bind_elements_id =['m_dynamicPageTitle','m_form','info_manager','manager_general_info',"table_info_label","table_info_label_t",'o_territories',"o_team"];
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                        }
+                    const labelParam =this.byId("m_dynamicPageTitle").getBindingContext().getProperty("EmployeeID");
+
+                    // bind teams data
+                    setModel.loadTable.call(this,
+                        "Employees.json",
+                        "o_team",
+                        {   "modelName":"ed",
+                            "labelID":"ReportsTo",
+                            "labelParameter":labelParam,
+                            "bindElementID":null
+                        }
+                    )
+                });
                     this.component._buttonExpandLogic(1, 0);
                 }.bind(this),
             });
         },
+
+        detailPress:function(oEvent){
+            this.oNavContainer.setBusy(true);
+            var id = oEvent.getSource().getBindingContext('ed').getProperty("EmployeeID");
+            // console.log(this.component);
+            this.component.second_binding=true;
+            // set id in nav model in idOfBindElementSecond
+            this.model.setProperty("/idOfBindElementSecond",id);
+             this.root_element.getController()._loadView("EmployeesOverview");
+        }
         
 
     });

@@ -30,12 +30,6 @@
                         <Text text="" wrapping="true" maxLines="3" />
                     </uxap:expandedContent>
 
-                    <uxap:actions>
-                        <Toolbar style="Clear">
-                            <ToolbarSpacer/>
-                                <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
-                        </Toolbar>
-                    </uxap:actions>
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
 
@@ -107,7 +101,7 @@
                                                     <Text text="{CompanyName}" maxLines="3"/>
                                                     <Text text="{ContactName}" maxLines="3"/>
                                                     <Text text="{City}" maxLines="3"/>
-                                                    <Text text="{path:'Region',formatter:'.foramtter.emptyDataHandle'}" maxLines="3"/>
+                                                    <Text emptyIndicatorMode="On" text="{path:'Region',formatter:'.foramtter.emptyDataHandle'}" maxLines="3"/>
                                                     <ObjectNumber textAlign="Begin" number="{Phone}" unit="" state="Information" inverted="true"/>
 
                                                     

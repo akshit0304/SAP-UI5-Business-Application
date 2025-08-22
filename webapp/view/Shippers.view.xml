@@ -8,7 +8,6 @@
     >
     <uxap:ObjectPageLayout id="shipper_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
     enableLazyLoading="true"
-    beforeNavigate=".navbuttonPressed"
     useIconTabBar="true"
     showTitleInHeaderContent="true"
     upperCaseAnchorBar="true"
@@ -18,10 +17,10 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Shipper" wrapping="false" titleStyle="H1" />
+                    <Title text="Shippers" wrapping="false" titleStyle="H1" />
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Shipper" wrapping="false" titleStyle="H3" />
+                    <Title text="Shippers" wrapping="false" titleStyle="H3" />
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>
@@ -31,12 +30,12 @@
                         <Text text="" wrapping="true" maxLines="3" />
                     </uxap:expandedContent>
 
-                    <uxap:actions>
+                    <!-- <uxap:actions>
                         <Toolbar style="Clear">
                             <ToolbarSpacer/>
                                 <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
                         </Toolbar>
-                    </uxap:actions>
+                    </uxap:actions> -->
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
 
@@ -77,12 +76,12 @@
                                             inset="false"
                                             busy="false"
                                             busyIndicatorDelay="100"
-                                            items="{/resutls}"
+                                            items="{/results}"
                                         >
                                         
                                         <columns>
                                             <Column visible="true"  minScreenWidth="Phone" width="10%" hAlign="Right">
-                                                <Text wrapping="true" text="Id" maxLines="3" tooltip="Shipper ID"/>
+                                                <Text wrapping="true" text="Id" maxLines="3" tooltip="Shipper ID" />
                                             </Column>
 
                                             <Column  demandPopin="false" minScreenWidth="Phone" width="20%">

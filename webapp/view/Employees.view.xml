@@ -18,10 +18,10 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Employee Details" wrapping="false" titleStyle="H1" />
+                    <Title text="Employees" wrapping="false" titleStyle="H1" />
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Employee Details" wrapping="false" titleStyle="H3" />
+                    <Title text="Employees" wrapping="false" titleStyle="H3" />
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>

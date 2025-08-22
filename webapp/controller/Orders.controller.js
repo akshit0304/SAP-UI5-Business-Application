@@ -4,6 +4,7 @@ sap.ui.define([
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
     "bd/businessportal/utils/setModel",
+    
 ],(Controller,
     JSONModel,
     Formatter,
@@ -33,6 +34,7 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Orders.json");
                 }.bind(this)
             })

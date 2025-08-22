@@ -19,10 +19,10 @@ controllerName="bd.businessportal.controller.Products"
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Product Details" wrapping="false" titleStyle="H1" />
+                    <Title text="Products" wrapping="false" titleStyle="H1" />
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Product Details" wrapping="false" titleStyle="H3" />
+                    <Title text="Products" wrapping="false" titleStyle="H3" />
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>
@@ -32,12 +32,12 @@ controllerName="bd.businessportal.controller.Products"
                         <Text text="" wrapping="true" maxLines="3" />
                     </uxap:expandedContent>
 
-                    <uxap:actions>
+                    <!-- <uxap:actions>
                         <Toolbar style="Clear">
                             <ToolbarSpacer/>
                                 <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
                         </Toolbar>
-                    </uxap:actions>
+                    </uxap:actions> -->
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
 
@@ -78,6 +78,9 @@ controllerName="bd.businessportal.controller.Products"
                                             inset="false"
                                             enableBusyIndicator="false"
                                             busyIndicatorDelay="500"
+                                            growing="true"
+                                            growingScrollToLoad="true"
+                                            growingThreshold="15"
                                             items="{/results}"
                                             core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >

@@ -33,6 +33,7 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
+                    this.component._buttonExpandLogic(1, 1);
                     setModel.configureModel.call(this,"Employees.json");
                 }.bind(this)
             });

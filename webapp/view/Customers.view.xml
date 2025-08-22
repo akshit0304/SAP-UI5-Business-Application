@@ -1,11 +1,12 @@
-<mvc:View xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:filterbar="sap.ui.comp.filterbar" controllerName="bd.businessportal.controller.Regions"
+<mvc:View xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:filterbar="sap.ui.comp.filterbar"
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
     xmlns:uxap="sap.uxap"
+    controllerName="bd.businessportal.controller.Customers"
     >
-    <uxap:ObjectPageLayout id="region_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
+    <uxap:ObjectPageLayout id="customer_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
     enableLazyLoading="true"
     beforeNavigate=".navbuttonPressed"
     useIconTabBar="true"
@@ -17,10 +18,10 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Regions" wrapping="false" titleStyle="H1" />
+                    <Title text="Customers" wrapping="false" titleStyle="H1" />
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Regions" wrapping="false" titleStyle="H3" />
+                    <Title text="Customers" wrapping="false" titleStyle="H3" />
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>
@@ -41,15 +42,15 @@
 
         <uxap:headerContent>
             <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_region" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+             <filterbar:FilterBar id="filterbar_cust" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
                     <filterbar:filterGroupItems>
-                        <filterbar:FilterGroupItem  name="region_search" label="" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="Customer_search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
                                 <SearchField placeholder="search" showSearchButton="true"/>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="region_role" label="Region" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="customer_role" label="Customer" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
                                <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
                             </filterbar:control>
@@ -65,40 +66,50 @@
                 <!-- <uxap:customAnchorBarButton>
                     <Button text="Manager Data"></Button>
                 </uxap:customAnchorBarButton> -->
-                <uxap:ObjectPageSubSection  showTitle="false" >
+                <uxap:ObjectPageSubSection class="sapUiNoMargin"  showTitle="false" >
                     <uxap:blocks>
-
+                                    
                                         <Table 
-                                            id="table_region"
-                                            headerText="Regions"
+                                            id="table_customer"
+                                            headerText="Customer Data"
                                             autoPopinMode="false"
                                             width="100%"
                                             inset="false"
                                             busy="false"
-                                            busyIndicatorDelay="100"
+                                            busyIndicatorDelay="0"
                                             items="{/results}"
+                                            core:require="{Formatter:'bd/businessportal/model/Formatter'}"
                                         >
                                         
                                         <columns>
-                                            <Column visible="true"  minScreenWidth="Phone" width="10%" hAlign="Right" >
-                                                <Text wrapping="true" text="ID" maxLines="3" tooltip="region Id"/>
+                                            <Column visible="true"  minScreenWidth="Phone">
+                                                
+                                                <Text wrapping="true" text="Customer Id" maxLines="3" tooltip="Customer Id"/>
                                             </Column>
 
-                                            <Column  demandPopin="false" minScreenWidth="Phone" width="30%">
-                                                <Text wrapping="false" text="Name"></Text>
+                                            <Column  demandPopin="false" minScreenWidth="Phone">
+                                                <Text wrapping="true" text="Name"></Text>
                                             </Column>
-
-                                            <Column  demandPopin="true" minScreenWidth="Phone" width="15%" hAlign="Center">
-                                                <Text wrapping="true" text="No of Terretories"/>
+                                            <Column  demandPopin="true" minScreenWidth="Phone">
+                                                <Text wrapping="false" text="City"/>
                                             </Column>
+                                            <Column   demandPopin="true" minScreenWidth="Tablet" >
+                                                <Text wrapping="true" text="Phone No."></Text>
+                                            </Column>
+                                            <Column demandPopin="true"  minScreenWidth="Tablet" hAlign="Center">
+                                                <Text wrapping="true" text="Placed Orders"/>
+                                            </Column>
+                                           
                                         </columns>
                                         <items>
 
-                                            <ColumnListItem type="Navigation" vAlign="Middle" press=".overViewPage">
+                                            <ColumnListItem type="Navigation" press=".overViewPage">
                                                 <cells>
-                                                    <ObjectNumber number="{RegionID}" unit="" state="None" />
-                                                    <Text text="{RegionDescription}" maxLines="3"/>
-                                                    <ObjectNumber number="{=${Territories/results}.length}" unit="" state="None" />
+                                                    <Text text="{CustomerID}"   wrapping="false"/>
+                                                    <Text text="{ContactName}" maxLines="3"/>
+                                                    <Text text="{City}({Country})" maxLines="3"/>
+                                                    <Text text="{Phone}" wrapping="false" />
+                                                    <ObjectNumber number="{:=%{path:'Orders/results'}.length}"  emptyIndicatorMode="On" />
                                                 </cells>
                                             </ColumnListItem>
                                         </items>

@@ -5,7 +5,7 @@
     xmlns:tnt="sap.tnt">
     <!-- ===================== -->
 
-    <App id="app">
+    <App id="app" autoFocus="false">
         <tnt:ToolPage id="shell_page">
 
             <tnt:header>
@@ -15,15 +15,15 @@
                 </Toolbar>
             </tnt:header>
             <tnt:subHeader>
-                <Toolbar class="sapUiContentPadding">
+                <Toolbar class="sapUiResponsiveContentPadding">
 
+                    <Button id="hamburgerMenu" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://menu2" badgeStyle="Default" type="Transparent" press=".hamburgerMenu"/>
                 <Button id="backButton" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://nav-back" badgeStyle="Default" type="Transparent" press=".backButton"/>
-                <Button id="hamburgerMenu" class="sapUiTinyMarginBeginEnd"  icon="sap-icon://menu2" badgeStyle="Default" type="Transparent" press=".hamburgerMenu"/>
                 </Toolbar>
             </tnt:subHeader>
             <tnt:sideContent>
-                <tnt:SideNavigation visible="true" id="sideNavigation" ariaLabel="side panel for navigating to different pages" expanded="true">
-                    <tnt:NavigationList id="list" itemSelect=".onItemSelect" selectedKey="Dashboard">
+                <tnt:SideNavigation visible="true" id="sideNavigation" ariaLabel="side panel for navigating to different pages" expanded="true" selectedKey="Dashboard">
+                    <tnt:NavigationList id="list" itemSelect=".onItemSelect">
                         <tnt:NavigationListItem id="dashboard" key="Dashboard" text="Dashboard" icon="sap-icon://home" />
                         <tnt:NavigationListItem key="Categories" text="Categories" icon="sap-icon://product" />
                         <tnt:NavigationListItem key="Products" text="Products" icon="sap-icon://add-product" />
@@ -39,7 +39,7 @@
                     </tnt:NavigationList>
                     <tnt:fixedItem>
                         <tnt:NavigationList>
-                            <tnt:NavigationListItem key="ImportantLinks" ariaHasPopup="Dialog" id="quickCreate" press=".quickActionPress" text="Important Links" icon="sap-icon://chain-link" design="Default" selectable="false" />
+                            <tnt:NavigationListItem  key="ImportantLinks" ariaHasPopup="Dialog" id="quickCreate" press=".quickActionPress" text="Important Links" icon="sap-icon://chain-link" design="Default" selectable="false" />
                             <tnt:NavigationListItem key='Legal' ariaHasPopup="Dialog" selectable="false" text="Legal" icon="sap-icon://compare" press=".dialogPress"/>
                         </tnt:NavigationList>
                     </tnt:fixedItem>
@@ -56,7 +56,8 @@
 
             <!-- main content -->
             <tnt:mainContents>
-                <NavContainer id="navContainer" autoFocus="true"  class="sapUiResponsiveContentPadding" busyIndicatorDelay="500">
+                <NavContainer id="navContainer" autoFocus="true"  class="sapUiResponsiveContentPadding" busyIndicatorDelay="500"
+                 >
                     <pages>
                         <!-- <mvc:XMLView id="dashboard_page" viewName="bd.businessportal.view.Dashboard" /> -->
                     </pages>
