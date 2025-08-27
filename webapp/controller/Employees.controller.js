@@ -18,6 +18,7 @@ sap.ui.define([
             // this.root_element =sap.ui.getCore().byId("container-bd.businessportal---App");
             // this.component = sap.ui.core.Component.getOwnerComponentFor(this.root_element);
             this.component =this.getOwnerComponent();
+             const expandFlag =this.component.expandFlag;
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
             // set media ---
@@ -33,7 +34,7 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
-                    this.component._buttonExpandLogic(1, 1);
+                    this.component._buttonExpandLogic(1, expandFlag);
                     setModel.configureModel.call(this,"Employees.json");
                 }.bind(this)
             });

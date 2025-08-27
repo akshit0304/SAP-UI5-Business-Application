@@ -2,74 +2,53 @@
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
+    xmlns:grid="sap.ui.layout.cssgrid"
     xmlns:core="sap.ui.core"
     xmlns:uxap="sap.uxap"
     >
-    <uxap:ObjectPageLayout id="region_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
-    enableLazyLoading="true"
-    beforeNavigate=".navbuttonPressed"
-    useIconTabBar="true"
-    showTitleInHeaderContent="true"
-    upperCaseAnchorBar="true"
-    showAnchorBar="false"
+
+     <Page
+        id="region_page"
+        title="Regions"
+        busyIndicatorDelay="100"
+        showNavButton="false"
+        class="sapUiResponsiveMargin--content"
     >
 
-        <uxap:headerTitle>
-            <uxap:ObjectPageDynamicHeaderTitle >
-                <uxap:snappedHeading>
-                    <Title text="Regions" wrapping="false" titleStyle="H1" />
-                </uxap:snappedHeading>
-                <uxap:expandedHeading>
-                    <Title text="Regions" wrapping="false" titleStyle="H3" />
-                </uxap:expandedHeading>
+    <Panel expandable="false" width="auto">
+        <f:GridList items="{/results}" id="table_region">
+                <f:customLayout>
+                    <grid:GridResponsiveLayout>
+                                <grid:layout>
+                                    <grid:GridSettings gridTemplateColumns="repeat(auto-fit, minmax(220px,250px))" gridGap="0.8rem"></grid:GridSettings>
+                                </grid:layout>
+                            </grid:GridResponsiveLayout>
+                </f:customLayout>
+            <f:GridListItem type="Active"  press='.overViewPage' >
+                <HBox class="sapUiSmallMargin sapUiResoinsivePadding" justifyContent="SpaceBetween">
 
-                <uxap:snappedContent>
-                    <Text text="" wrapping="true" maxLines="3" />
-                </uxap:snappedContent>
-                    <uxap:expandedContent>
-                        <Text text="" wrapping="true" maxLines="3" />
-                    </uxap:expandedContent>
+                    <VBox  gap="0.8rem">
+                        <ObjectIdentifier title="{RegionDescription}"></ObjectIdentifier>
+                        <Text text="RegionID : {RegionID}" wrapping="false" ></Text>
+                    </VBox>
+                    <VBox gap="0.8rem">
+                        <ObjectNumber  number="{=${Territories/results}.length}" unit="" state="None">
+                            <layoutData>
+                                <FlexItemData alignSelf="Center"></FlexItemData>
+                            </layoutData>
+                            </ObjectNumber>
+                        <Text text="Terretories"/>
+                    </VBox>
+                </HBox>
+            </f:GridListItem>
+        </f:GridList>
 
-                    <!-- <uxap:actions>
-                        <Toolbar style="Clear">
-                            <ToolbarSpacer/>
-                                <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
-                        </Toolbar>
-                    </uxap:actions> -->
-            </uxap:ObjectPageDynamicHeaderTitle>
-        </uxap:headerTitle>
 
-        <uxap:headerContent>
-            <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_region" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
-                    <filterbar:filterGroupItems>
-                        <filterbar:FilterGroupItem  name="region_search" label="" groupName="q"  visibleInFilterBar="true">
-                            <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
-                            </filterbar:control>
-                        </filterbar:FilterGroupItem>
-                        <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="region_role" label="Region" groupName="q"  visibleInFilterBar="true">
-                            <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
-                            </filterbar:control>
-                        </filterbar:FilterGroupItem>
+    </Panel>
+    
 
-                    </filterbar:filterGroupItems>
-             </filterbar:FilterBar>
-        </uxap:headerContent>
-
-        <!-- block content -->
-         <uxap:sections>
-            <uxap:ObjectPageSection  showTitle="false">
-                <!-- <uxap:customAnchorBarButton>
-                    <Button text="Manager Data"></Button>
-                </uxap:customAnchorBarButton> -->
-                <uxap:ObjectPageSubSection  showTitle="false" >
-                    <uxap:blocks>
-
-                                        <Table 
-                                            id="table_region"
+                                        <!-- <Table 
+                                            id="table_region2"
                                             headerText="Regions"
                                             autoPopinMode="false"
                                             width="100%"
@@ -102,10 +81,7 @@
                                                 </cells>
                                             </ColumnListItem>
                                         </items>
-                                    </Table>
-                    </uxap:blocks>
-                </uxap:ObjectPageSubSection>
-            </uxap:ObjectPageSection>
-         </uxap:sections>
-    </uxap:ObjectPageLayout>
+                                    </Table> -->
+
+    </Page>
 </mvc:View>

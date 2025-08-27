@@ -15,6 +15,7 @@ sap.ui.define([
     },
 
     init() {
+      this.abord_request_flag =0;
       // call the base component's init function
       UIComponent.prototype.init.apply(this, arguments);
       // 1-Event bus initialization
@@ -26,6 +27,7 @@ sap.ui.define([
 
       // enable routing
       this.getRouter().initialize();
+      this.getContentDensityClass();
       this.loaded_model =undefined;
       // this variable is use for second navigation eg: category->categorydetails->productdetails (set boolean value if true then use /idOfBindElementSecond else use /idOfBindElement present in nav model)
       this.second_binding=false;
@@ -34,8 +36,10 @@ sap.ui.define([
       if (!this._sContentDensityClass) {
         if (Device.support.touch) {
           this._sContentDensityClass = "sapUiSizeCozy";
+          this.expandFlag =0;
         } else {
           this._sContentDensityClass = "sapUiSizeCompact";
+           this.expandFlag =1;
         }
       }
       return this._sContentDensityClass;

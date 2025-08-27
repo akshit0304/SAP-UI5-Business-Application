@@ -76,49 +76,42 @@
                                         >
                                         <columns>
                                             <Column  demandPopin="false" minScreenWidth="Phone">
-                                                <Text wrapping="true" text="Customer Name"></Text>
-                                            </Column>
-
-                                            <Column  demandPopin="true" minScreenWidth="Phone" width="auto" >
-                                                <Text wrapping="true" text="Employee Name"/>
+                                                <Text wrapping="false" text="Order ID"/>
                                             </Column>
 
                                             <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center">
                                                 <Text wrapping="true" text="Order Date"/>
                                             </Column>
-                                            <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center">
+
+
+                                             <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center">
                                                 <Text wrapping="true" text="Shipped Date"/>
+                                            </Column>
+
+
+                                            <Column  demandPopin="false" minScreenWidth="Phone">
+                                                <Text wrapping="true" text="Customer"></Text>
+                                            </Column>
+
+                                            <Column  demandPopin="true" minScreenWidth="Phone" width="auto" >
+                                                <Text wrapping="false" tooltip="Handled By" text="Handled By"/>
                                             </Column>
 
                                             <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
                                                 <Text wrapping="true" text="ShipperName"/>
-                                            </Column>
-
-                                            <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
-                                                <Text wrapping="true" text="Region"/>
-                                            </Column>
-
-                                            <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
-                                                <Text wrapping="true" text="City"/>
-                                            </Column>
-
-                                            <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Right">
-                                                <Text wrapping="true" text="Postal Code"/>
                                             </Column>
                                         </columns>
                                         <items>
 
                                             <ColumnListItem type="Navigation" vAlign="Middle" press=".overViewPage">
                                                 <cells>
-                                                  
-                                                    <Text text="{Customer/ContactName}" maxLines="3"/>
-                                                    <Text text="{Employee/FirstName}" maxLines="3"/>
+                                                    <ObjectIdentifier title="{OrderID}"></ObjectIdentifier>
                                                     <Text text="{path:'OrderDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
                                                     <Text text="{path:'ShippedDate',formatter:'.formatter.parseDate'}" maxLines="3"/>
+                                                    <Text text="{Customer/ContactName}" maxLines="3"/>
+                                                    <Text text="{Employee/FirstName}" maxLines="3"/>
                                                     <Text text="{path:'ShipName'}" maxLines="3"/>
-                                                    <Text text="{path:'ShipRegion',formatter:'.formatter.emptyDataHandle'}" maxLines="3"/>
-                                                    <Text text="{ShipCity}"/>
-                                                    <Text text="{ShipPostalCode}"/>
+                                                   
                                                     <!-- <ObjectNumber  number="{Phone}" unit="" state="Information" inverted="true"/> -->
 
                                                     

@@ -89,7 +89,7 @@
                                                 <Text wrapping="true" text="Region"/>
                                             </Column>
 
-                                            <Column   demandPopin="true" minScreenWidth="Tablet" width="auto" hAlign="Center">
+                                            <Column   demandPopin="true" minScreenWidth="Tablet" width="auto">
                                                 <Text wrapping="true" text="Phone"/>
                                             </Column>
                                         </columns>
@@ -102,9 +102,7 @@
                                                     <Text text="{ContactName}" maxLines="3"/>
                                                     <Text text="{City}" maxLines="3"/>
                                                     <Text emptyIndicatorMode="On" text="{path:'Region',formatter:'.foramtter.emptyDataHandle'}" maxLines="3"/>
-                                                    <ObjectNumber textAlign="Begin" number="{Phone}" unit="" state="Information" inverted="true"/>
-
-                                                    
+                                                    <Text text="{Phone}" wrapping="false"/>
                                                 </cells>
                                             </ColumnListItem>
                                         </items>

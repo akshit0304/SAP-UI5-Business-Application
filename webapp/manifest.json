@@ -81,6 +81,13 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "Mkpi":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "utils/Mkpi.json",
+        "settings": {
+          "defaultBindingMode": "OneWay"
+        }
       }
     },
     "resources": {

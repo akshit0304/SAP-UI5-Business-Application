@@ -1,0 +1,70 @@
+{
+    "ProductStat": [
+        {
+            "id": "TotalOrders",
+            "Title": "Total Orders",
+            "Description": "total served orders",
+            "Data": 1000,
+            "Unit": null
+        },
+        {
+            "id": "TotalRevenue",
+            "Title": "Total Revenue",
+            "Description": "orders' sub-total sum",
+            "Data": "325,641",
+            "Unit": "€"
+        },
+        {
+            "id": "FullfilledOrders",
+            "Title": "Fulfillment",
+            "Description": "successfully completed and delivered orders",
+            "Data": 95,
+            "Unit": "%"
+        },
+        {
+            "id": "TotalCustomers",
+            "Title": "Total Clientele",
+            "Description": "companies using our products",
+            "Data": 25,
+            "Unit": null
+        }
+    ],
+    "CompanyStat": [
+        {
+            "id": "TotalProducts",
+            "Title": "Total Catalog",
+            "Description": "products under the company",
+            "Data": 32,
+            "Unit": "items"
+        },
+        {
+            "id": "TotalEmployees",
+            "Title": "Total Employees ",
+            "Description": "",
+            "Data": 15,
+            "Unit": null
+        },
+        {
+            "id": "TotalSuppliers",
+            "Title": "Total Suppliers",
+            "Description": "",
+            "Data": 35,
+            "Unit": null
+        },
+        {
+            "id": "TotalShippers",
+            "Title": "Total Shippers",
+            "Description": "",
+            "Data": 3,
+            "Unit": null
+        },
+        {
+            "id": "Territories",
+            "Title": "Territories",
+            "Description": "business spread in world",
+            "Data": 10,
+            "Unit": null
+        }
+    ]
+
+}

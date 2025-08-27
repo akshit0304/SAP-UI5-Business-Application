@@ -36,13 +36,13 @@ sap.ui.define([
           // this._setNavigationList('list');
         }.bind(this),
         onBeforeShow:function(){
-          this.component._buttonExpandLogic(1, 1);
+          // this.component._buttonExpandLogic(1, 1);
         }.bind(this)
       });
-      // device model change
-      if(Device.support.touch){
-         this.component._buttonExpandLogic(1,0);
-      }
+      // // device model change
+      // if(Device.support.touch){
+      //    this.component._buttonExpandLogic(1,0);
+      // }
     },
     _loadView: function (sViewName) {
       if(this.oNavContainer.getCurrentPage().getViewName().split('.').at(-1)==sViewName){
@@ -50,6 +50,13 @@ sap.ui.define([
         BusyIndicator.hide();
         return 0;
       }
+      // abort request flag for aggregated order details
+      if(sViewName!="Dashboard"){
+        this.component.abort_request_flag =1;
+      }
+      else{
+      this.component.abort_request_flag =0;}
+
       // this.oNavContainer.getCurrentPage()
       var history_tag_flag =sViewName.search(/Overview/);
       var history_tag;

@@ -29,6 +29,7 @@ sap.ui.define([
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                        }
+                    this.byId("officials_subsection").setTitle("About "+this.byId("m_dynamicPageTitle").getBindingContext().getProperty("FirstName"));
                     const labelParam =this.byId("m_dynamicPageTitle").getBindingContext().getProperty("EmployeeID");
 
                     // bind teams data

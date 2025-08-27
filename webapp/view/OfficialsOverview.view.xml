@@ -99,7 +99,7 @@ controllerName="bd.businessportal.controller.OfficialsOverview"
             <m:Button text="Product information" type="Attention"/>
         </customAnchorBarButton> -->
             <subSections>
-                <ObjectPageSubSection title="Person Info" showTitle="false" titleUppercase="false">
+                <ObjectPageSubSection id="officials_subsection" showTitle="false" titleUppercase="false">
                     <blocks>
                        <form:SimpleForm layout="ColumnLayout" id="info_manager"
                             columnsXL="3"

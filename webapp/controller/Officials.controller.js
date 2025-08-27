@@ -19,7 +19,7 @@ sap.ui.define([
             // console.log("dashboard initialized");
             this.main_page =this.byId("manager_page");
             this.component =this.getOwnerComponent();
-
+            const expandFlag =this.component.expandFlag;
             this.table =this.byId("table_manager");
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
@@ -35,7 +35,7 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
-                    this.component._buttonExpandLogic(1, 1);
+                    this.component._buttonExpandLogic(1, expandFlag);
                     setModel.configureModel.call(this,"Officials.json");
                 }.bind(this),
                 onAfterShow:function(){

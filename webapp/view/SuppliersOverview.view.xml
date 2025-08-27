@@ -15,7 +15,7 @@ controllerName="bd.businessportal.controller.SuppliersOverview"
     class="sapUiResponsiveMargin--content 
             sapUiResponsiveContentPadding"
     >
-    <Panel id="supplier_overview_panel" expandable="false" stickyHeader="false" headerText="Supplier {CompanyName}" width="auto">
+    <Panel id="supplier_overview_panel" expandable="false" stickyHeader="false" headerText="{CompanyName}" width="auto">
         <content>
             <!-- dymanic binding from controller -->
              <form:SimpleForm 

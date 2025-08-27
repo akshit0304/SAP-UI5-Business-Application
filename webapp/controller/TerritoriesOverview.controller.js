@@ -23,18 +23,34 @@ sap.ui.define([
                 }.bind(this),
 
                 onBeforeShow: function () {
-                    setModel.configureModel.call(this, "Territories.json");
+                    setModel.configureModel2.call(this, "Territories.json").then(()=>{
                     let bind_path = this.model.getProperty("/idOfBindElement");
-                    const bind_elements_id = ['t_dynamicPageTitle', 't_product_general_info', 'territory_overview'];
+                    const bind_elements_id = ['t_dynamicPageTitle','territory_overview','head_panel'];
                     for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                     }
                     this.component._buttonExpandLogic(1, 0);
+                    let id =this.byId("info_head_person").getBindingContext().getProperty("EmployeeID");
+                    if(!id){
+                        this.byId("head_panel").setVisible(false);
+                    }
+                    else{this.byId("head_panel").setVisible();}
+
+                });
                 }.bind(this),
             });
         },
-        backNavigation: function (oEvent) {
-            this.component.navbuttonPressed(oEvent);
+        detailPress:function(oEvent){
+            let id = oEvent.getParameter("id").split('--');
+            // console.log(typeof id);
+            if(id.at(-1)=="more"){
+                let id =this.byId("info_head_person").getBindingContext().getProperty("EmployeeID");
+                 this.oNavContainer.setBusy(true);
+                this.component.second_binding=true;
+                // set id in nav model in idOfBindElementSecond
+                this.model.setProperty("/idOfBindElementSecond",id);
+                this.root_element.getController()._loadView("EmployeesOverview");
+            } 
         }
 
 

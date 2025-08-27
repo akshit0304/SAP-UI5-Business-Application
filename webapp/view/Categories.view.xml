@@ -5,101 +5,35 @@
     xmlns:core="sap.ui.core"
     xmlns:uxap="sap.uxap"
     controllerName="bd.businessportal.controller.Categories"
+>
+
+    <Page
+        id="category_page"
+        title="{nav>/pageTitles/category}"
+        busyIndicatorDelay="100"
+        showNavButton="false"
+        class="sapUiResponsiveMargin--content sapUiResponsivePadding--content"
+            
     >
-    <uxap:ObjectPageLayout id="category_page" class="sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
-    enableLazyLoading="true"
-    beforeNavigate=".navbuttonPressed"
-    useIconTabBar="true"
-    showTitleInHeaderContent="true"
-    upperCaseAnchorBar="true"
-    showAnchorBar="false"
-    >
+        <Panel expandable="false" stickyHeader="false" width="auto">
 
-        <uxap:headerTitle>
-            <uxap:ObjectPageDynamicHeaderTitle >
-                <uxap:snappedHeading>
-                    <Title text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H1" />
-                </uxap:snappedHeading>
-                <uxap:expandedHeading>
-                    <Title text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H3" />
-                </uxap:expandedHeading>
-            </uxap:ObjectPageDynamicHeaderTitle>
-        </uxap:headerTitle>
+            <List mode="None" id="table_category"
+                itemPress="overViewPage" items="{/results}">
 
-        <uxap:headerContent>
-            <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_category" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
-                    <filterbar:filterGroupItems>
-                        <filterbar:FilterGroupItem  name="category_search" label="" groupName="q"  visibleInFilterBar="true">
-                            <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
-                            </filterbar:control>
-                        </filterbar:FilterGroupItem>
-                        <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="category_filter" label="Category" groupName="q"  visibleInFilterBar="true">
-                            <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
-                            </filterbar:control>
-                        </filterbar:FilterGroupItem>
-                    </filterbar:filterGroupItems>
-             </filterbar:FilterBar>
-        </uxap:headerContent>
+                <ObjectListItem
+                    title="{CategoryName}"
+                    type="Navigation"
+                    number="{=${path:'Products/results'}.length}"
+                    numberUnit="Products">
+                    <ObjectAttribute text="Category ID : {CategoryID}" active="false" />
+                    <ObjectAttribute text="{Description}" active="false" />
+                </ObjectListItem>
 
-        <!-- block content -->
-         <uxap:sections>
-            <uxap:ObjectPageSection  showTitle="false">
-                <!-- <uxap:customAnchorBarButton>
-                    <Button text="Manager Data"></Button>
-                </uxap:customAnchorBarButton> -->
-                <uxap:ObjectPageSubSection   showTitle="false" >
-                    <uxap:blocks>
+            </List>
 
-                                        <Table 
-                                            id="table_category"
-                                            headerText="{nav>category}"
-                                            autoPopinMode="false"
-                                            width="100%"
-                                            inset="false"
-                                            enableBusyIndicator="true"
-                                           items="{/results}"
-                                            core:require="{Formatter:'bd/businessportal/model/Formatter'}"
-                                        >
-                                        
-                                        <columns>
-                                            <Column visible="true" width="6em">
-                                                <Text wrapping="true" text="Category ID" wrappingType="Hyphenated" ></Text>
-                                            </Column>
-                                            <Column  demandPopin="false" minScreenWidth="Phone">
-                                                <Text wrapping="false" text="Category"></Text>
-                                            </Column>
-                                            <Column  demandPopin="true" minScreenWidth="Tablet">
-                                                
-                                                <Text wrapping="false" text="Description"/>
-                                            </Column>
-                                            <Column demandPopin="true" styleClass="sapUiNoMargin"  importance="Low" minScreenWidth="Phone"  hAlign="Center">
-                                                <Text wrapping="false" text="No. of Products" tooltip="products under the category"/>
-                                            </Column>
-                                            <!-- <Column class="sapUiTinyMargin" minScreenWidth="Phone" width="auto">
-                                                <Text wrapping="false" text=""></Text>
-                                            </Column> -->
-                                        </columns>
-                                        <items>
 
-                                            <ColumnListItem type="Navigation" press=".overViewPage">
-                                                <cells>
-                                                        <ObjectIdentifier title="{CategoryID}" visible="true"></ObjectIdentifier>
-                                                        <Text text="{CategoryName}"/>
-                                                        <Text text="{Description}" wrapping="true" maxLines="3"/>
-                                                       <ObjectNumber 
-                                                       number="{=${path:'Products/results'}.length}" 
-                                                       unit="" state="None" inverted="true"/>
-                                                </cells>
-                                            </ColumnListItem>
-                                        </items>
-                                    </Table>
-                    </uxap:blocks>
-                </uxap:ObjectPageSubSection>
-            </uxap:ObjectPageSection>
-         </uxap:sections>
-    </uxap:ObjectPageLayout>
+            
+
+        </Panel>
+    </Page>
 </mvc:View>

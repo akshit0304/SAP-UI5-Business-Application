@@ -9,12 +9,12 @@ controllerName="bd.businessportal.controller.RegionsOverview"
 <!-- Page start -->
 <Page 
     id="region_overview"  
-    title="{RegionDescription}"
     busyIndicatorDelay="300"
-    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
+    title="Region Details"
+     class="sapUiResponsiveMargin--content
             sapUiResponsiveContentPadding"
     >
-    <Panel id="r_dynamicPageTitle" expandable="false" stickyHeader="false" width="auto" headerText="{TerritoryDescription}" class="">
+    <Panel id="r_dynamicPageTitle" expandable="false" stickyHeader="false" width="auto" headerText="Region {RegionDescription}">
         <!-- <headerToolbar>
             <OverflowToolbar design="Transparent">
                 <Title class="sapUiSmallMarginBegin" text="Region Data"/>

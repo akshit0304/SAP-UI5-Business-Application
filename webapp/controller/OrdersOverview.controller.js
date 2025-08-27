@@ -76,7 +76,7 @@ sap.ui.define([
                     // condition end
                         // end
                         // let bind_path = this.model.getProperty("/idOfBindElement");
-                        const bind_elements_id =['shipments','info_order',"o_customer","o_employee","order_overview_panel"];       
+                        const bind_elements_id =['shipments','info_order',"o_customer","o_employee","order_dynamicPageTitle","o_overview_info"];       
                         for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
                        }

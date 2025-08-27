@@ -17,6 +17,7 @@ sap.ui.define([
             this.main_page =this.byId("region_page");
             this.table =this.byId("table_region");
             this.component =this.getOwnerComponent();
+             const expandFlag =this.component.expandFlag;
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
             this.model_data =this.component.getModel();
@@ -31,7 +32,7 @@ sap.ui.define([
             // event delegation
             this.getView().addEventDelegate({
                 onBeforeShow:function(){
-                    this.component._buttonExpandLogic(1, 1);
+                    this.component._buttonExpandLogic(1, expandFlag);
                     setModel.configureModel.call(this,"Regions.json");
                 }.bind(this)
             });

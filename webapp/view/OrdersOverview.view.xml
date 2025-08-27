@@ -4,23 +4,97 @@ xmlns="sap.m"
 xmlns:mvc="sap.ui.core.mvc"
 xmlns:l="sap.ui.layout"
 xmlns:form="sap.ui.layout.form"
-xmlns:cards="sap.f.cards"
-xmlns:f="sap.f"
+xmlns:uxap="sap.uxap"
 controllerName="bd.businessportal.controller.OrdersOverview"
 >
 <!-- Page start -->
-<Page 
-    id="order_overview"  
-    title="Orders Detail" 
-    busyIndicatorDelay="100"
-    showNavButton="false"
-    class="sapUiResponsiveMargin--content
-            sapUiResponsiveContentPadding"
-    >
-    <Panel id="order_overview_panel" expandable="false" stickyHeader="false" headerText="Order #{OrderID}" width="auto">
-        <content>
+  <uxap:ObjectPageLayout id="order_overview" upperCaseAnchorBar="true" headerContentPinnable="true" showAnchorBar="true" showTitleInHeaderContent="true" busy="false" busyIndicatorDelay="300" class="sapUiResponsivePadding--header
+            sapUiResponsiveContentPadding">
+
+        <uxap:headerTitle >
             <!-- dymanic binding from controller -->
-             <form:SimpleForm 
+            <uxap:ObjectPageDynamicHeaderTitle id="order_dynamicPageTitle" busy="false" busyIndicatorDelay="300">
+                <uxap:snappedHeading>
+                    <HBox width="100%" gap="5px">
+                        <!-- add title -->
+                       <Title class="sapUiNoMarginBegin" text="Order #{OrderID}" wrapping="false" titleStyle="H4" level="H1" />
+                    </HBox>
+                </uxap:snappedHeading>
+
+                <uxap:expandedHeading>
+                    <HBox width="100%" gap="5px">
+                      <Title class="sapUiNoMarginBegin" text="Order Details" wrapping="false" titleStyle="H3"  level="H1" />
+                    </HBox>
+                </uxap:expandedHeading>
+            </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+        <uxap:headerContent>
+            <!-- header content -->
+               <VBox visible="true" width="100%" id="o_overview_info" class="sapUiSmallMarginBottom">
+
+                <FlexBox rowGap="1.2rem" columnGap="1rem" fitContainer="false" alignItems="Start" alignContent="Start" wrap="Wrap">
+                        <VBox gap="0.8rem">
+                            <layoutData>
+                                <FlexItemData  baseSize="200px"></FlexItemData>
+                            </layoutData>
+                            <Label vAlign="Middle" showColon="true" text="OrderID" displayOnly="true" wrapping="false"/>
+                            <ObjectNumber number="{OrderID}" unit="" state="Information" class="sapMObjectNumberLarge sapUiSmallMarginTop" />
+                            <!-- description ended -->
+                        </VBox>
+                    <!-- </VBox> -->
+                    <VBox alignItems="Start" gap="0.8rem">
+                        <layoutData>
+                                <FlexItemData baseSize="200px" ></FlexItemData>
+                            </layoutData>
+                         <ObjectIdentifier title="Date's" class="sapUiTinyMarginBottom sapUiHideOnPhone" />
+                         <ObjectIdentifier title="Date's" class="sapUiVisibleOnlyOnPhone" />
+                        <!-- <layoutData>
+                            <FlexItemData alignSelf="Center" baseSize="auto" maxWidth="35%"></FlexItemData>
+                        </layoutData> -->
+                        <HBox alignItems="Start" columnGap="10px">
+                                <Label vAlign="Middle" showColon="true" text="Order"  displayOnly="true" wrapping="false"></Label>
+                                <Text text="{path:'OrderDate',formatter:'.formatter.parseDate'}" />
+                        </HBox>
+                        <HBox columnGap="10px">
+                            <Label vAlign="Middle" showColon="true" text="Shipped"  displayOnly="true" wrapping="false"></Label>
+                            <Text text="{path:'ShippedDate',formatter:'.formatter.parseDate'}" />
+                        </HBox>
+                        
+                    </VBox>
+                    
+                    <!-- customer and employee -->
+                       <VBox alignItems="Start" gap="0.8rem">
+                             <layoutData>
+                                <FlexItemData baseSize="200px" />
+                        </layoutData>
+                         <ObjectIdentifier title="Associate's" class="sapUiTinyMarginBottom sapUiHideOnPhone"/>
+                         <ObjectIdentifier title="Associate's" class="sapUiVisibleOnlyOnPhone"/>
+                        
+                        <HBox alignItems="Start" columnGap="10px">
+                                <Label vAlign="Middle" showColon="true" text="Customer Name"  displayOnly="true" wrapping="false"></Label>
+                                <Text text="{Customer/CompanyName}" wrapping="false" maxLines="3" />
+                        </HBox>
+                        <HBox columnGap="10px">
+                                <Label vAlign="Middle" showColon="true" text="Employee Name"  displayOnly="true" wrapping="false"></Label>
+                                 <Text  text="{Employee/TitleOfCourtesy} {Employee/FirstName}" wrapping="false" maxLines="3"  />
+                        </HBox>
+                    </VBox>
+                </FlexBox>
+                <!-- <HBox width="2.5rem" wrap="NoWrap"></HBox> -->
+            </VBox>
+
+
+           
+        </uxap:headerContent>
+        <!-- main content -->
+
+        <!-- sections -->
+         <uxap:sections>
+            <uxap:ObjectPageSection showTitle="false" >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Order Info" showTitle="false">
+                        <uxap:blocks>
+                                        <form:SimpleForm 
                     layout="ColumnLayout" id="info_order"
                         columnsXL="-1"
                         columnsL="2"
@@ -58,9 +132,17 @@ controllerName="bd.businessportal.controller.OrdersOverview"
 
                     </form:content>
                 </form:SimpleForm>
-    <!-- customer data -->
-     <HBox width="100%">
-        <form:SimpleForm 
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+
+            <!-- section-2 -->
+               <uxap:ObjectPageSection showTitle="false" >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Customer Info" showTitle="false">
+                        <uxap:blocks>
+                                  <form:SimpleForm 
                         layout="ColumnLayout" id="o_customer"
                         columnsXL="-1"
                         columnsL="2"
@@ -94,11 +176,16 @@ controllerName="bd.businessportal.controller.OrdersOverview"
                         <Text  text="{Customer/CustomerID}" class="sapUiTinyMarginBottom"/>
                 </form:content>
             </form:SimpleForm>
-     </HBox>
-    
-    <!-- forms data shipments -->
-            <HBox width="100%">
-               <form:SimpleForm 
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <!-- section-3 -->
+               <uxap:ObjectPageSection showTitle="false" >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Shipment Info" showTitle="false">
+                        <uxap:blocks>
+                                 <form:SimpleForm 
                     layout="ColumnLayout" id="shipments"
                         columnsXL="-1"
                         columnsL="2"
@@ -142,12 +229,17 @@ controllerName="bd.businessportal.controller.OrdersOverview"
                         <Text  text="{ShipPostalCode}" class="sapUiTinyMarginBottom"/>
                     </form:content>
                 </form:SimpleForm> 
-            </HBox>
-        <!-- form end -->
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
 
-        <!-- order processing specialist -->
-         <HBox width="100%">
-             <form:SimpleForm 
+            <!-- section-4 -->
+               <uxap:ObjectPageSection showTitle="false" >
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Order Specialist" showTitle="false">
+                        <uxap:blocks>
+                              <form:SimpleForm 
                     layout="ColumnLayout" id="o_employee"
                         columnsXL="-1"
                         columnsL="2"
@@ -176,95 +268,15 @@ controllerName="bd.businessportal.controller.OrdersOverview"
                         <Label text="ID" showColon="true" vAlign="Middle"  displayOnly="true"  />
                         <Text  text="{Employee/EmployeeID}" class="sapUiTinyMarginBottom"/>
 
-                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
-                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
-                        <Label text="" showColon="true" vAlign="Middle"  displayOnly="true"  />
+
                         <!-- <Text  text="{Employee/EmployeeID}" class="sapUiTinyMarginBottom"/> -->
                 </form:content>
                 </form:SimpleForm>
-         </HBox>
-
-         <!-- order processing specialist -->
-          <!-- <VBox class="sapUiSmallMarginTopBottom">
-              <Title text="Additional Info" class="sapUiSmallMarginBottom sapUiSmallMarginBegin"  titleStyle="H5"/>
-              <HBox wrap="Wrap" alignContent="Start" id="o_add_info" gap="16px">
-                
-                  <f:Card  height="280px">
-                    <f:layoutData>
-                        <FlexItemData maxWidth="320px" />
-                    </f:layoutData>
-                      <f:header>
-                          <cards:Header title="Employee" subtitle="Order Processing Specialist"  class="myCardBG"/>
-                        </f:header>
-                <f:content>
-                   
-                </f:content>
-            </f:Card>
-             <f:Card  height="280px">
-                <f:layoutData>
-                        <FlexItemData maxWidth="320px" />
-                    </f:layoutData>
-                <f:header>
-                    <cards:Header  title="Customer Detail" subtitle="Associate Customer"  class="myCardBG"/>
-                </f:header>
-                <f:content>
-                    <ScrollContainer horizontal="false" vertical="true">
-
-                        
-        </ScrollContainer>
-                </f:content>
-            </f:Card>
-        </HBox>
-    </VBox> -->
-
-    <!-- order detail table -->
-     <!-- <Table 
-        id="order_detail_table"
-        busyIndicatorDelay="100"
-        autoPopinMode="true"
-        growing="true"
-        growingScrollToLoad="true"
-        headerText="Order Detail"
-        items="{od>/results}"
-     >
-     <infoToolbar>
-					<OverflowToolbar>
-						<Label wrapping="true" displayOnly="true" text="Order Details (Each order has many order-details)"/>
-					</OverflowToolbar>
-                	</infoToolbar>
-        <columns>
-            <Column hAlign="Right" width="6em">
-                <Label displayOnly="true" text="Product ID" />
-            </Column>
-
-            <Column>
-                <Label displayOnly="true" text="Unit Price" wrapping="true" />
-            </Column>
-
-            <Column  hAlign="Center">
-                <Label displayOnly="true" text="Quantity" />
-            </Column>
-
-            <Column>
-                <Label displayOnly="true" text="Discount"  />
-            </Column>
-        </columns>
-
-        <items>
-            <ColumnListItem >
-                <cells>
-                    <ObjectIdentifier title="{od>ProductID}" />
-                    <Text wrapping="false" text="{path:'od>UnitPrice',formatter:'.formatter.currency'}"/>
-                    <Text text="{od>Quantity}"  />
-                    <ObjectNumber number="{:= %{od>Discount}*100}" unit="%" state="{path:'od>Discount',formatter:'.formatter.employeeStatus'}" />
-                </cells>
-            </ColumnListItem>
-        </items>
-    
-    </Table> -->
-        </content>
-    </Panel>
-   
-</Page>
-
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+         </uxap:sections>
+  </uxap:ObjectPageLayout>
+ <!-- object page end -->
 </mvc:View>

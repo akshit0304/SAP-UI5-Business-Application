@@ -92,12 +92,12 @@ controllerName="bd.businessportal.controller.EmployeesOverview"
     </headerContent>
     <!-- main content -->
     <sections>
-        <ObjectPageSection titleUppercase="false" title="Person Info" showTitle="false" anchorBarButtonColor="Tile" >
+        <ObjectPageSection titleUppercase="false" title="" showTitle="false" anchorBarButtonColor="Tile" >
             <!-- <customAnchorBarButton>
             <m:Button text="Product information" type="Attention"/>
         </customAnchorBarButton> -->
             <subSections>
-                <ObjectPageSubSection title="Person Info" showTitle="false" titleUppercase="false">
+                <ObjectPageSubSection id="employee_subsection" title="" showTitle="false" titleUppercase="false">
                     <blocks>
                          <form:SimpleForm layout="ColumnLayout" id="info_employee"
                             columnsXL="3"

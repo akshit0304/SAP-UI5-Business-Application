@@ -9,10 +9,9 @@ controllerName="bd.businessportal.controller.TerritoriesOverview"
 <!-- Page start -->
 <Page 
     id="territory_overview"  
-    title="{TerritoryDescription}" 
+    title="Territory Details" 
     busyIndicatorDelay="300"
-    class="sapUiResponsiveMargin--content sapUiResponsivePadding--header
-            sapUiResponsiveContentPadding"
+    class="sapUiResponsiveMargin--content sapUiResponsiveContentPadding"
     >
     <Panel id="t_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="{TerritoryDescription}" width="auto" >
         <!-- <headerToolbar>
@@ -52,12 +51,48 @@ controllerName="bd.businessportal.controller.TerritoriesOverview"
                     <Avatar displaySize="S" src="sap-icon://business-card" displayShape="Circle" imageFitType="Cover"/>
                     <HBox columnGap="10px"  wrap="Wrap" justifyContent="Center" alignContent="Center">
                         <ObjectStatus class="sapMObjectStatusLongText" text="Head Person"/>
-                        <ObjectStatus class="sapMObjectStatusLongText"  state="None" text="{Employees/results/0/FirstName}-{Employees/results/0/EmployeeID}"/>
+                        <ObjectStatus class="sapMObjectStatusLongText"  state="None" text="{Employees/results/0/FirstName}"/>
                     </HBox>
                 </VBox>
             </HBox>
-        </content>
-    </Panel>
+             </content>
+            </Panel>
+            <Panel expanded="false" class="sapUiSmallMarginTopBottom" width="auto" headerText="About Head Person" id="head_panel">
+                <content>
+                <form:SimpleForm 
+                    id="info_head_person"
+                    adjustLabelSpan="false"
+                    columnsXL="-1"
+                    columnsL="1"
+                    columnsM="1"
+                    labelSpanXL="-1"
+                    labelSpanL="2"
+                    emptySpanL="1"
+                    labelSpanM="2"
+                    labelSpanS="12"
+                    binding="{Employees/results/0}"
+                >
+                    <form:content>
+                                <Label text="First Name" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true" textAlign="Left" />
+                                 <Text text="{FirstName}" class="sapUiTinyMarginBottom" wrapping="false"/>
+
+                                 <Label text="Last Name" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true"  />
+                                 <Text text="{LastName}" class="sapUiTinyMarginBottom"/>
+
+                                 <Label text="Birth Date" showColon="true" vAlign="Middle" wrapping="true" displayOnly="true"  />
+                                 <Text text="{path:'BirthDate',formatter:'.formatter.parseDate'}" class="sapUiTinyMarginBottom"/>
+
+                                 <Label text="Phone No" showColon="true" vAlign="Middle" displayOnly="true" wrapping="true" />
+                                 <ObjectStatus text="{HomePhone}"  icon="sap-icon://contacts" inverted="true"/>
+
+                                 <Label text="" showColon="false" vAlign="Middle" displayOnly="true" />
+                                 <Link id="more" accessibleRole="Button" ariaHasPopup="None" ariaLabelledBy="more data about employee {FirstName}"
+                                    text="more ..." press=".detailPress"  />
+                    </form:content>
+                </form:SimpleForm>
+            </content>
+            </Panel>
+    
    
 </Page>
 

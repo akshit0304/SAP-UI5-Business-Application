@@ -31,12 +31,12 @@
                         <Text text="" wrapping="true" maxLines="3" />
                     </uxap:expandedContent>
 
-                    <uxap:actions>
+                    <!-- <uxap:actions>
                         <Toolbar style="Clear">
                             <ToolbarSpacer/>
                                 <Button  icon="sap-icon://action" iconFirst="true"  press="{=null}" />
                         </Toolbar>
-                    </uxap:actions>
+                    </uxap:actions> -->
             </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
 

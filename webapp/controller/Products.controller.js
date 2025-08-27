@@ -17,6 +17,7 @@ sap.ui.define([
         onInit() {
             console.log("product initialized");
             this.component = this.getOwnerComponent();
+             const expandFlag =this.component.expandFlag;
             this.main_page =this.byId("product_page");
             this.root_element =this.component.byId("App");
             this.table =this.byId("table_product");
@@ -29,7 +30,7 @@ sap.ui.define([
             this.getView().addStyleClass(this.component.getContentDensityClass());
             this.getView().addEventDelegate({
                 onBeforeShow:function(obj){
-                    this.component._buttonExpandLogic(1, 1);
+                    this.component._buttonExpandLogic(1, expandFlag);
                     setModel.configureModel.call(this,"Products.json");
                     // console.log(obj.data);
                     this.oNavContainer.setBusy();

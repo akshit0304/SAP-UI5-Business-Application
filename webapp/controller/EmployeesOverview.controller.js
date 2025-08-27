@@ -15,7 +15,7 @@ sap.ui.define([
             this.model = this.component.getModel("nav");
             this.root_element =this.component.byId("App");
             this.oNavContainer = this.component.byId("App--navContainer");
-           this.model = this.component.getModel("nav");
+        //    this.model = this.component.getModel("nav");
 
             this.oNavContainer.setBusy();
             
@@ -42,10 +42,11 @@ sap.ui.define([
                         // console.log(bind_path);
                     }
                     // condition end
-                        const bind_elements_id =['e_dynamicPageTitle','e_form','info_employee','e_product_general_info',"o_e_orders"];
-                        for (const element of bind_elements_id) {
+                    const bind_elements_id =['e_dynamicPageTitle','e_form','info_employee','e_product_general_info',"o_e_orders"];
+                    for (const element of bind_elements_id) {
                         this.byId(element)?.bindElement(bind_path);
-                       }
+                    }
+                    this.byId("employee_subsection").setTitle("About " +this.byId("e_dynamicPageTitle").getBindingContext().getProperty("FirstName"));
                     // orders table
                     setModel.loadTable.call(this,
                         "Orders.json",
