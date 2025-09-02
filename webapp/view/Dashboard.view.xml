@@ -1,4 +1,4 @@
-<mvc:View xmlns:l="sap.ui.layout" displayBlock="true"
+<mvc:View xmlns:home="sap.cux.home" xmlns:l="sap.ui.layout" displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.f"
     xmlns:cards="sap.f.cards"
@@ -11,13 +11,13 @@
 
     <Page class="sapUiResponsiveMargin--content" id="dashboard_page" title="Business KPIs">
         <!-- grid-start -->
-       <l:Grid id="main_grid" hSpacing="1" vSpacing="0.5"
+       <l:Grid id="main_grid" hSpacing="1" vSpacing="1"
                 class="sapUiSmallMarginTopBottom"
        >
                             <!-- card-1 -->
-                <f:Card class="" >
+                <f:Card height="400px"  id="product_manage">
                     <f:layoutData>
-                                <l:GridData span="XL3 L3 M5 S12"/>
+                                <l:GridData span="XL3 L4 M5 S12"/>
                     
                     </f:layoutData>
                         <f:header>
@@ -29,20 +29,20 @@
                                 <List id="kpi_stat_list" showSeparators="None" width="auto"  class="sapUiTinyMarginEnd" items="{Mkpi>/ProductStat}">
                                     <items>
                                     <CustomListItem navigated="false" type="Inactive" class="sapUiTinyMarginBottom">
-                                        <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto" class="sapUiTinyMargin">
+                                        <HBox alignItems="Start"  justifyContent="SpaceBetween" width="auto" class="sapUiTinyMargin">
                                             <VBox class="sapUiTinyMarginBegin">
                                                 <layoutData>
-                                                    <FlexItemData maxWidth="80%" ></FlexItemData>
+                                                    <FlexItemData  baseSize="60%" shrinkFactor="1" growFactor="1" ></FlexItemData>
                                                 </layoutData>
                                                 <Text wrapping="false" text="{Mkpi>Title}" />
-                                                <Label text="{Mkpi>Description}" displayOnly="true" wrapping="true" />
+                                                <Label text="{Mkpi>Description}" displayOnly="true" wrapping="true"/>
                                             </VBox>
                                             <VBox alignItems="End" class="" width="20%">
                                             <layoutData>
                                                 <FlexItemData alignSelf="Center"/>
                                             </layoutData>
-                                            <ObjectNumber class="" number="{Mkpi>Data}" state="Success"/>
-                                             <Text text="{Mkpi>Unit}" />
+                                            <ObjectNumber  number="{path:'Mkpi>Data'}" state="Success"/>
+                                             <Text text="{Mkpi>Unit}"  class="fontsize-S" />
                                             </VBox>
                                         </HBox>
                                     </CustomListItem>
@@ -54,7 +54,7 @@
                     </f:Card>
 
                      <!-- card-2 -->
-        <f:Card class="" id="charts" width="100%" >
+        <f:Card  id="charts" width="100%" height="400px">
  
 					  <f:layoutData>
                                 <l:GridData span="XL6 L6 M7 S12"/>
@@ -67,23 +67,27 @@
                 <viz:VizFrame
                     id="donutChart"
                     width="100%"
-                    height="400px"
+                    height="auto"
                     uiConfig="{applicationSet:'fiori'}"
                     vizType="donut"
                     >
-
                     <viz:dataset>
                         <viz.data:FlattenedDataset
-                        data="{/customers}">
+                        data="{Mkpi>/TopCustomers}" >
                         <viz.data:dimensions>
                             <viz.data:DimensionDefinition
+                            axis="1"
                             name="Customer"
-                            value="{customerName}" />
+                            value="{Name}" />
                         </viz.data:dimensions>
                         <viz.data:measures>
                             <viz.data:MeasureDefinition
-                            name="Order Amount"
-                            value="{orderAmount}" />
+                            name="OrderAmount"
+                            value="{subTotal}" />
+
+                         <viz.data:MeasureDefinition
+                            name="Customer ID"
+                            value="{Id}" />
                         </viz.data:measures>
                         </viz.data:FlattenedDataset>
                     </viz:dataset>
@@ -92,7 +96,7 @@
                         <viz.feeds:FeedItem
                         uid="size"
                         type="Measure"
-                        values="Order Amount" />
+                        values="OrderAmount" />
                         <viz.feeds:FeedItem
                         uid="color"
                         type="Dimension"
@@ -102,9 +106,9 @@
             </f:content>
         </f:Card>
         <!-- card-3 -->
-             <f:Card class="asset" >
+             <f:Card class="asset" height="400px" >
                     <f:layoutData>
-                                <l:GridData span="XL3 L3 M5 S12"/>
+                                <l:GridData span="XL3 L4 M5 S12"/>
                     
                     </f:layoutData>
                         <f:header>
@@ -112,14 +116,14 @@
                             </cards:Header>
                         </f:header>
                         <f:content>
-                            <ScrollContainer horizontal="false" vertical="true" height="auto" width="100%"  class="">
+                            <ScrollContainer horizontal="false" vertical="true" height="auto" width="100%" >
                                 <List  showSeparators="None" width="auto"  class="sapUiTinyMarginEnd" items="{Mkpi>/CompanyStat}">
                                     <items>
                                     <CustomListItem navigated="false" type="Inactive" class="sapUiTinyMarginBottom">
                                         <HBox alignItems="Start" justifyContent="SpaceBetween" width="auto" class="sapUiTinyMargin">
                                             <VBox class="sapUiTinyMarginBegin">
                                                 <layoutData>
-                                                    <FlexItemData maxWidth="80%" ></FlexItemData>
+                                                    <FlexItemData baseSize="60%" growFactor="1" ></FlexItemData>
                                                 </layoutData>
                                                 <Text wrapping="false" text="{Mkpi>Title}" />
                                                 <Label text="{Mkpi>Description}" displayOnly="true" wrapping="true" />
@@ -129,7 +133,7 @@
                                                 <FlexItemData alignSelf="Center"/>
                                             </layoutData>
                                             <ObjectNumber class="" number="{Mkpi>Data}" state="Success"/>
-                                             <Text text="{Mkpi>Unit}" />
+                                             <Text text="{Mkpi>Unit}" class="fontsize-S" />
                                             </VBox>
                                         </HBox>
                                     </CustomListItem>
@@ -139,6 +143,70 @@
                             </ScrollContainer>
                         </f:content>
                     </f:Card>
+
+
+        <!-- card-4 -->
+          <f:Card  id="shipper_chart" width="100%" height="350px">
+ 
+					  <f:layoutData>
+                                <l:GridData span="XL5 L5 M6 S12" />
+                    </f:layoutData>
+            <f:header>
+                <cards:Header  title="Shipper Orders Chart" subtitle="Total Delivery Orders by Shippers">
+                </cards:Header>
+            </f:header>
+            <f:content>
+                <viz:VizFrame
+                    id="shipper_column_chart"
+                    width="100%"
+                    height="auto"
+                    uiConfig="{applicationSet:'fiori'}"
+                    vizType="column"
+                    >
+                    <viz:dataset>
+                        <viz.data:FlattenedDataset
+                        data="{path:'Mkpi>/ShipperKPI'}" >
+                        
+
+
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition
+                            name="Shipper Name"
+                            displayValue="Shipper Name"
+                            value="{Mkpi>CompanyName}" />
+                        </viz.data:dimensions>
+
+
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition
+                            name="Order Managed"
+                            value="{Mkpi>SettledOrders}" />
+                              <!-- <viz.data:MeasureDefinition
+                            name="Color"
+                            value="{Mkpi>color}" /> -->
+                        </viz.data:measures>
+                        </viz.data:FlattenedDataset>
+                    </viz:dataset>
+
+                    <viz:feeds>
+                        <viz.feeds:FeedItem
+                        uid="categoryAxis"
+                        type="Dimension"
+                        values="Shipper Name" />
+                        <!-- <viz.feeds:FeedItem uid="color" type="Measure" values="Color"/> -->
+                        <viz.feeds:FeedItem
+                        uid="valueAxis"
+                        type="Measure"
+                        values="Order Managed" />
+
+                         <!-- <viz.feeds:FeedItem
+                        uid="color"
+                        type="Measure"
+                        values="Order Fullfillment" /> -->
+                    </viz:feeds>
+                </viz:VizFrame>
+            </f:content>
+        </f:Card>
        </l:Grid>
 
     </Page>

@@ -11,7 +11,7 @@
             "id": "TotalRevenue",
             "Title": "Total Revenue",
             "Description": "orders' sub-total sum",
-            "Data": "325,641",
+            "Data": "325 K",
             "Unit": "€"
         },
         {
@@ -26,7 +26,7 @@
             "Title": "Total Clientele",
             "Description": "companies using our products",
             "Data": 25,
-            "Unit": null
+            "Unit": "clients"
         }
     ],
     "CompanyStat": [
@@ -65,6 +65,68 @@
             "Data": 10,
             "Unit": null
         }
+    ],
+    "TopCustomers": [
+        {
+            "Name": "Alfreds Futterkiste",
+            "Id": "ALFKI",
+            "subTotal": "10000",
+            "unit": "€"
+        },
+        {
+            "Name": "Ana Trujillo",
+            "Id": "ANATR",
+            "subTotal": "8000",
+            "unit": "€"
+        },
+        {
+            "Name": "Antonio Moreno",
+            "Id": "ANTON",
+            "subTotal": "5000",
+            "unit": "€"
+        },
+        {
+            "Name": "Around the Horn",
+            "Id": "AROUT",
+            "subTotal": "2500",
+            "unit": "€"
+        },
+        {
+            "Name": "Blondesddsl père et",
+            "Id": "BLONP",
+            "subTotal": "2000",
+            "unit": "€"
+        }
+    ],
+    "ShipperKPI": [
+            {
+                "ShipperID": 1,
+                "CompanyName": "Speedy Express",
+                "Phone": "(503) 555-9831",
+                "SettledOrders":500,
+                "color":"#f1c232"
+            },
+            {
+                "ShipperID": 2,
+                "CompanyName": "United Package",
+                "Phone": "(503) 555-3199",
+                "SettledOrders":450,
+                "color":"#FCDAB0"
+            },
+            {
+                "ShipperID": 3,
+                "CompanyName": "Federal Shipping",
+                "Phone": "(503) 555-9931",
+                "SettledOrders":300,
+                "color":"#9CC677"
+            }
+    ],
+    "Colors":[
+        {"color":"#8873A2"},
+        {"color":"#D16A7C"},
+        {"color":"#F9AD79"},
+        {"color":"#EACF5E"},
+        {"color":"#EACF5E"},
+        {"color":"#f1c232"}
     ]
-
 }

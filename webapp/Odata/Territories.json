@@ -2,53 +2,13 @@
     "endpoint":"territories",
     "results":[
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01581')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01581')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -71,57 +31,17 @@
             ]
         },
         "TerritoryID": "01581",
-        "TerritoryDescription": "Westboro                                          ",
+        "TerritoryDescription": "Westboro",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01730')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01730')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -144,57 +64,17 @@
             ]
         },
         "TerritoryID": "01730",
-        "TerritoryDescription": "Bedford                                           ",
+        "TerritoryDescription": "Bedford",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01833')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('01833')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -217,57 +97,17 @@
             ]
         },
         "TerritoryID": "01833",
-        "TerritoryDescription": "Georgetow                                         ",
+        "TerritoryDescription": "Georgetow",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02116')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02116')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -290,57 +130,17 @@
             ]
         },
         "TerritoryID": "02116",
-        "TerritoryDescription": "Boston                                            ",
+        "TerritoryDescription": "Boston",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02139')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02139')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -363,57 +163,17 @@
             ]
         },
         "TerritoryID": "02139",
-        "TerritoryDescription": "Cambridge                                         ",
+        "TerritoryDescription": "Cambridge",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02184')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02184')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -436,57 +196,17 @@
             ]
         },
         "TerritoryID": "02184",
-        "TerritoryDescription": "Braintree                                         ",
+        "TerritoryDescription": "Braintree",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02903')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('02903')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -509,57 +229,17 @@
             ]
         },
         "TerritoryID": "02903",
-        "TerritoryDescription": "Providence                                        ",
+        "TerritoryDescription": "Providence",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('03049')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('03049')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -582,57 +262,17 @@
             ]
         },
         "TerritoryID": "03049",
-        "TerritoryDescription": "Hollis                                            ",
+        "TerritoryDescription": "Hollis",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('03801')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('03801')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -655,57 +295,17 @@
             ]
         },
         "TerritoryID": "03801",
-        "TerritoryDescription": "Portsmouth                                        ",
+        "TerritoryDescription": "Portsmouth",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('06897')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('06897')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Territories"
-                        }
-                    },
                     "EmployeeID": 1,
                     "LastName": "Davolio",
                     "FirstName": "Nancy",
@@ -728,57 +328,17 @@
             ]
         },
         "TerritoryID": "06897",
-        "TerritoryDescription": "Wilton                                            ",
+        "TerritoryDescription": "Wilton",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('07960')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('07960')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -801,57 +361,17 @@
             ]
         },
         "TerritoryID": "07960",
-        "TerritoryDescription": "Morristown                                        ",
+        "TerritoryDescription": "Morristown",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('08837')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('08837')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -874,57 +394,17 @@
             ]
         },
         "TerritoryID": "08837",
-        "TerritoryDescription": "Edison                                            ",
+        "TerritoryDescription": "Edison",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10019')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10019')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -947,57 +427,17 @@
             ]
         },
         "TerritoryID": "10019",
-        "TerritoryDescription": "New York                                          ",
+        "TerritoryDescription": "New York",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10038')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('10038')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -1020,57 +460,17 @@
             ]
         },
         "TerritoryID": "10038",
-        "TerritoryDescription": "New York                                          ",
+        "TerritoryDescription": "New York",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('11747')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('11747')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -1093,57 +493,17 @@
             ]
         },
         "TerritoryID": "11747",
-        "TerritoryDescription": "Mellvile                                          ",
+        "TerritoryDescription": "Mellvile",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('14450')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('14450')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-                        }
-                    },
                     "EmployeeID": 5,
                     "LastName": "Buchanan",
                     "FirstName": "Steven",
@@ -1166,57 +526,17 @@
             ]
         },
         "TerritoryID": "14450",
-        "TerritoryDescription": "Fairport                                          ",
+        "TerritoryDescription": "Fairport",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('19428')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('19428')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Territories"
-                        }
-                    },
                     "EmployeeID": 8,
                     "LastName": "Callahan",
                     "FirstName": "Laura",
@@ -1239,57 +559,17 @@
             ]
         },
         "TerritoryID": "19428",
-        "TerritoryDescription": "Philadelphia                                      ",
+        "TerritoryDescription": "Philadelphia",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('19713')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('19713')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Territories"
-                        }
-                    },
                     "EmployeeID": 1,
                     "LastName": "Davolio",
                     "FirstName": "Nancy",
@@ -1312,57 +592,17 @@
             ]
         },
         "TerritoryID": "19713",
-        "TerritoryDescription": "Neward                                            ",
+        "TerritoryDescription": "Neward",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('20852')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('20852')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Territories"
-                        }
-                    },
                     "EmployeeID": 4,
                     "LastName": "Peacock",
                     "FirstName": "Margaret",
@@ -1385,57 +625,17 @@
             ]
         },
         "TerritoryID": "20852",
-        "TerritoryDescription": "Rockville                                         ",
+        "TerritoryDescription": "Rockville",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('27403')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('27403')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Territories"
-                        }
-                    },
                     "EmployeeID": 4,
                     "LastName": "Peacock",
                     "FirstName": "Margaret",
@@ -1458,57 +658,17 @@
             ]
         },
         "TerritoryID": "27403",
-        "TerritoryDescription": "Greensboro                                        ",
+        "TerritoryDescription": "Greensboro",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('27511')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('27511')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Territories"
-                        }
-                    },
                     "EmployeeID": 4,
                     "LastName": "Peacock",
                     "FirstName": "Margaret",
@@ -1531,26 +691,11 @@
             ]
         },
         "TerritoryID": "27511",
-        "TerritoryDescription": "Cary                                              ",
+        "TerritoryDescription": "Cary",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('29202')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('29202')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
@@ -1558,57 +703,17 @@
             "results": []
         },
         "TerritoryID": "29202",
-        "TerritoryDescription": "Columbia                                          ",
+        "TerritoryDescription": "Columbia",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('30346')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('30346')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Territories"
-                        }
-                    },
                     "EmployeeID": 3,
                     "LastName": "Leverling",
                     "FirstName": "Janet",
@@ -1631,57 +736,17 @@
             ]
         },
         "TerritoryID": "30346",
-        "TerritoryDescription": "Atlanta                                           ",
+        "TerritoryDescription": "Atlanta",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('31406')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('31406')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Territories"
-                        }
-                    },
                     "EmployeeID": 3,
                     "LastName": "Leverling",
                     "FirstName": "Janet",
@@ -1704,57 +769,17 @@
             ]
         },
         "TerritoryID": "31406",
-        "TerritoryDescription": "Savannah                                          ",
+        "TerritoryDescription": "Savannah",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('32859')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('32859')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Territories"
-                        }
-                    },
                     "EmployeeID": 3,
                     "LastName": "Leverling",
                     "FirstName": "Janet",
@@ -1777,57 +802,17 @@
             ]
         },
         "TerritoryID": "32859",
-        "TerritoryDescription": "Orlando                                           ",
+        "TerritoryDescription": "Orlando",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('33607')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('33607')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Territories"
-                        }
-                    },
                     "EmployeeID": 3,
                     "LastName": "Leverling",
                     "FirstName": "Janet",
@@ -1850,57 +835,17 @@
             ]
         },
         "TerritoryID": "33607",
-        "TerritoryDescription": "Tampa                                             ",
+        "TerritoryDescription": "Tampa",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('40222')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('40222')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(1)/Territories"
-                }
-            },
             "RegionID": 1,
             "RegionDescription": "Eastern                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-                        }
-                    },
                     "EmployeeID": 2,
                     "LastName": "Fuller",
                     "FirstName": "Andrew",
@@ -1923,57 +868,17 @@
             ]
         },
         "TerritoryID": "40222",
-        "TerritoryDescription": "Louisville                                        ",
+        "TerritoryDescription": "Louisville",
         "RegionID": 1
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('44122')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('44122')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Territories"
-                        }
-                    },
                     "EmployeeID": 8,
                     "LastName": "Callahan",
                     "FirstName": "Laura",
@@ -1996,57 +901,17 @@
             ]
         },
         "TerritoryID": "44122",
-        "TerritoryDescription": "Beachwood                                         ",
+        "TerritoryDescription": "Beachwood",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('45839')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('45839')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Territories"
-                        }
-                    },
                     "EmployeeID": 8,
                     "LastName": "Callahan",
                     "FirstName": "Laura",
@@ -2069,57 +934,17 @@
             ]
         },
         "TerritoryID": "45839",
-        "TerritoryDescription": "Findlay                                           ",
+        "TerritoryDescription": "Findlay",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48075')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48075')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -2142,57 +967,17 @@
             ]
         },
         "TerritoryID": "48075",
-        "TerritoryDescription": "Southfield                                        ",
+        "TerritoryDescription": "Southfield",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48084')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48084')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -2215,57 +1000,17 @@
             ]
         },
         "TerritoryID": "48084",
-        "TerritoryDescription": "Troy                                              ",
+        "TerritoryDescription": "Troy",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48304')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('48304')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -2288,57 +1033,17 @@
             ]
         },
         "TerritoryID": "48304",
-        "TerritoryDescription": "Bloomfield Hills                                  ",
+        "TerritoryDescription": "Bloomfield Hills",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('53404')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('53404')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Territories"
-                        }
-                    },
                     "EmployeeID": 8,
                     "LastName": "Callahan",
                     "FirstName": "Laura",
@@ -2361,57 +1066,17 @@
             ]
         },
         "TerritoryID": "53404",
-        "TerritoryDescription": "Racine                                            ",
+        "TerritoryDescription": "Racine",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('55113')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('55113')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -2434,57 +1099,17 @@
             ]
         },
         "TerritoryID": "55113",
-        "TerritoryDescription": "Roseville                                         ",
+        "TerritoryDescription": "Roseville",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('55439')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('55439')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(3)/Territories"
-                }
-            },
             "RegionID": 3,
             "RegionDescription": "Northern                                          "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-                        }
-                    },
                     "EmployeeID": 9,
                     "LastName": "Dodsworth",
                     "FirstName": "Anne",
@@ -2507,57 +1132,17 @@
             ]
         },
         "TerritoryID": "55439",
-        "TerritoryDescription": "Minneapolis                                       ",
+        "TerritoryDescription": "Minneapolis",
         "RegionID": 3
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('60179')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('60179')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -2580,57 +1165,17 @@
             ]
         },
         "TerritoryID": "60179",
-        "TerritoryDescription": "Hoffman Estates                                   ",
+        "TerritoryDescription": "Hoffman Estates",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('60601')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('60601')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -2653,26 +1198,11 @@
             ]
         },
         "TerritoryID": "60601",
-        "TerritoryDescription": "Chicago                                           ",
+        "TerritoryDescription": "Chicago",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('72716')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('72716')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
@@ -2680,26 +1210,11 @@
             "results": []
         },
         "TerritoryID": "72716",
-        "TerritoryDescription": "Bentonville                                       ",
+        "TerritoryDescription": "Bentonville",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('75234')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('75234')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
@@ -2707,26 +1222,11 @@
             "results": []
         },
         "TerritoryID": "75234",
-        "TerritoryDescription": "Dallas                                            ",
+        "TerritoryDescription": "Dallas",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('78759')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('78759')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(4)/Territories"
-                }
-            },
             "RegionID": 4,
             "RegionDescription": "Southern                                          "
         },
@@ -2734,57 +1234,17 @@
             "results": []
         },
         "TerritoryID": "78759",
-        "TerritoryDescription": "Austin                                            ",
+        "TerritoryDescription": "Austin",
         "RegionID": 4
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('80202')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('80202')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -2807,57 +1267,17 @@
             ]
         },
         "TerritoryID": "80202",
-        "TerritoryDescription": "Denver                                            ",
+        "TerritoryDescription": "Denver",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('80909')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('80909')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -2880,57 +1300,17 @@
             ]
         },
         "TerritoryID": "80909",
-        "TerritoryDescription": "Colorado Springs                                  ",
+        "TerritoryDescription": "Colorado Springs",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('85014')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('85014')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-                        }
-                    },
                     "EmployeeID": 6,
                     "LastName": "Suyama",
                     "FirstName": "Michael",
@@ -2953,57 +1333,17 @@
             ]
         },
         "TerritoryID": "85014",
-        "TerritoryDescription": "Phoenix                                           ",
+        "TerritoryDescription": "Phoenix",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('85251')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('85251')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-                        }
-                    },
                     "EmployeeID": 6,
                     "LastName": "Suyama",
                     "FirstName": "Michael",
@@ -3026,57 +1366,17 @@
             ]
         },
         "TerritoryID": "85251",
-        "TerritoryDescription": "Scottsdale                                        ",
+        "TerritoryDescription": "Scottsdale",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('90405')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('90405')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3099,57 +1399,17 @@
             ]
         },
         "TerritoryID": "90405",
-        "TerritoryDescription": "Santa Monica                                      ",
+        "TerritoryDescription": "Santa Monica",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('94025')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('94025')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3172,57 +1432,17 @@
             ]
         },
         "TerritoryID": "94025",
-        "TerritoryDescription": "Menlo Park                                        ",
+        "TerritoryDescription": "Menlo Park",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('94105')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('94105')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3245,57 +1465,17 @@
             ]
         },
         "TerritoryID": "94105",
-        "TerritoryDescription": "San Francisco                                     ",
+        "TerritoryDescription": "San Francisco",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95008')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95008')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3318,57 +1498,17 @@
             ]
         },
         "TerritoryID": "95008",
-        "TerritoryDescription": "Campbell                                          ",
+        "TerritoryDescription": "Campbell",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95054')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95054')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3391,57 +1531,17 @@
             ]
         },
         "TerritoryID": "95054",
-        "TerritoryDescription": "Santa Clara                                       ",
+        "TerritoryDescription": "Santa Clara",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95060')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('95060')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-                        }
-                    },
                     "EmployeeID": 7,
                     "LastName": "King",
                     "FirstName": "Robert",
@@ -3464,57 +1564,17 @@
             ]
         },
         "TerritoryID": "95060",
-        "TerritoryDescription": "Santa Cruz                                        ",
+        "TerritoryDescription": "Santa Cruz",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98004')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98004')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-                        }
-                    },
                     "EmployeeID": 6,
                     "LastName": "Suyama",
                     "FirstName": "Michael",
@@ -3537,57 +1597,17 @@
             ]
         },
         "TerritoryID": "98004",
-        "TerritoryDescription": "Bellevue                                          ",
+        "TerritoryDescription": "Bellevue",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98052')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98052')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-                        }
-                    },
                     "EmployeeID": 6,
                     "LastName": "Suyama",
                     "FirstName": "Michael",
@@ -3610,57 +1630,17 @@
             ]
         },
         "TerritoryID": "98052",
-        "TerritoryDescription": "Redmond                                           ",
+        "TerritoryDescription": "Redmond",
         "RegionID": 2
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98104')",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Territories('98104')",
-            "type": "NorthwindModel.Territory"
-        },
         "Region": {
-            "__metadata": {
-                "id": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)",
-                "type": "NorthwindModel.Region"
-            },
-            "Territories": {
-                "__deferred": {
-                    "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Regions(2)/Territories"
-                }
-            },
             "RegionID": 2,
             "RegionDescription": "Western                                           "
         },
         "Employees": {
             "results": [
                 {
-                    "__metadata": {
-                        "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-                        "type": "NorthwindModel.Employee"
-                    },
-                    "Employees1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-                        }
-                    },
-                    "Employee1": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-                        }
-                    },
-                    "Orders": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-                        }
-                    },
-                    "Territories": {
-                        "__deferred": {
-                            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-                        }
-                    },
                     "EmployeeID": 6,
                     "LastName": "Suyama",
                     "FirstName": "Michael",
@@ -3683,7 +1663,7 @@
             ]
         },
         "TerritoryID": "98104",
-        "TerritoryDescription": "Seattle                                           ",
+        "TerritoryDescription": "Seattle",
         "RegionID": 2
     }
 ]

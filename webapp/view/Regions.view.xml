@@ -15,33 +15,17 @@
         class="sapUiResponsiveMargin--content"
     >
 
-    <Panel expandable="false" width="auto">
-        <f:GridList items="{/results}" id="table_region">
-                <f:customLayout>
-                    <grid:GridResponsiveLayout>
-                                <grid:layout>
-                                    <grid:GridSettings gridTemplateColumns="repeat(auto-fit, minmax(220px,250px))" gridGap="0.8rem"></grid:GridSettings>
-                                </grid:layout>
-                            </grid:GridResponsiveLayout>
-                </f:customLayout>
-            <f:GridListItem type="Active"  press='.overViewPage' >
-                <HBox class="sapUiSmallMargin sapUiResoinsivePadding" justifyContent="SpaceBetween">
+    <Panel expandable="false" width="auto" height="100%">
+        <IconTabBar id="region_tabBar" headerMode="Standard" selectedKey="{:=${null}}" expanded="false" select=".regionExpand"> 
+            <items>
+                <!-- <IconTabFilter text="{RegionDescription}" icon="sap-icon://world" iconColor="Default" tooltip="total territories" key="{RegionID}" count="{=${Territories/results}.length}"/> -->
 
-                    <VBox  gap="0.8rem">
-                        <ObjectIdentifier title="{RegionDescription}"></ObjectIdentifier>
-                        <Text text="RegionID : {RegionID}" wrapping="false" ></Text>
-                    </VBox>
-                    <VBox gap="0.8rem">
-                        <ObjectNumber  number="{=${Territories/results}.length}" unit="" state="None">
-                            <layoutData>
-                                <FlexItemData alignSelf="Center"></FlexItemData>
-                            </layoutData>
-                            </ObjectNumber>
-                        <Text text="Terretories"/>
-                    </VBox>
-                </HBox>
-            </f:GridListItem>
-        </f:GridList>
+                <!-- <IconTabSeparator icon="sap-icon://world" /> -->
+            </items>
+        </IconTabBar>
+
+
+      
 
 
     </Panel>

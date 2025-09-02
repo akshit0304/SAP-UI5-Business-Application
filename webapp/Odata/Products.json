@@ -3,21 +3,13 @@
     {
     "endpoint":"products",
    "results": [
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 1,
+        "Supplier": {            "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
             "ContactTitle": "Purchasing Manager",
@@ -42,19 +34,13 @@
         "Discontinued": false
     },
     {
-        "Category": {
-            
-
-            "CategoryID": 1,
+        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-           
-
-            "SupplierID": 1,
+        "Supplier": {            "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
             "ContactTitle": "Purchasing Manager",
@@ -78,20 +64,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 1,
+        "Supplier": {            "SupplierID": 1,
             "CompanyName": "Exotic Liquids",
             "ContactName": "Charlotte Cooper",
             "ContactTitle": "Purchasing Manager",
@@ -115,21 +94,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 2,
+        "Supplier": {            "SupplierID": 2,
             "CompanyName": "New Orleans Cajun Delights",
             "ContactName": "Shelley Burke",
             "ContactTitle": "Order Administrator",
@@ -153,21 +124,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 2,
+        "Supplier": {            "SupplierID": 2,
             "CompanyName": "New Orleans Cajun Delights",
             "ContactName": "Shelley Burke",
             "ContactTitle": "Order Administrator",
@@ -191,21 +154,13 @@
         "ReorderLevel": 0,
         "Discontinued": true
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 3,
+        "Supplier": {            "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
             "ContactTitle": "Sales Representative",
@@ -229,21 +184,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 7,
+    {        "Category": {            "CategoryID": 7,
             "CategoryName": "Produce",
             "Description": "Dried fruit and bean curd"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 3,
+        "Supplier": {            "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
             "ContactTitle": "Sales Representative",
@@ -267,21 +214,13 @@
         "ReorderLevel": 10,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 3,
+        "Supplier": {            "SupplierID": 3,
             "CompanyName": "Grandma Kelly's Homestead",
             "ContactName": "Regina Murphy",
             "ContactTitle": "Sales Representative",
@@ -305,21 +244,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 6,
+    {        "Category": {            "CategoryID": 6,
             "CategoryName": "Meat/Poultry",
             "Description": "Prepared meats"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 4,
+        "Supplier": {            "SupplierID": 4,
             "CompanyName": "Tokyo Traders",
             "ContactName": "Yoshi Nagase",
             "ContactTitle": "Marketing Manager",
@@ -343,21 +274,13 @@
         "ReorderLevel": 0,
         "Discontinued": true
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 4,
+        "Supplier": {            "SupplierID": 4,
             "CompanyName": "Tokyo Traders",
             "ContactName": "Yoshi Nagase",
             "ContactTitle": "Marketing Manager",
@@ -381,21 +304,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 4,
+    {        "Category": {            "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 5,
+        "Supplier": {            "SupplierID": 5,
             "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
             "ContactName": "Antonio del Valle Saavedra",
             "ContactTitle": "Export Administrator",
@@ -419,21 +334,13 @@
         "ReorderLevel": 30,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 4,
+    {        "Category": {            "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 5,
+        "Supplier": {            "SupplierID": 5,
             "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
             "ContactName": "Antonio del Valle Saavedra",
             "ContactTitle": "Export Administrator",
@@ -457,21 +364,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 6,
+        "Supplier": {            "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
             "ContactTitle": "Marketing Representative",
@@ -495,21 +394,13 @@
         "ReorderLevel": 5,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 7,
+    {        "Category": {            "CategoryID": 7,
             "CategoryName": "Produce",
             "Description": "Dried fruit and bean curd"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 6,
+        "Supplier": {            "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
             "ContactTitle": "Marketing Representative",
@@ -533,21 +424,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 2,
+    {        "Category": {            "CategoryID": 2,
             "CategoryName": "Condiments",
             "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 6,
+        "Supplier": {            "SupplierID": 6,
             "CompanyName": "Mayumi's",
             "ContactName": "Mayumi Ohno",
             "ContactTitle": "Marketing Representative",
@@ -571,21 +454,13 @@
         "ReorderLevel": 5,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 7,
+        "Supplier": {            "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
             "ContactTitle": "Marketing Manager",
@@ -609,21 +484,13 @@
         "ReorderLevel": 10,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 6,
+    {        "Category": {            "CategoryID": 6,
             "CategoryName": "Meat/Poultry",
             "Description": "Prepared meats"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 7,
+        "Supplier": {            "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
             "ContactTitle": "Marketing Manager",
@@ -647,21 +514,13 @@
         "ReorderLevel": 0,
         "Discontinued": true
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 7,
+        "Supplier": {            "SupplierID": 7,
             "CompanyName": "Pavlova, Ltd.",
             "ContactName": "Ian Devling",
             "ContactTitle": "Marketing Manager",
@@ -685,21 +544,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 8,
+        "Supplier": {            "SupplierID": 8,
             "CompanyName": "Specialty Biscuits, Ltd.",
             "ContactName": "Peter Wilson",
             "ContactTitle": "Sales Representative",
@@ -723,21 +574,13 @@
         "ReorderLevel": 5,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 8,
+        "Supplier": {            "SupplierID": 8,
             "CompanyName": "Specialty Biscuits, Ltd.",
             "ContactName": "Peter Wilson",
             "ContactTitle": "Sales Representative",
@@ -761,21 +604,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 8,
+        "Supplier": {            "SupplierID": 8,
             "CompanyName": "Specialty Biscuits, Ltd.",
             "ContactName": "Peter Wilson",
             "ContactTitle": "Sales Representative",
@@ -799,21 +634,13 @@
         "ReorderLevel": 5,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 5,
+    {        "Category": {            "CategoryID": 5,
             "CategoryName": "Grains/Cereals",
             "Description": "Breads, crackers, pasta, and cereal"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 9,
+        "Supplier": {            "SupplierID": 9,
             "CompanyName": "PB Knckebrd AB",
             "ContactName": "Lars Peterson",
             "ContactTitle": "Sales Agent",
@@ -837,21 +664,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 5,
+    {        "Category": {            "CategoryID": 5,
             "CategoryName": "Grains/Cereals",
             "Description": "Breads, crackers, pasta, and cereal"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 9,
+        "Supplier": {            "SupplierID": 9,
             "CompanyName": "PB Knckebrd AB",
             "ContactName": "Lars Peterson",
             "ContactTitle": "Sales Agent",
@@ -875,21 +694,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 10,
+        "Supplier": {            "SupplierID": 10,
             "CompanyName": "Refrescos Americanas LTDA",
             "ContactName": "Carlos Diaz",
             "ContactTitle": "Marketing Manager",
@@ -914,18 +725,12 @@
         "Discontinued": true
     },
     {
-        "Category": {
-            
-
-            "CategoryID": 3,
+        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
-        "Supplier": {
-            
-
-            "SupplierID": 11,
+        "Supplier": {            "SupplierID": 11,
             "CompanyName": "Heli Swaren GmbH & Co. KG",
             "ContactName": "Petra Winkler",
             "ContactTitle": "Sales Manager",
@@ -949,21 +754,13 @@
         "ReorderLevel": 30,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 11,
+        "Supplier": {            "SupplierID": 11,
             "CompanyName": "Heli Swaren GmbH & Co. KG",
             "ContactName": "Petra Winkler",
             "ContactTitle": "Sales Manager",
@@ -987,21 +784,13 @@
         "ReorderLevel": 0,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 3,
+    {        "Category": {            "CategoryID": 3,
             "CategoryName": "Confections",
             "Description": "Desserts, candies, and sweet breads"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 11,
+        "Supplier": {            "SupplierID": 11,
             "CompanyName": "Heli Swaren GmbH & Co. KG",
             "ContactName": "Petra Winkler",
             "ContactTitle": "Sales Manager",
@@ -1025,21 +814,13 @@
         "ReorderLevel": 30,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 7,
+    {        "Category": {            "CategoryID": 7,
             "CategoryName": "Produce",
             "Description": "Dried fruit and bean curd"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 12,
+        "Supplier": {            "SupplierID": 12,
             "CompanyName": "Plutzer Lebensmittelgromrkte AG",
             "ContactName": "Martin Bein",
             "ContactTitle": "International Marketing Mgr.",
@@ -1063,21 +844,13 @@
         "ReorderLevel": 0,
         "Discontinued": true
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 6,
+    {        "Category": {            "CategoryID": 6,
             "CategoryName": "Meat/Poultry",
             "Description": "Prepared meats"
         
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 12,
+        "Supplier": {            "SupplierID": 12,
             "CompanyName": "Plutzer Lebensmittelgromrkte AG",
             "ContactName": "Martin Bein",
             "ContactTitle": "International Marketing Mgr.",
@@ -1101,21 +874,13 @@
         "ReorderLevel": 0,
         "Discontinued": true
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 13,
+        "Supplier": {            "SupplierID": 13,
             "CompanyName": "Nord-Ost-Fisch Handelsgesellschaft mbH",
             "ContactName": "Sven Petersen",
             "ContactTitle": "Coordinator Foreign Markets",
@@ -1139,21 +904,13 @@
         "ReorderLevel": 15,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 4,
+    {        "Category": {            "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 14,
+        "Supplier": {            "SupplierID": 14,
             "CompanyName": "Formaggi Fortini s.r.l.",
             "ContactName": "Elio Rossi",
             "ContactTitle": "Sales Representative",
@@ -1177,21 +934,13 @@
         "ReorderLevel": 20,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 4,
+    {        "Category": {            "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 14,
+        "Supplier": {            "SupplierID": 14,
             "CompanyName": "Formaggi Fortini s.r.l.",
             "ContactName": "Elio Rossi",
             "ContactTitle": "Sales Representative",
@@ -1215,21 +964,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 4,
+    {        "Category": {            "CategoryID": 4,
             "CategoryName": "Dairy Products",
             "Description": "Cheeses"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 15,
+        "Supplier": {            "SupplierID": 15,
             "CompanyName": "Norske Meierier",
             "ContactName": "Beate Vileid",
             "ContactTitle": "Marketing Manager",
@@ -1253,21 +994,13 @@
         "ReorderLevel": 20,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 16,
+        "Supplier": {            "SupplierID": 16,
             "CompanyName": "Bigfoot Breweries",
             "ContactName": "Cheryl Saylor",
             "ContactTitle": "Regional Account Rep.",
@@ -1291,21 +1024,13 @@
         "ReorderLevel": 15,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 16,
+        "Supplier": {            "SupplierID": 16,
             "CompanyName": "Bigfoot Breweries",
             "ContactName": "Cheryl Saylor",
             "ContactTitle": "Regional Account Rep.",
@@ -1329,21 +1054,13 @@
         "ReorderLevel": 15,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 17,
+        "Supplier": {            "SupplierID": 17,
             "CompanyName": "Svensk Sjfda AB",
             "ContactName": "Michael Bjrn",
             "ContactTitle": "Sales Representative",
@@ -1367,21 +1084,13 @@
         "ReorderLevel": 20,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 17,
+        "Supplier": {            "SupplierID": 17,
             "CompanyName": "Svensk Sjfda AB",
             "ContactName": "Michael Bjrn",
             "ContactTitle": "Sales Representative",
@@ -1405,21 +1114,13 @@
         "ReorderLevel": 25,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 18,
+        "Supplier": {            "SupplierID": 18,
             "CompanyName": "Aux joyeux ecclsiastiques",
             "ContactName": "Guylne Nodier",
             "ContactTitle": "Sales Manager",
@@ -1443,21 +1144,13 @@
         "ReorderLevel": 15,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 1,
+    {        "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 18,
+        "Supplier": {            "SupplierID": 18,
             "CompanyName": "Aux joyeux ecclsiastiques",
             "ContactName": "Guylne Nodier",
             "ContactTitle": "Sales Manager",
@@ -1481,21 +1174,13 @@
         "ReorderLevel": 5,
         "Discontinued": false
     },
-    {
-        
-        "Category": {
-            
-
-            "CategoryID": 8,
+    {        "Category": {            "CategoryID": 8,
             "CategoryName": "Seafood",
             "Description": "Seaweed and fish"
             
         },
 
-        "Supplier": {
-            
-
-            "SupplierID": 19,
+        "Supplier": {            "SupplierID": 19,
             "CompanyName": "New England Seafood Cannery",
             "ContactName": "Robb Merchant",
             "ContactTitle": "Wholesale Account Agent",

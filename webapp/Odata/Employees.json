@@ -2,32 +2,7 @@
     "endpoint":"Employees",
     "results":[
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(1)/Territories"
-            }
-        },
-        "EmployeeID": 1,
+         "EmployeeID": 1,
         "LastName": "Davolio",
         "FirstName": "Nancy",
         "Title": "Sales Representative",
@@ -46,32 +21,7 @@
         "PhotoPath": "http://accweb/emmployees/davolio.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(2)/Territories"
-            }
-        },
-        "EmployeeID": 2,
+         "EmployeeID": 2,
         "LastName": "Fuller",
         "FirstName": "Andrew",
         "Title": "Vice President, Sales",
@@ -90,32 +40,7 @@
         "PhotoPath": "http://accweb/emmployees/fuller.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(3)/Territories"
-            }
-        },
-        "EmployeeID": 3,
+         "EmployeeID": 3,
         "LastName": "Leverling",
         "FirstName": "Janet",
         "Title": "Sales Representative",
@@ -134,32 +59,7 @@
         "PhotoPath": "http://accweb/emmployees/leverling.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(4)/Territories"
-            }
-        },
-        "EmployeeID": 4,
+         "EmployeeID": 4,
         "LastName": "Peacock",
         "FirstName": "Margaret",
         "Title": "Sales Representative",
@@ -178,32 +78,7 @@
         "PhotoPath": "http://accweb/emmployees/peacock.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(5)/Territories"
-            }
-        },
-        "EmployeeID": 5,
+         "EmployeeID": 5,
         "LastName": "Buchanan",
         "FirstName": "Steven",
         "Title": "Sales Manager",
@@ -222,32 +97,7 @@
         "PhotoPath": "http://accweb/emmployees/buchanan.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(6)/Territories"
-            }
-        },
-        "EmployeeID": 6,
+         "EmployeeID": 6,
         "LastName": "Suyama",
         "FirstName": "Michael",
         "Title": "Sales Representative",
@@ -266,32 +116,7 @@
         "PhotoPath": "http://accweb/emmployees/davolio.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(7)/Territories"
-            }
-        },
-        "EmployeeID": 7,
+         "EmployeeID": 7,
         "LastName": "King",
         "FirstName": "Robert",
         "Title": "Sales Representative",
@@ -310,32 +135,7 @@
         "PhotoPath": "http://accweb/emmployees/davolio.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(8)/Territories"
-            }
-        },
-        "EmployeeID": 8,
+         "EmployeeID": 8,
         "LastName": "Callahan",
         "FirstName": "Laura",
         "Title": "Inside Sales Coordinator",
@@ -354,32 +154,7 @@
         "PhotoPath": "http://accweb/emmployees/davolio.bmp"
     },
     {
-        "__metadata": {
-            "id": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-            "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)",
-            "type": "NorthwindModel.Employee"
-        },
-        "Employees1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employees1"
-            }
-        },
-        "Employee1": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Employee1"
-            }
-        },
-        "Orders": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Orders"
-            }
-        },
-        "Territories": {
-            "__deferred": {
-                "uri": "https://services.odata.org/V2/northwind/Northwind.svc/Employees(9)/Territories"
-            }
-        },
-        "EmployeeID": 9,
+         "EmployeeID": 9,
         "LastName": "Dodsworth",
         "FirstName": "Anne",
         "Title": "Sales Representative",

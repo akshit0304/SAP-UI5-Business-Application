@@ -10,7 +10,6 @@ sap.ui.define([
         configureModel:function (fileName) {
                 const component =this.component;
                 const table =this.table;
-                
                 const fileSplit =fileName.split(".");
                 if(fileSplit[0]==component.loaded_model) return 1;
                 if(fileSplit.pop()=="json" && Array.isArray(fileSplit)){
@@ -150,6 +149,7 @@ sap.ui.define([
                 });
                 // console.log(aFiltered);
                 return aFiltered;
-            }
+            },
+
         }
     });

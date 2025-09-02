@@ -43,17 +43,34 @@ controllerName="bd.businessportal.controller.Products"
 
         <uxap:headerContent>
             <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_proudct" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+             <filterbar:FilterBar id="filterbar_proudct" useToolbar="false" showFilterConfiguration="false" showRestoreButton="false" showGoOnFB="true" showClearOnFB="true" 
+                search=".filterSearch" clear=".filterClear"
+             >
                     <filterbar:filterGroupItems>
-                        <filterbar:FilterGroupItem  name="product_search" label="" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="f_product_name" label="Product Name" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
+                                <ComboBox id="p_name" ariaDescribedBy="filter based on product name" filterSecondaryValues="true" 
+                                    items="{path:'/results',suspended:false,sorter:[{path:'ProductName'}]}" change=".selectionChange" >
+                                    <customData>
+                                        <!-- #region -->
+                                    </customData>
+                                    <items>
+                                        <core:ListItem key="{ProductID}" text="{ProductName}" additionalText="{ProductID}"/>
+                                    </items>
+                                </ComboBox>
+                                <!-- <SearchField placeholder="search" showSearchButton="true"/> -->
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="product_filter" label="Product" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="product_filter" label="Supplier Name" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                               <!-- <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"/> -->
+                                  <ComboBox id="s_name" ariaDescribedBy="filter based on supplier name" filterSecondaryValues="true" 
+                                    items="{path:'supl>/results',suspended:false,sorter:[{path:'CompanyName'}]}" change=".selectionChange" >
+                                    <items>
+                                        <core:ListItem key="{supl>SupplierID}" text="{supl>CompanyName}" additionalText="{supl>SupplierID}"/>
+                                    </items>
+                                </ComboBox>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                     </filterbar:filterGroupItems>
