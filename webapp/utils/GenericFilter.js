@@ -49,32 +49,44 @@ sap.ui.define([
                         case "ComboBox":
                             this.c_ComboBox(control,data[index]);
                             break;
-                    
+                        case "Input":
+                            this.c_Input(control,data[index]);
+                            break;
                         default:
                             break;
                     }
                 });
-                this.applyFilter();
+                // this.applyFilter();
                 return "filter apply successfully"
             },
             resetFilter:function(){
-                 if(!this.selection_set){
+                let selection_set =this.selection_set
+                if(!selection_set){
                      console.log("set the selection_set parameter of filterbar in selection_set variable (let selection_set =oEvent.getParameters(\"selectionSet\");selection_set.selectionSet)");
                      return 0;
                 }
-                 this.selection_set.forEach((control) => {
+                this.resetFilterContent(selection_set);
+                this.clean();
+                return "filter reset successfully"
+
+            },
+            resetFilterContent:function(selection_set){
+                if(selection_set && Array.isArray(selection_set)){
+                    selection_set.forEach((control) => {
                     switch (_getControName(control)) {
                         case "ComboBox":
                             this.r_ComboBox(control);
                             break;
+                        case "Input":
+                            this.r_Input(control);
+                            break;
                     
                         default:
                             break;
                     }
                 });
-                this.clean();
-                return "filter reset successfully"
-
+                }
+                return ;
             },
             clean() {
                 this.oFilter = [];
@@ -92,7 +104,7 @@ sap.ui.define([
                     const own_models = that.getView().getOwnModels();
                     const model_keys = Object.keys(own_models);
                     let view = that.getView();
-                    if (modelName in model_keys) {
+                    if (model_keys.includes(modelName)) {
                         view.getModel(modelName).refresh();
                         resolve(208)
                     }
@@ -113,9 +125,10 @@ sap.ui.define([
             },
             // AND operation for all the filter objects present in "oFilter". 
             combineFilters(){
+                // or filter
                 return new Filter({
                     filters: this.oFilter,
-                    and: true
+                    and: false
                 })
             },
             _expressionMapping(){
@@ -123,7 +136,11 @@ sap.ui.define([
                 expression_hash.set("EQ",FO.EQ);
                 expression_hash.set("BT",FO.BT);
                 expression_hash.set("NB",FO.NB);
-
+                expression_hash.set("GT",FO.GT);
+                expression_hash.set("GE",FO.GE);
+                expression_hash.set("LT",FO.LT);
+                expression_hash.set("LE",FO.LE);
+                expression_hash.set("Contains",FO.Contains);
                 return expression_hash;
             },
 
@@ -133,9 +150,16 @@ sap.ui.define([
             c_ComboBox(control,jsonConfig,keyOrValue=0){
                 // zero for key and 1 for value
                 const jc =jsonConfig;
+                keyOrValue =jc['keyOrValue']?jc['keyOrValue']:keyOrValue;
                 let key =keyOrValue?control.getSelectedItem()?.getText():control.getSelectedItem()?.getKey();
                 if(!key || key==""){return 439;}
-                if(!keyOrValue) {key =parseInt(key);}
+                // check filter field value is boolean,key or value -1 for boolean.
+                if(!keyOrValue) {
+                    key =parseInt(key);
+                    if(jc['boolean']){
+                        key =Boolean(key);
+                    }
+                }
                 let fObj =this.makeFilterObj(jc['key'],jc['expression'],key);
                 this.addFilter(fObj);
                 return 440; //return code mean :combobox is successfully parsed and filter added in oFilter.
@@ -144,7 +168,45 @@ sap.ui.define([
             // c_ComboBox mean reset combo box control
             r_ComboBox(control){
                 control.setSelectedKey();
+            },
+            c_Input(control,jsonConfig){
+                let control_data =control.getValue();
+                let {code ,numbers} =this._parseInput(control_data);
+                // console.log(code);
+                if(!code || !(Array.isArray(numbers) && numbers.length)){control.setValue();return 441;}
+                if(typeof code ==="string" && ["BT","NB"].includes(code)){
+                    if(Array.isArray(numbers) && numbers.length!==2){console.log("error in beetween operation");control.setValue();return 441;}
+                    let fObj =this.makeFilterObj(jsonConfig['key'],code,parseFloat(parseFloat(numbers[0]).toFixed(2)),parseFloat(parseFloat(numbers[1]).toFixed(2)));
+                    this.addFilter(fObj);
+                    return 442;
+                }
+                else{
+                    let fObj =this.makeFilterObj(jsonConfig['key'],code,parseFloat(parseFloat(numbers[0]).toFixed(2)));
+                    this.addFilter(fObj);
+                    return 442;
+                }
+                // return this._parseInput(control_data);
+            },
+            r_Input(control){
+                control?.setValue();
+                return 1;
+            },
+            _parseInput(line) {
+                line = line.trim();
+                const parts = line.split(/\s+/);  // split by any whitespace
+                let code;
+                const numbers=[];
+                let flag =1;
+                for (const number of parts) {
+                    if(flag){
+                        code =number;
+                        flag =0;
+                        continue;
+                    }
+                    numbers.push(number);
+
+                }
+                return { code, numbers };
             }
         })
-    }
-)
+    })

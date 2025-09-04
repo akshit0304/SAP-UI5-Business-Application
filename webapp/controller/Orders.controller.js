@@ -4,12 +4,14 @@ sap.ui.define([
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
     "bd/businessportal/utils/setModel",
+    "bd/businessportal/utils/GenericFilter",
     
 ],(Controller,
     JSONModel,
     Formatter,
     Device,
-    setModel
+    setModel,
+    GenericFilter
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Orders", {
@@ -40,8 +42,15 @@ sap.ui.define([
                 }.bind(this)
             })
         },
-        navbuttonPressed:function(oEvent){
-            this.component.navbuttonPressed(oEvent);
+         onAfterRendering:function(){
+            GenericFilter.prototype.setLocalModel(this,{fileName:"Customers.json",modelName:"cust"}).then((flag) => {
+                         if (flag == 207){ console.log('already not exists');}
+                    else {console.log("exists fast load");}
+                })
+             GenericFilter.prototype.setLocalModel(this,{fileName:"Employees.json",modelName:"emp"}).then((flag) => {
+                         if (flag == 207){ console.log('already not exists');}
+                    else {console.log("exists fast load");}
+                })
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
@@ -51,7 +60,50 @@ sap.ui.define([
             const model =this.component.getModel("nav");
             model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("OrdersOverview");
-          },
+        },
+         filterSearch: function (oEvent) {
+            const configuration = {
+                configurationProperty: [
+                    {
+                        controlType: "SearchBox",
+                        key: "",
+                        expression: ""
+                    },
+                    {
+                        controlType: "ComboBox",
+                        key: "EmployeeID",
+                        expression: "EQ",
+                    },
+                     {
+                        controlType: "ComboBox",
+                        key: "ShipName",
+                        keyOrValue:1,
+                        expression: "Contains",
+                    }
+                ]
+            }
+            // console.log(oEvent.getParameters("selectionSet"));
+            if (!this.genericFilter) {
+                var selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                this.genericFilter = new GenericFilter(this, this.table);
+                this.genericFilter.SET_selectionSet(selection_set);
+            }
+            const gf = this.genericFilter;
+            gf.configureFilter(configuration);
+            gf.applyFilter();
+           
+        },
+          filterClear: function (oEvent) {
+            console.log("clear pressed");
+            if (!this.genericFilter) {
+                this.genericFilter = new GenericFilter(this, this.table);
+                const selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                this.genericFilter.SET_selectionSet(selection_set);
+            }
+            const gf = this.genericFilter;
+            gf.resetFilter();
+        }
+
     
 
     });

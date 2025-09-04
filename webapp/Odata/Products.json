@@ -3,7 +3,8 @@
     {
     "endpoint":"products",
    "results": [
-    {        "Category": {            "CategoryID": 1,
+    {       
+         "Category": {            "CategoryID": 1,
             "CategoryName": "Beverages",
             "Description": "Soft drinks, coffees, teas, beers, and ales"
             
@@ -32,6 +33,37 @@
         "UnitsOnOrder": 0,
         "ReorderLevel": 10,
         "Discontinued": false
+    },
+     {       
+         "Category": {            "CategoryID": 1,
+            "CategoryName": "Beverages",
+            "Description": "Soft drinks, coffees, teas, beers, and ales"
+            
+        },
+
+        "Supplier": {            "SupplierID": 1,
+            "CompanyName": "Exotic Liquids",
+            "ContactName": "Charlotte Cooper",
+            "ContactTitle": "Purchasing Manager",
+            "Address": "49 Gilbert St.",
+            "City": "London",
+            "Region": null,
+            "PostalCode": "EC1 4SD",
+            "Country": "UK",
+            "Phone": "(171) 555-2222",
+            "Fax": null,
+            "HomePage": null
+        },
+        "ProductID": 1,
+        "ProductName": "Chai-Jaljira",
+        "SupplierID": 1,
+        "CategoryID": 1,
+        "QuantityPerUnit": "10 boxes x 20 bags",
+        "UnitPrice": "180.0000",
+        "UnitsInStock": 309,
+        "UnitsOnOrder": 100,
+        "ReorderLevel": 10,
+        "Discontinued": true
     },
     {
         "Category": {            "CategoryID": 1,

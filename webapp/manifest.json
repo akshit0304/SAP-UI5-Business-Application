@@ -128,7 +128,7 @@
       "targets": {
         "TargetView1": {
           "id": "dashboard_page",
-          "name": "Products"
+          "name": "Dashboard"
         },
         "T_o_manager": {
           "id": "shellPage",

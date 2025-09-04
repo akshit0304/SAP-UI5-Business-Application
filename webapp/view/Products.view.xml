@@ -49,11 +49,8 @@ controllerName="bd.businessportal.controller.Products"
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="f_product_name" label="Product Name" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <ComboBox id="p_name" ariaDescribedBy="filter based on product name" filterSecondaryValues="true" 
+                                <ComboBox id="ProductID" ariaDescribedBy="filter based on product name" filterSecondaryValues="true" showClearIcon="true"
                                     items="{path:'/results',suspended:false,sorter:[{path:'ProductName'}]}" change=".selectionChange" >
-                                    <customData>
-                                        <!-- #region -->
-                                    </customData>
                                     <items>
                                         <core:ListItem key="{ProductID}" text="{ProductName}" additionalText="{ProductID}"/>
                                     </items>
@@ -62,17 +59,37 @@ controllerName="bd.businessportal.controller.Products"
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="product_filter" label="Supplier Name" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="product_filter" label="Supplier Name" groupName="q"  visibleInFilterBar="true" >
                             <filterbar:control>
                                <!-- <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"/> -->
-                                  <ComboBox id="s_name" ariaDescribedBy="filter based on supplier name" filterSecondaryValues="true" 
-                                    items="{path:'supl>/results',suspended:false,sorter:[{path:'CompanyName'}]}" change=".selectionChange" >
+                                  <ComboBox id="SupplierID" ariaDescribedBy="filter based on supplier name" filterSecondaryValues="true" 
+                                    items="{path:'supl>/results',suspended:false,sorter:[{path:'CompanyName'}]}" change=".selectionChange" showClearIcon="true">
                                     <items>
                                         <core:ListItem key="{supl>SupplierID}" text="{supl>CompanyName}" additionalText="{supl>SupplierID}"/>
                                     </items>
                                 </ComboBox>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
+                        <!-- 3 -->
+                        <filterbar:FilterGroupItem  name="f_product_availability" label="Availability" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                <ComboBox id="Discontinued" ariaDescribedBy="filter based on products are available or not" filterSecondaryValues="false" showClearIcon="true">
+                                    <items>
+                                        <core:ListItem key="0" text="Available" />
+                                        <core:ListItem key="1" text="Un-Aavailable" />
+                                    </items>
+                                </ComboBox>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                         <!-- 3 end -->
+
+                         <!-- 4 -->
+                        <filterbar:FilterGroupItem  name="f_product_price" label="Price" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                <Input id="f_product_price" showClearIcon="true" editable="true" showValueHelp="true" showSuggestion="false" type="Text" placeholder="" valueHelpRequest=".valueHelpRequest"/>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                         <!-- 4 end -->
                     </filterbar:filterGroupItems>
              </filterbar:FilterBar>
         </uxap:headerContent>

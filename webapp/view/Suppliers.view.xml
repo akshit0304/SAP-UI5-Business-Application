@@ -35,20 +35,48 @@
 
         <uxap:headerContent>
             <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_supplier" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+             <filterbar:FilterBar id="filterbar_supplier" useToolbar="false" showRestoreButton="false" showGoOnFB="true" showFilterConfiguration="false" showClearOnFB="true" clear=".filterClear" search=".filterSearch" >
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
                                 <SearchField placeholder="search" showSearchButton="true"/>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
-                        <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="supplier_role" label="Supplier" groupName="q"  visibleInFilterBar="true">
+                         <!-- ++ -->
+                          <filterbar:FilterGroupItem  name="supplier" label="Supplier Name" groupName="q"  visibleInFilterBar="true" >
                             <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                                  <ComboBox id="s_SupplierID" ariaDescribedBy="filter based on supplier name" filterSecondaryValues="true" 
+                                    items="{path:'/results',suspended:false,sorter:[{path:'CompanyName'}]}" change=".selectionChange" showClearIcon="true">
+                                    <items>
+                                        <core:ListItem key="{SupplierID}" text="{CompanyName}" additionalText="{SupplierID}"/>
+                                    </items>
+                                </ComboBox>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
-
+                        <!-- ++ -->
+                        <!-- 3 -->
+                        <filterbar:FilterGroupItem  name="supplier_country" label="Country" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                               <ComboBox id="s_Country"  filterSecondaryValues="true" showClearIcon="true"
+                                    items="{path:'country>/results/country',suspended:false,sorter:[{path:''}]}" change=".selectionChange" >
+                                    <items>
+                                        <core:ListItem text="{country>}" />
+                                    </items>
+                                </ComboBox>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                        <!-- 3 -->
+                        <filterbar:FilterGroupItem  name="supplier_city" label="City" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                               <ComboBox id="s_City"  filterSecondaryValues="true" showClearIcon="true"
+                                    items="{path:'country>/results/city',suspended:false,sorter:[{path:''}]}" change=".selectionChange" >
+                                    <items>
+                                        <core:ListItem text="{country>}" />
+                                    </items>
+                                </ComboBox>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                       
                     </filterbar:filterGroupItems>
              </filterbar:FilterBar>
         </uxap:headerContent>

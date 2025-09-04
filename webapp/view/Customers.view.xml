@@ -41,8 +41,8 @@
         </uxap:headerTitle>
 
         <uxap:headerContent>
-            <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_cust" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+            <!-- filter bar -->
+             <filterbar:FilterBar id="filterbar_cust" useToolbar="false" showRestoreButton="false" showGoOnFB="true" showClearOnFB="true" search=".filterSearch" clear=".filterClear" showFilterConfiguration="false" >
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="Customer_search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
@@ -50,12 +50,28 @@
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="customer_role" label="Customer" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="customer_role" label="Country" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                                <ComboBox id="Country" ariaDescribedBy="filter based on country" filterSecondaryValues="false" showClearIcon="true"
+                                    items="{path:'country>/results/country',suspended:false,sorter:[{path:''}]}" change=".selectionChange">
+                                    <items>
+                                        <core:ListItem  text="{country>}"/>
+                                    </items>
+                                </ComboBox>                            
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
 
+                          <!-- 3 -->
+                        <filterbar:FilterGroupItem  name="customer_city" label="City" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                <ComboBox id="City" ariaDescribedBy="filter based on city" filterSecondaryValues="false" showClearIcon="true"
+                                    items="{path:'country>/results/city',suspended:false,sorter:[{path:''}]}" change=".selectionChange">
+                                    <items>
+                                        <core:ListItem  text="{country>}"/>
+                                    </items>
+                                </ComboBox>                            
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
                     </filterbar:filterGroupItems>
              </filterbar:FilterBar>
         </uxap:headerContent>

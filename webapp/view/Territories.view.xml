@@ -41,17 +41,24 @@
 
         <uxap:headerContent>
             <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_territory" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+             <filterbar:FilterBar id="filterbar_territory" useToolbar="false" showRestoreButton="false" showFilterConfiguration="false" showClearOnFB="true" showGoOnFB="true"  search=".filterSearch" clear=".filterClear">
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
+                                <SearchField maxLength="100"  placeholder="search" showSearchButton="true"/>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="territory_role" label="Territory" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="f_region" label="Region" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"/>
+                                <ComboBox id="RegionDescription" ariaDescribedBy="filter based on regions" filterSecondaryValues="true" showClearIcon="true">
+                                    <items>
+                                        <core:ListItem key="1" text="Eastern" additionalText="1" />
+                                        <core:ListItem key="2" text="Western" additionalText="2" />
+                                        <core:ListItem key="3" text="Northern" additionalText="3" />
+                                        <core:ListItem key="4" text="Southern" additionalText="4" />
+                                    </items>
+                                </ComboBox>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
 

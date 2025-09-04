@@ -1,7 +1,8 @@
 {
     "endpoint":"orders",
     "results":[
-    {        "Customer": {
+    {       
+         "Customer": {
             "CustomerID": "VINET",
             "CompanyName": "Vins et alcools Chevalier",
             "ContactName": "Paul Henriot",
@@ -30,7 +31,8 @@
             "Extension": "3453",            "Notes": "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London.  He was promoted to sales manager in March 1993.  Mr. Buchanan has completed the courses \"Successful Telemarketing\" and \"International Sales Management.\"  He is fluent in French.",
             "ReportsTo": 2,
             "PhotoPath": "http://accweb/emmployees/buchanan.bmp"
-        },        "OrderID": 10248,
+        },        
+        "OrderID": 10248,
         "CustomerID": "VINET",
         "EmployeeID": 5,
         "OrderDate": "1996-07-04T00:00:00.000Z",
@@ -75,7 +77,8 @@
             "Extension": "428",            "Notes": "Michael is a graduate of Sussex University (MA, economics, 1983) and the University of California at Los Angeles (MBA, marketing, 1986).  He has also taken the courses \"Multi-Cultural Selling\" and \"Time Management for the Sales Professional.\"  He is fluent in Japanese and can read and write French, Portuguese, and Spanish.",
             "ReportsTo": 5,
             "PhotoPath": "http://accweb/emmployees/davolio.bmp"
-        },        "OrderID": 10249,
+        },        
+        "OrderID": 10249,
         "CustomerID": "TOMSP",
         "EmployeeID": 6,
         "OrderDate": "1996-07-05T00:00:00.000Z",

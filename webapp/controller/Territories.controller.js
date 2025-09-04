@@ -3,12 +3,14 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
-    "bd/businessportal/utils/setModel"
+    "bd/businessportal/utils/setModel",
+    "bd/businessportal/utils/GenericFilter",
 ],(Controller,
     JSONModel,
     Formatter,
     Device,
-    setModel
+    setModel,
+    GenericFilter
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Territories", {
@@ -43,9 +45,6 @@ sap.ui.define([
         onExit(){
             console.log("dashboard exit");
         },
-        navbuttonPressed:function(oEvent){
-            this.component.navbuttonPressed(oEvent);
-        },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
             var oContext = oEvent.getSource().getBindingContext().getPath();
@@ -55,6 +54,52 @@ sap.ui.define([
             model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("TerritoriesOverview");
           },
+        //   filter code
+        filterSearch: function (oEvent) {
+            const configuration = {
+                configurationProperty: [
+                    {
+                        controlType: "SearchBox",
+                        key: "",
+                        expression: "EQ"
+                    },
+                    {
+                        controlType: "ComboBox",
+                        key: "Region/RegionID",
+                        expression: "EQ",
+                    },
+
+                ]
+            }
+            // console.log(oEvent.getParameters("selectionSet"));
+            if (!this.genericFilter) {
+                var selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                this.genericFilter = new GenericFilter(this, this.table);
+                this.genericFilter.SET_selectionSet(selection_set);
+            }
+            const gf = this.genericFilter;
+            gf.configureFilter(configuration);
+            gf.applyFilter();
+            // else if(codes['code']==1){
+            //     console.log('product is present');
+            // }
+            // else{
+            //     console.log('supplier is present');
+            // }
+
+
+        },
+        filterClear: function (oEvent) {
+            if (!this.genericFilter) {
+                this.genericFilter = new GenericFilter(this, this.table);
+            }
+            const gf = this.genericFilter;
+            if (!gf.GET_selectionSet()) {
+                const selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                gf.SET_selectionSet(selection_set);
+            }
+            gf.resetFilter();
+        },
 
     });
 })

@@ -34,17 +34,33 @@
 
         <uxap:headerContent>
             <!-- entet filter bar -->
-             <filterbar:FilterBar id="filterbar_order" useToolbar="false" showRestoreButton="false" showGoOnFB="true" >
+             <filterbar:FilterBar id="filterbar_order" useToolbar="false" showRestoreButton="false" showGoOnFB="true" showFilterConfiguration="false" showClearOnFB="true" clear=".filterClear" search=".filterSearch" >
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
                                 <SearchField placeholder="search" showSearchButton="true"/>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
-                        <!-- 2 -->
-                        <filterbar:FilterGroupItem  name="order" label="Order" groupName="q"  visibleInFilterBar="true">
+                         <!-- 2 -->
+                        <filterbar:FilterGroupItem  name="o_employee" label="Handled By" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                               <Input showValueHelp="true" showSuggestion="false" type="Text" showClearIcon="false"></Input>
+                                 <ComboBox filterSecondaryValues="true" showClearIcon="true"
+                                    items="{path:'emp>/results',suspended:false,sorter:[{path:'EmployeeID'}]}" change=".selectionChange" >
+                                    <items>
+                                        <core:ListItem key="{emp>EmployeeID}" text="{emp>FirstName}" additionalText="{emp>EmployeeID}"/>
+                                    </items>
+                                </ComboBox>
+                            </filterbar:control>
+                        </filterbar:FilterGroupItem>
+                        <!-- 3 -->
+                        <filterbar:FilterGroupItem  name="o_customer" label="Customer" groupName="q"  visibleInFilterBar="true">
+                            <filterbar:control>
+                                 <ComboBox filterSecondaryValues="true" showClearIcon="true"
+                                    items="{path:'cust>/results',suspended:false,sorter:[{path:'CustomerID'}]}" change=".selectionChange" >
+                                    <items>
+                                        <core:ListItem key="{cust>CustomerID}" text="{cust>CompanyName}" additionalText="{cust>CustomerID}"/>
+                                    </items>
+                                </ComboBox>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
 
@@ -90,15 +106,15 @@
 
 
                                             <Column  demandPopin="false" minScreenWidth="Phone">
-                                                <Text wrapping="true" text="Customer"></Text>
+                                                <Text wrapping="true" text="Customer"   tooltip="representative person from the company" />
                                             </Column>
 
                                             <Column  demandPopin="true" minScreenWidth="Phone" width="auto" >
                                                 <Text wrapping="false" tooltip="Handled By" text="Handled By"/>
                                             </Column>
 
-                                            <Column   demandPopin="true" minScreenWidth="Desktop" width="auto">
-                                                <Text wrapping="true" text="ShipperName"/>
+                                            <Column   demandPopin="true" minScreenWidth="Desktop" width="auto"  >
+                                                <Text wrapping="true" text="ShipperName" tooltip="company name to which order send (customer)"/>
                                             </Column>
                                         </columns>
                                         <items>

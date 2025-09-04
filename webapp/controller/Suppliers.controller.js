@@ -3,12 +3,14 @@ sap.ui.define([
     "bd/businessportal/model/Formatter",
     "sap/ui/Device",
     "bd/businessportal/utils/setModel",
+    "bd/businessportal/utils/GenericFilter"
     
     
 ],(Controller,
     Formatter,
     Device,
     setModel,
+    GenericFilter
 )=>{
     "use strict"
     return Controller.extend("bd.businessportal.controller.Suppliers", {
@@ -43,11 +45,71 @@ sap.ui.define([
             });
 
         },
+        onAfterRendering:function(){
+            GenericFilter.prototype.setLocalModel(this,{fileName:"Countries.json",modelName:"country"}).then((flag) => {
+                         if (flag == 207){ console.log('already not exists');}
+                    else {console.log("exists fast load");}
+                })
+        },
         onExit(){
             console.log("dashboard exit");
         },
-        navbuttonPressed:function(oEvent){
-            this.component.navbuttonPressed(oEvent);
+         filterSearch: function (oEvent) {
+            const configuration = {
+                configurationProperty: [
+                    {
+                        controlType: "SearchBox",
+                        key: "",
+                        expression: ""
+                    },
+                     {
+                        controlType: "ComboBox",
+                        key: "SupplierID",
+                        expression: "EQ",
+                    },
+                    {
+                        controlType: "ComboBox",
+                        key: "Country",
+                        expression: "Contains",
+                        keyOrValue:1
+                    },
+                     {
+                        controlType: "ComboBox",
+                        key: "City",
+                        expression: "Contains",
+                        keyOrValue:1
+                    }
+
+                ]
+            }
+            // console.log(oEvent.getParameters("selectionSet"));
+            if (!this.genericFilter) {
+                var selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                this.genericFilter = new GenericFilter(this, this.table);
+                this.genericFilter.SET_selectionSet(selection_set);
+            }
+            const gf = this.genericFilter;
+            gf.configureFilter(configuration);
+            gf.applyFilter();
+            // else if(codes['code']==1){
+            //     console.log('product is present');
+            // }
+            // else{
+            //     console.log('supplier is present');
+            // }
+
+
+        },
+        filterClear: function (oEvent) {
+            if (!this.genericFilter) {
+                this.genericFilter = new GenericFilter(this, this.table);
+            }
+            const gf = this.genericFilter;
+            if (!gf.GET_selectionSet()) {
+                const selection_set = oEvent.getParameters("selectionSet").selectionSet;
+                gf.SET_selectionSet(selection_set);
+            }
+            gf.resetFilter();
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
