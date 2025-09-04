@@ -46,7 +46,10 @@
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="Customer_search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
+                                    <SearchField id="c_search_field" suggest=".searchSuggest"  maxLength="100"  placeholder="search" showSearchButton="true" enableSuggestions="true" search=".searchPressed">   
+                                        <SuggestionItem text="ALFKI" />
+                                        <SuggestionItem text="Maria Anders" />
+                                    </SearchField>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->

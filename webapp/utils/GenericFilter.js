@@ -80,6 +80,9 @@ sap.ui.define([
                         case "Input":
                             this.r_Input(control);
                             break;
+                        case "SearchField":
+                            this.r_Input(control);
+                            break;
                     
                         default:
                             break;
@@ -188,6 +191,7 @@ sap.ui.define([
                 // return this._parseInput(control_data);
             },
             r_Input(control){
+                // input control and search-field has same method to reset the content
                 control?.setValue();
                 return 1;
             },

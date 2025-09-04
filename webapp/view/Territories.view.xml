@@ -43,9 +43,15 @@
             <!-- entet filter bar -->
              <filterbar:FilterBar id="filterbar_territory" useToolbar="false" showRestoreButton="false" showFilterConfiguration="false" showClearOnFB="true" showGoOnFB="true"  search=".filterSearch" clear=".filterClear">
                     <filterbar:filterGroupItems>
-                        <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
+                        <filterbar:FilterGroupItem  name="t_search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField maxLength="100"  placeholder="search" showSearchButton="true"/>
+                                <SearchField id="t_search_field" suggest=".searchSuggest"  maxLength="100"  placeholder="search on territories field" showSearchButton="true" enableSuggestions="true" search=".searchPressed">
+                                    <suggestionItems>
+                                        <SuggestionItem text="cambridge"/>
+                                        <SuggestionItem text="bel"/>
+                                        <SuggestionItem text="USA"/>
+                                    </suggestionItems>
+                                </SearchField>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                         <!-- 2 -->

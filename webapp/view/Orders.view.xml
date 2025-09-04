@@ -38,7 +38,10 @@
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
+                              <SearchField id="o_search_field" suggest=".searchSuggest"  maxLength="100"  placeholder="search orderID" showSearchButton="true" enableSuggestions="true" search=".searchPressed">
+                                <SuggestionItem text="10251"></SuggestionItem>
+                                <SuggestionItem text="Paul Henriot"/>
+                                </SearchField>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                          <!-- 2 -->

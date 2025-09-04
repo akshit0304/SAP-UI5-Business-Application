@@ -100,6 +100,54 @@ sap.ui.define([
             }
             gf.resetFilter();
         },
+        searchSuggest:function(oEvent){
+            this.byId("t_search_field").suggest(true);
+        },
+        searchPressed:function(oEvent){
+            // utility function 
+            // let utility =function(key,expression,value){
+            //     if(key &&expression && value){
+            //         return {
+            //             "key":key,
+            //             "value":value,
+            //             "expression":expression
+            //         }
+            //     }
+            //     return;
+            // };
+            let filterEnum =sap.ui.model.FilterOperator;
+            let query =oEvent.getParameter("query")?.trim();
+            const params =[];
+            params.push({
+                            "key":"TerritoryDescription",
+                            "expression":filterEnum.Contains
+            })
+
+            const filter_ar =setModel.searchParse(oEvent,params);
+            this.table.getBinding("items").filter(filter_ar);
+            // suggetion item
+            if(query || query!==""){
+                let search_field =this.byId("t_search_field");
+                let suggestion_items =search_field.getSuggestionItems();
+                let last_item_text =suggestion_items.at(0)?.getText();
+                if(last_item_text===query){return;}
+
+                // suggestion_items =suggestion_items.reverse();
+                if(suggestion_items.length>5){
+                    // suggestion_items.shift();
+                    // suggestion_items.push(new sap.m.SuggestionItem({"text":query}));
+                    // suggestion_items =suggestion_items.reverse();
+                    search_field.removeSuggestionItem(5);
+                }
+               search_field.insertSuggestionItem(new sap.m.SuggestionItem({"text":query}));
+                
+                // search_field.removeItems
+                
+            }
+            return 1;
+
+
+        }
 
     });
 })

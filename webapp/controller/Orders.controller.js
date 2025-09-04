@@ -102,6 +102,43 @@ sap.ui.define([
             }
             const gf = this.genericFilter;
             gf.resetFilter();
+        },
+        searchSuggest:function(oEvent){
+            this.byId("o_search_field").suggest(true);
+        },
+        searchPressed:function(oEvent){
+            let filterEnum =sap.ui.model.FilterOperator;
+            let query =oEvent.getParameter("query")?.trim();
+            const params =[];
+            params.push({
+                            "key":"OrderID",
+                            "expression":filterEnum.EQ
+            });
+            params.push({
+                            "key":"Customer/ContactName",
+                            "expression":filterEnum.Contains
+            });
+
+            const filter_ar =setModel.searchParse(oEvent,params);
+            this.table.getBinding("items").filter(filter_ar);
+            // suggetion item
+            if(query || query!==""){
+                let search_field =this.byId("c_search_field");
+                let suggestion_items =search_field.getSuggestionItems();
+                let last_item_text =suggestion_items.at(0)?.getText();
+                if(last_item_text===query){return;}
+                if(suggestion_items.length>5){
+                   
+                    search_field.removeSuggestionItem(5);
+                }
+               search_field.insertSuggestionItem(new sap.m.SuggestionItem({"text":query}));
+                
+                // search_field.removeItems
+                
+            }
+            return 1;
+
+
         }
 
     

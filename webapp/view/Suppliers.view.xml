@@ -39,7 +39,9 @@
                     <filterbar:filterGroupItems>
                         <filterbar:FilterGroupItem  name="search" label="" groupName="q"  visibleInFilterBar="true">
                             <filterbar:control>
-                                <SearchField placeholder="search" showSearchButton="true"/>
+                                <SearchField id="supl_search_field" suggest=".searchSuggest"  maxLength="100"  placeholder="search" showSearchButton="true" enableSuggestions="true" search=".searchPressed">
+                                    <SuggestionItem text="Charlotte Cooper"/>
+                                    </SearchField>
                             </filterbar:control>
                         </filterbar:FilterGroupItem>
                          <!-- ++ -->
@@ -129,7 +131,7 @@
                                                     <Text text="{CompanyName}" maxLines="3"/>
                                                     <Text text="{ContactName}" maxLines="3"/>
                                                     <Text text="{City}" maxLines="3"/>
-                                                    <Text emptyIndicatorMode="On" text="{path:'Region',formatter:'.foramtter.emptyDataHandle'}" maxLines="3"/>
+                                                    <Text emptyIndicatorMode="On" text="{path:'Region'}" maxLines="3"/>
                                                     <Text text="{Phone}" wrapping="false"/>
                                                 </cells>
                                             </ColumnListItem>
