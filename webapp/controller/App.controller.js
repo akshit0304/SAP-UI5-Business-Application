@@ -22,7 +22,7 @@ sap.ui.define([
     formatter: Formatter,
     onInit() {
       BusyIndicator.show(0);
-      console.log("app controller is initialized");
+      // console.log("app controller is initialized");
       // initial setup
       this.main_page = this.byId("shell_page");
       this.oNavContainer = this.byId("navContainer");
@@ -65,8 +65,8 @@ sap.ui.define([
       const last_tag =this.CURRENT_ITEM;
       this.CURRENT_ITEM =history_tag;
       this.HISTORY.push(last_tag);
-      console.log(this.CURRENT_ITEM);
-      console.log(this.HISTORY);
+      // console.log(this.CURRENT_ITEM);
+      // console.log(this.HISTORY);
       // navigation logic end
       if (!sViewName || typeof sViewName != 'string') return "error";
       let oExistingPage = this.oNavContainer.getPages()
@@ -114,7 +114,7 @@ sap.ui.define([
       if (!id) return 0
       const control = this.byId(id);
       if (control) {
-        console.log('control control fullfilled');
+        // console.log('control control fullfilled');
         control.focus();
       }
       return 1;

@@ -104,10 +104,10 @@ sap.ui.define([
         },
         onAfterRendering: function () {
             BusyIndicator.hide();
-            // setTimeout(timeoutFunction.bind(this), 5000);
+            setTimeout(timeoutFunction.bind(this), 5000);
             // this.customersTotalSpend();
             function timeoutFunction() {
-                console.log("function called");
+                // console.log("function called");
                 this.countSpecificParameterValue("kpi_stat_list", { "that": this, "setNumber_id": null }, 1);
             };
             // set grid-item size
@@ -243,7 +243,7 @@ sap.ui.define([
                     }
                     const temp_sub_order = subTotal_ar.reduce(accumulateSubOrder, 0);
                     temp["orders"]["subTotal"] = temp_sub_order;
-                    console.log(temp_sub_order);
+                    // console.log(temp_sub_order);
                     // break;
                     json_customer.push(temp);
                 }

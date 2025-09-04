@@ -45,7 +45,7 @@ sap.ui.define([
     return Controller.extend("bd.businessportal.controller.Products", {
         formatter: Formatter,
         onInit() {
-            console.log("product initialized");
+            // console.log("product initialized");
             this.component = this.getOwnerComponent();
             const expandFlag = this.component.expandFlag;
             this.main_page = this.byId("product_page");
@@ -177,7 +177,7 @@ sap.ui.define([
 
         //   }
         filterClear: function (oEvent) {
-            console.log("clear pressed");
+            // console.log("clear pressed");
             if (!this.genericFilter) {
                 this.genericFilter = new GenericFilter(this, this.table);
             }

@@ -69,7 +69,7 @@ sap.ui.define([
                         index =index!=-1?index:0;
                         // find index using the id if not exist then set is index zero
                         bind_path="/results/"+index;
-                        console.log(bind_path);
+                        // console.log(bind_path);
                     }
                     else{
                         bind_path = this.model.getProperty("/idOfBindElement");

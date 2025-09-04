@@ -44,12 +44,16 @@ sap.ui.define([
         },
          onAfterRendering:function(){
             GenericFilter.prototype.setLocalModel(this,{fileName:"Customers.json",modelName:"cust"}).then((flag) => {
-                         if (flag == 207){ console.log('already not exists');}
-                    else {console.log("exists fast load");}
+                         if (flag == 207){ //console.log('already not exists');
+                         }
+                    else {//console.log("exists fast load");
+                    }
                 })
              GenericFilter.prototype.setLocalModel(this,{fileName:"Employees.json",modelName:"emp"}).then((flag) => {
-                         if (flag == 207){ console.log('already not exists');}
-                    else {console.log("exists fast load");}
+                         if (flag == 207){ //console.log('already not exists');
+                         }
+                    else {//console.log("exists fast load");
+                    }
                 })
         },
         overViewPage:function(oEvent){
@@ -94,7 +98,7 @@ sap.ui.define([
            
         },
           filterClear: function (oEvent) {
-            console.log("clear pressed");
+            // console.log("clear pressed");
             if (!this.genericFilter) {
                 this.genericFilter = new GenericFilter(this, this.table);
                 const selection_set = oEvent.getParameters("selectionSet").selectionSet;

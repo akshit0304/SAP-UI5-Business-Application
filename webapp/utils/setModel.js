@@ -17,7 +17,7 @@ sap.ui.define([
                     const model = component.getModel();
                     // model.loadData("../Odata/"+fileName).then((info)=>{
                     model.loadData(sap.ui.require.toUrl("bd/businessportal/Odata/" + fileName)).then((info) => {
-                        // console.log(info);
+
                         component.setModel(model);
                         component.loaded_model = fileSplit.pop();
                         table?.setBusy();
@@ -44,7 +44,7 @@ sap.ui.define([
                         const model = component.getModel();
                         // model.loadData("../Odata/"+fileName).then((info)=>{
                         model.loadData(sap.ui.require.toUrl("bd/businessportal/Odata/" + fileName)).then((info) => {
-                            // console.log(info);
+
                             component.setModel(model);
                             component.loaded_model = fileSplit.pop();
                             busyControl?.setBusy();
@@ -93,7 +93,7 @@ sap.ui.define([
 
                         // let id =this.byId("info_category").getModel().getProperty(bind_path+`/${labelID}`);
                         // labelParameter =labelParameter?labelParameter:id;
-                        // console.log(id,labelParameter);
+
 
                         if (!this.aFilters) {
                             this.aFilters = [];
@@ -119,7 +119,7 @@ sap.ui.define([
                 let model_data = component.getModel().getJSON();
                 model_data = JSON.parse(model_data);
                 let main_results = model_data['results'];
-                // console.log(main_results);
+
                 let index = main_results.findIndex((val) => val[key] == value);
                 // busycontainer?.setBusy();
                 return index;
@@ -143,11 +143,11 @@ sap.ui.define([
                 }
                 // get the object
                 const aProducts = model.getProperty("/results");
-                console.log(aProducts);
+
                 const aFiltered = aProducts.forEach((item, index) => {
                     return item[key] == value ? index : 0;
                 });
-                // console.log(aFiltered);
+
                 return aFiltered;
             },
             makeFilterObj({key, expression},query) {

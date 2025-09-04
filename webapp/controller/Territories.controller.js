@@ -16,7 +16,6 @@ sap.ui.define([
     return Controller.extend("bd.businessportal.controller.Territories", {
         formatter:Formatter,
         onInit() {
-            console.log("dashboard initialized");
             this.main_page =this.byId("territory_page");
             this.table =this.byId("table_territory");
             this.component =this.getOwnerComponent();
@@ -41,9 +40,6 @@ sap.ui.define([
                     setModel.configureModel.call(this,"Territories.json");
                 }.bind(this)
             });      
-        },
-        onExit(){
-            console.log("dashboard exit");
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);

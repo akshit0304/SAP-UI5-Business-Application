@@ -47,12 +47,9 @@ sap.ui.define([
         },
         onAfterRendering:function(){
             GenericFilter.prototype.setLocalModel(this,{fileName:"Countries.json",modelName:"country"}).then((flag) => {
-                         if (flag == 207){ console.log('already not exists');}
-                    else {console.log("exists fast load");}
+                    //      if (flag == 207){ console.log('already not exists');}
+                    // else {console.log("exists fast load");}
                 })
-        },
-        onExit(){
-            console.log("dashboard exit");
         },
          filterSearch: function (oEvent) {
             const configuration = {
