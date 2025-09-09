@@ -47,12 +47,12 @@ sap.ui.define([
         },
         onAfterRendering:function(){
             GenericFilter.prototype.setLocalModel(this,{fileName:"Countries.json",modelName:"country"}).then((flag) => {
-                         if (flag == 207){ console.log('already not exists');}
-                    else {console.log("exists fast load");}
+                    //      if (flag == 207){ console.log('already not exists');}
+                    // else {console.log("exists fast load");}
                 })
         },
-        onExit(){
-            console.log("dashboard exit");
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         },
          filterSearch: function (oEvent) {
             const configuration = {
@@ -118,6 +118,10 @@ sap.ui.define([
             let filterEnum =sap.ui.model.FilterOperator;
             let query =oEvent.getParameter("query")?.trim();
             const params =[];
+            params.push({
+                    "key":"CompanyName",
+                    "expression":filterEnum.Contains
+            });
             params.push({
                     "key":"ContactName",
                     "expression":filterEnum.Contains

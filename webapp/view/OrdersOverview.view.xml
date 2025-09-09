@@ -15,15 +15,18 @@ controllerName="bd.businessportal.controller.OrdersOverview"
             <!-- dymanic binding from controller -->
             <uxap:ObjectPageDynamicHeaderTitle id="order_dynamicPageTitle" busy="false" busyIndicatorDelay="300">
                 <uxap:snappedHeading>
-                    <HBox width="100%" gap="5px">
-                        <!-- add title -->
-                       <Title class="sapUiNoMarginBegin" text="Order #{OrderID}" wrapping="false" titleStyle="H4" level="H1" />
-                    </HBox>
+                    <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Order #{OrderID}" wrapping="false" titleStyle="H5" />
+                    </Toolbar>
                 </uxap:snappedHeading>
 
                 <uxap:expandedHeading>
                     <HBox width="100%" gap="5px">
-                      <Title class="sapUiNoMarginBegin" text="Order Details" wrapping="false" titleStyle="H3"  level="H1" />
+                    <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Order #{OrderID}" wrapping="false" titleStyle="H5" />
+                    </Toolbar>
                     </HBox>
                 </uxap:expandedHeading>
             </uxap:ObjectPageDynamicHeaderTitle>

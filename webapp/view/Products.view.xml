@@ -19,10 +19,27 @@ controllerName="bd.businessportal.controller.Products"
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Products" wrapping="false" titleStyle="H1" />
+                <Toolbar style="Clear">
+                    <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                    <Title text="Products" wrapping="false" titleStyle="H5" />
+                </Toolbar>
                 </uxap:snappedHeading>
+
                 <uxap:expandedHeading>
-                    <Title text="Products" wrapping="false" titleStyle="H3" />
+                    <!-- <VBox> -->
+                        <Toolbar  style="Clear">
+                            <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                            <Title text="Products" wrapping="false" titleStyle="H5" />
+                        </Toolbar>
+                        <!-- breadcrumb -->
+                         <!-- <Toolbar  style="Clear">
+                             <Breadcrumbs id="p_breadcrumb">
+                                <links>
+                                </links>
+                            </Breadcrumbs>
+                        </Toolbar> -->
+                    <!-- </VBox> -->
+
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>

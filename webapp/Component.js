@@ -15,7 +15,6 @@ sap.ui.define([
     },
 
     init() {
-      this.abord_request_flag =0;
       // call the base component's init function
       UIComponent.prototype.init.apply(this, arguments);
       // 1-Event bus initialization
@@ -27,6 +26,7 @@ sap.ui.define([
 
       // enable routing
       this.getRouter().initialize();
+      this.abord_request_flag =0;
       this.getContentDensityClass();
       this.loaded_model =undefined;
       // this variable is use for second navigation eg: category->categorydetails->productdetails (set boolean value if true then use /idOfBindElementSecond else use /idOfBindElement present in nav model)
@@ -64,7 +64,9 @@ sap.ui.define([
       const button_style = ['Transparent', "Emphasized"];
       if (!this.oSideNav && !this.hamburger_button) {
           this.App =this.byId("App");
+          // remove if not needed 
           this.oSideNav = this.App.byId('sideNavigation');
+          this.shell = this.App.byId("shell_page");
           this.hamburger_button = this.App.byId('hamburgerMenu');
       }
       // console.log(this.byId('hamburgerMenu'));
@@ -72,17 +74,17 @@ sap.ui.define([
       if (bit) {
         if (menu_state) {
           this.hamburger_button.setType("Transparent");
-          this.oSideNav.setExpanded(true);
+          this.shell.setSideExpanded(true);
         }
         else {
           this.hamburger_button.setType("Emphasized");
-          this.oSideNav.setExpanded(false);
+          this.shell.setSideExpanded(false);
         }
       }
       else {
-        var bExpanded = this.oSideNav.getExpanded();
+        var bExpanded = this.shell.getSideExpanded();
         this.hamburger_button.setType(button_style[Number(bExpanded)]);
-        this.oSideNav.setExpanded(!bExpanded);
+        this.shell.setSideExpanded(!bExpanded);
       }
     },
   });

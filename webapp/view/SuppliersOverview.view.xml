@@ -11,7 +11,8 @@ controllerName="bd.businessportal.controller.SuppliersOverview"
     id="supplier_overview"  
     title="Supplier Details" 
     busyIndicatorDelay="100"
-    showNavButton="false"
+    showNavButton="true"
+    navButtonPress=".navButtonPressed"
     class="sapUiResponsiveMargin--content 
             sapUiResponsiveContentPadding"
     >

@@ -11,10 +11,22 @@
         id="category_page"
         title="{nav>/pageTitles/category}"
         busyIndicatorDelay="100"
-        showNavButton="false"
+        showNavButton="true"
+        navButtonPress=".navButtonPressed"
         class="sapUiResponsiveMargin--content sapUiResponsivePadding--content"
             
     >
+    <!-- <subHeader>
+        <Bar design="SubHeader" >
+            <contentLeft>
+                <Breadcrumbs id="c_breadcrumb">
+                    <links>
+                        
+                    </links>
+                </Breadcrumbs>
+            </contentLeft>
+        </Bar>
+    </subHeader> -->
         <Panel expandable="false" stickyHeader="false" width="auto">
 
             <List mode="None" id="table_category"

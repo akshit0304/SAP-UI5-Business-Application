@@ -47,7 +47,9 @@ sap.ui.define([
                 }.bind(this),
             });
         },
-
+         navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
         detailPress:function(oEvent){
             this.oNavContainer.setBusy(true);
             var id = oEvent.getSource().getBindingContext('ed').getProperty("EmployeeID");

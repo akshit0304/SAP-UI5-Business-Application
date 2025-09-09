@@ -34,7 +34,7 @@ sap.ui.define([
                         index =index!=-1?index:0;
                         // find index using the id if not exist then set is index zero
                         bind_path="/results/"+index;
-                        console.log(bind_path);
+                        // console.log(bind_path);
                     }
                     else{
                         bind_path = this.model.getProperty("/idOfBindElement");
@@ -58,6 +58,9 @@ sap.ui.define([
             // set id in nav model in idOfBindElementSecond
             this.model.setProperty("/idOfBindElementSecond",id);
             this.root_element.getController()._loadView("OrdersOverview");
+        },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         }
         
 

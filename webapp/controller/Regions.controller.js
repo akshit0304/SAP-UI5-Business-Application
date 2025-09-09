@@ -21,7 +21,7 @@ sap.ui.define([
             this.component =this.getOwnerComponent();
              const expandFlag =this.component.expandFlag;
             this.root_element =this.component.byId("App");
-            this.oNavContainer = this.component.byId("App--navContainer");
+            this.oNavContainer =  this.root_element.byId("navContainer");
             this.model_data =this.component.getModel();
             // set media ---
             Device.media.attachHandler((oEvent)=>{
@@ -46,16 +46,14 @@ sap.ui.define([
             // console.log(model.getProperty("/results/3/RegionDescription"));
             // console.log(model.getProperty("/results/"+0+"/Territories/results").length)
             for(let i=0;i<4;i++){
-                 const tabFilter =new sap.m.IconTabFilter({
-                text:model.getProperty("/results/"+i+"/RegionDescription"),
+                const temp_object =model.getObject("/results/"+i);
+                const tabFilter =new sap.m.IconTabFilter({
+                text:temp_object.RegionDescription,
                 icon:"sap-icon://world",
                 iconColor:sap.ui.core.IconColor.Neutral,
                 tooltip:"total territories",
-                key:model.getProperty("/results/"+i+"/RegionID"),
-                count:model.getProperty("/results/"+i+"/Territories/results").length
-                // content:[
-                //     actual_fragment
-                // ]
+                key:temp_object.RegionID,
+                count:temp_object.Territories.results.length
             });
             tabFilter.bindElement("/results/"+i);
             const tabSeparator =new sap.m.IconTabSeparator({
@@ -79,7 +77,7 @@ sap.ui.define([
             }).then((actual_fragment)=>{ 
                 selectedItem.addContent(actual_fragment);
                  this.overview_fragment = actual_fragment;
-                 this.overview_fragment.getBinding()
+                //  this.overview_fragment.getBinding()
                     // _BindElement(this,binding_path);
                 //  this.overview_fragment.bindElement(binding_path);
             })
@@ -95,12 +93,16 @@ sap.ui.define([
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
-            var oContext = oEvent.getSource().getBindingContext().getPath();
+            this.component.second_binding=true;
+            var oContext_data = oEvent.getSource().getBindingContext().getProperty("TerritoryID");
             // console.log(oContext);
             // const id =oContext.getProperty("RegionID");
             const model =this.component.getModel("nav");
-            model.setProperty("/idOfBindElement",oContext);
-            this.root_element.getController()._loadView("RegionsOverview");
+            model.setProperty("/idOfBindElementSecond",oContext_data);
+            this.root_element.getController()._loadView("TerritoriesOverview");
           },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        }
     });
 })

@@ -37,8 +37,8 @@ sap.ui.define([
             });   
         },
         
-        navbuttonPressed:function(oEvent){
-            this.component.navbuttonPressed(oEvent);
+        navButtonPressed:function(oEvent){     
+            this.root_element.getController().backButton(oEvent);
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);

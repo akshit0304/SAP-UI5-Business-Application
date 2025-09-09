@@ -12,24 +12,29 @@
             <!-- dymanic binding from controller -->
             <ObjectPageDynamicHeaderTitle id="dynamicPageTitle" busy="false" busyIndicatorDelay="300">
                 <snappedHeading>
-                    <m:HBox width="100%" gap="5px">
-                        <!-- add title -->
-                        <m:Title class="sapUiNoMarginBegin" text="{ProductName}" wrapping="false" level="H1" />
-                    </m:HBox>
+                    <m:Toolbar  style="Clear">
+                        <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <m:Title class="sapUiNoMarginBegin"  text="{ProductName}" wrapping="false" titleStyle="H5" />
+                    </m:Toolbar>
                 </snappedHeading>
 
                 <expandedHeading>
-                    <m:HBox width="100%" gap="5px">
-                        <m:Title class="sapUiNoMarginBegin" text="{ProductName}" wrapping="false" level="H1" />
-                    </m:HBox>
+                   <m:Toolbar  style="Clear">
+                        <m:VBox>
+                            <m:Toolbar  style="Clear">
+                                <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                                <m:Title class="sapUiNoMarginBegin"  text="{ProductName}" wrapping="false" titleStyle="H5" />
+                            </m:Toolbar>
+                        </m:VBox>
+                    </m:Toolbar>
                 </expandedHeading>
                 <!-- 123 -->
                 <snappedContent>
-                    <m:Text text="{Category/CategoryName}" wrapping="false"></m:Text>
+                    <m:Text class="sapUiMediumMarginBegin" text="{Category/CategoryName}" wrapping="false"></m:Text>
                 </snappedContent>
 
                 <expandedContent>
-                    <m:Text text="{Category/CategoryName}" wrapping="false"></m:Text>
+                    <m:Text class="sapUiMediumMarginBegin" text="{Category/CategoryName}" wrapping="false"></m:Text>
                 </expandedContent>
                 <!-- <actions>
                     <m:Toolbar style="Clear">
@@ -127,14 +132,17 @@
                                  <m:Label text="Description" showColon="true" vAlign="Middle" wrapping="false" displayOnly="true"  />
                                  <m:Text text="{Category/Description}" class="sapUiTinyMarginBottom"/>
 
+                                 <m:Label text="ID" showColon="true" vAlign="Middle" wrapping="false" displayOnly="true"  />
+                                 <m:Text text="{ProductID}" class="sapUiTinyMarginBottom"/>
+
                                  <m:Label text="Category" showColon="true" vAlign="Middle" wrapping="false" displayOnly="true"  />
                                  <m:Text text="{Category/CategoryName}" class="sapUiTinyMarginBottom"/>
 
                                  <m:Label text="Quantity per Unit" showColon="true" vAlign="Middle" displayOnly="true" wrapping="true" />
-                                 <m:ObjectStatus text="{QuantityPerUnit}"  state="Information"/>
+                                 <m:ObjectStatus text="{QuantityPerUnit}" class="sapUiTinyMarginBottom"  state="Information"/>
 
                                 <m:Label text="Price" showColon="true" vAlign="Middle" displayOnly="true"  />
-                        <m:ObjectNumber number="{parts:[{path:'UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'.formatter.currency'}" state="None"></m:ObjectNumber>
+                                <m:ObjectNumber class="sapUiTinyMarginBottom" number="{parts:[{path:'UnitPrice'}],type:'sap.ui.model.type.Currency',formatter:'.formatter.currency'}" state="None"></m:ObjectNumber>
                             </form:content>
                             <!-- orders parameters -->
                              <form:content>

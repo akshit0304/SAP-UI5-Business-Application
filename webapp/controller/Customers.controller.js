@@ -43,9 +43,14 @@ sap.ui.define([
         },
          onAfterRendering:function(){
             GenericFilter.prototype.setLocalModel(this,{fileName:"Countries.json",modelName:"country"}).then((flag) => {
-                         if (flag == 207){ console.log('already not exists');}
-                    else {console.log("exists fast load");}
+                         if (flag == 207){ //console.log('already not exists');
+                            }
+                    else {//console.log("exists fast load");
+                        }
                 })
+        },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
@@ -90,7 +95,7 @@ sap.ui.define([
            
         },
           filterClear: function (oEvent) {
-            console.log("clear pressed");
+            // console.log("clear pressed");
             if (!this.genericFilter) {
                 this.genericFilter = new GenericFilter(this, this.table);
                 const selection_set = oEvent.getParameters("selectionSet").selectionSet;

@@ -12,6 +12,8 @@ controllerName="bd.businessportal.controller.TerritoriesOverview"
     title="Territory Details" 
     busyIndicatorDelay="300"
     class="sapUiResponsiveMargin--content sapUiResponsiveContentPadding"
+    showNavButton="true"
+    navButtonPress=".navButtonPressed"
     >
     <Panel id="t_dynamicPageTitle" expandable="false" stickyHeader="false" headerText="{TerritoryDescription}" width="auto" >
         <!-- <headerToolbar>

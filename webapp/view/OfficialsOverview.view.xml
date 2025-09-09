@@ -30,24 +30,27 @@ controllerName="bd.businessportal.controller.OfficialsOverview"
         busyIndicatorDelay="300"
         >
             <snappedHeading>
-                <m:HBox width="100%" gap="5px">
+               <m:Toolbar  style="Clear">
+                        <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <m:Title  tooltip="officials" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H5" />
+                </m:Toolbar>
                         <!-- add title -->
-                        <m:Title  tooltip="officials" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H1" />
-                    </m:HBox>
+                    
             </snappedHeading>
 
             <expandedHeading>
-                 <m:HBox width="100%" gap="5px">
-                        <m:Title tooltip="officials" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H1" />
-                </m:HBox>
+                    <m:Toolbar  style="Clear">
+                        <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <m:Title  tooltip="officials" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H5" />
+                    </m:Toolbar>
             </expandedHeading>
             <!-- 123 -->
             <snappedContent>
-                <m:Text text="{Title}" wrapping="false"></m:Text>
+                <m:Text class="sapUiMediumMarginBegin" text="{Title}" wrapping="false"></m:Text>
             </snappedContent>
 
             <expandedContent>
-                <m:Text text="{Title}" wrapping="false"></m:Text>
+                <m:Text class="sapUiMediumMarginBegin" text="{Title}" wrapping="false"></m:Text>
             </expandedContent>
             <!-- <actions>
                     <m:Toolbar style="Clear">

@@ -11,6 +11,8 @@ controllerName="bd.businessportal.controller.ShippersOverview"
     id="shipper_overview"  
     title="Shipper Detail" 
     busyIndicatorDelay="300"
+    showNavButton="true"
+    navButtonPress=".navButtonPressed"
     class="sapUiResponsiveMargin--content 
             sapUiResponsiveContentPadding"
     >

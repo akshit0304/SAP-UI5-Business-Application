@@ -19,14 +19,14 @@ sap.ui.define([],
                         // get managers from the manager_ar id
                         const managers = [];
                         // const keys =map.keys()
-                        // console.log(keys);
+
                         for (const key of manager_ar) {
                             managers.push(
                                 empData[map.get(key)]
                             )
                         }
-                        // console.log(managers);
-                        // console.log(manager_ar);
+
+
                         resolve(managers);
                     })
                     return a;
@@ -58,8 +58,3 @@ sap.ui.define([],
         }
     }
 )
-
-
-// for (const ele of results) {
-//                         ele["Territories"] = Object.getPrototypeOf(ele["Territories"]["results"]) ==Array.prototype? ele["Territories"]["results"].length:"fisshy activity"
-//                     }

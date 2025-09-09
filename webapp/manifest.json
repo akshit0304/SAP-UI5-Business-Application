@@ -126,8 +126,9 @@
         }
       ],
       "targets": {
+
         "TargetView1": {
-          "id": "dashboard_page",
+          "id": "App--Dashboard",
           "name": "Dashboard"
         },
         "T_o_manager": {

@@ -72,7 +72,7 @@ sap.ui.define([],
                         unitFormatType:"MetricUnits",
                         style:{
                             fontFamily:"Helvetica",
-                            color:"#ce7e00"
+                            color:"#003a7d"
                             // plotArea.dataLabel.style.color
                         }
                     },

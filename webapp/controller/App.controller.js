@@ -17,12 +17,40 @@ sap.ui.define([
 
 ) => {
   "use strict";
-
+  // breadcrumb logic
+  // const idToLink ={
+  //     "Dashboard":0,
+  //     "Categories":1,
+  //     "CategoriesOverview":2,
+  //     "Products":3,
+  //     "ProductsOverview":4
+  // };
+  // const adjecency_list =[[0],[1,2],[2,4],[3,4],[4]];
+  // const breadcrumbAr =[];
+  // let last_view_code =null;
   return BaseController.extend("bd.businessportal.controller.App", {
     formatter: Formatter,
+    // getIdToLink:function(link){
+    //   return idToLink[link];
+    // },
+    // getAdjecencyListData:function(index){
+    //   return adjecency_list[index];
+    // },
+    // setBreadcrumbAr:function(object){
+    //   breadcrumbAr.push(object);
+    // },
+    // getBreadcrumbAr:function(index){
+    //   if(index<0){
+    //     return breadcrumbAr.at(index);
+    //   }
+    //   else if(!index){
+    //     return breadcrumbAr;
+    //   }
+    //   return breadcrumbAr[index];
+    // },
     onInit() {
-      BusyIndicator.show(0);
-      console.log("app controller is initialized");
+      // BusyIndicator.show(0);
+      // console.log("app controller is initialized");
       // initial setup
       this.main_page = this.byId("shell_page");
       this.oNavContainer = this.byId("navContainer");
@@ -60,13 +88,18 @@ sap.ui.define([
       // this.oNavContainer.getCurrentPage()
       var history_tag_flag =sViewName.search(/Overview/);
       var history_tag;
-      if(history_tag_flag!=-1) history_tag =sViewName.slice(0,history_tag_flag);
-      else history_tag =sViewName;
+      if(history_tag_flag!=-1) {history_tag =sViewName.replace("Overview","");}
+      else { history_tag =sViewName; }
+      if(history_tag=="Territories"){
+        // do this because region and territories are in same section.
+        history_tag ="Regions"
+      }
       const last_tag =this.CURRENT_ITEM;
       this.CURRENT_ITEM =history_tag;
       this.HISTORY.push(last_tag);
-      console.log(this.CURRENT_ITEM);
-      console.log(this.HISTORY);
+      this._setNavigationList("sideNavigation",history_tag);
+      // console.log(this.CURRENT_ITEM);
+      // console.log(this.HISTORY);
       // navigation logic end
       if (!sViewName || typeof sViewName != 'string') return "error";
       let oExistingPage = this.oNavContainer.getPages()
@@ -81,6 +114,7 @@ sap.ui.define([
         function () {
           XMLView.create({
             viewName: "bd.businessportal.view." + sViewName,
+            id:this.getView().createId(sViewName.trim())
           }).then(oView => {
             this.oNavContainer.addPage(oView);
             this.oNavContainer.to(oView);
@@ -93,7 +127,9 @@ sap.ui.define([
     _setNavigationList: function (id,keyName=null) {
       const control = this.byId(id);
       if(!keyName) {
-          keyName ="Dashboard";
+          // keyName ="Dashboard";
+          control.setSelectedKey(keyName);
+          return 1;
         }
       // console.log(control.getItems());
       // const list_items = control.getItems();
@@ -107,6 +143,7 @@ sap.ui.define([
       //   // }
       // }
       control.setSelectedKey(keyName);
+      return 1;
       
       // console.log(this.getLocalId(control.getSelectedKey(control)));
     },
@@ -114,7 +151,7 @@ sap.ui.define([
       if (!id) return 0
       const control = this.byId(id);
       if (control) {
-        console.log('control control fullfilled');
+        // console.log('control control fullfilled');
         control.focus();
       }
       return 1;
@@ -138,9 +175,19 @@ sap.ui.define([
       // const lastKey =this._getNavModelData("/current_item");
       // const lastKey =this.CURRENT_ITEM;
       const oItemKey = oItem.getKey();
+      BusyIndicator.show(200);
+      // setting breadcrumb ----
+      // const breadcrumb_obj ={
+      //   "name":oItem.getText(),
+      //   "level":0,
+      //   "bindingData":null,
+      //   "id":oItemKey,
+      //   "code":idToLink[oItemKey]
+      // };
+      // breadcrumbAr.push(breadcrumb_obj);
+      // this.last_view_code =idToLink[oItemKey];
+      this._loadView(oItemKey);
 
-          BusyIndicator.show(200);
-          this._loadView(oItemKey);
           // this._setNavModelData("/current_item",oItemKey);
      
     },
@@ -149,7 +196,7 @@ sap.ui.define([
       this.component._buttonExpandLogic();
     },
     backButton: function (oEvent) {
-      if(this.HISTORY.length==1) this.CURRENT_ITEM="Dashboard";
+      if(this.HISTORY.length==1) {this.CURRENT_ITEM="Dashboard";}
       let back_item =this.HISTORY.pop();
       this._setNavigationList("sideNavigation",back_item);
       // console.log(this.HISTORY);
@@ -161,6 +208,7 @@ sap.ui.define([
       
     },
     dialogPress: function (oEvent) {
+      BusyIndicator.show(100);
       // create popover
       if (!this.dialog) {
         this.dialog = Fragment.load({
@@ -192,6 +240,7 @@ sap.ui.define([
         });
       }
       this.dialog.then((point) => {
+        BusyIndicator.hide();
         this.point=point;
         point.open();
       })

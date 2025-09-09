@@ -27,26 +27,25 @@
                 busyIndicatorDelay="300"
             >
                 <snappedHeading>
-                    <m:HBox width="100%" gap="5px">
-                        <!-- add title -->
-                        <m:Title class="sapUiNoMarginBegin" text="Customer Details" wrapping="false"
-                            level="H1" />
-                    </m:HBox>
+                      <m:Toolbar  style="Clear">
+                        <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <m:Title  class="sapUiNoMarginBegin" text="Customer Details" wrapping="false" level="H5" />
+                    </m:Toolbar>
                 </snappedHeading>
 
                 <expandedHeading>
-                    <m:HBox width="100%" gap="5px">
-                        <m:Title class="sapUiNoMarginBegin" text="Customer Details" wrapping="false"
-                            level="H1" />
-                    </m:HBox>
+                    <m:Toolbar  style="Clear">
+                        <m:Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <m:Title  class="sapUiNoMarginBegin" text="Customer Details" wrapping="false" level="H5" />
+                    </m:Toolbar>
                 </expandedHeading>
                 <!-- 123 -->
                 <snappedContent>
-                    <m:Text text="{CompanyName}" wrapping="false"></m:Text>
+                    <m:Text class="sapUiMediumMarginBegin" text="{CompanyName}" wrapping="false"></m:Text>
                 </snappedContent>
 
                 <expandedContent>
-                    <m:Text text="{CompanyName}" wrapping="false"></m:Text>
+                    <m:Text class="sapUiMediumMarginBegin" text="{CompanyName}" wrapping="false"></m:Text>
                 </expandedContent>
                 <!-- <actions>
                     <m:Toolbar style="Clear">

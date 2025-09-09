@@ -45,6 +45,9 @@ sap.ui.define([
             });
 
         },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
         detailPress:function(oEvent){
             this.oNavContainer.setBusy(true);
             var product_id = oEvent.getSource().getBindingContext().getProperty("ProductID");

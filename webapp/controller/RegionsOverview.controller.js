@@ -34,9 +34,9 @@ sap.ui.define([
                 }.bind(this),
             });
         },
-        backNavigation:function (oEvent) {
-            this.component.navbuttonPressed(oEvent);
-        }
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
         
 
     });

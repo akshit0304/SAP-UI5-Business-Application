@@ -16,7 +16,6 @@ sap.ui.define([
     return Controller.extend("bd.businessportal.controller.Territories", {
         formatter:Formatter,
         onInit() {
-            console.log("dashboard initialized");
             this.main_page =this.byId("territory_page");
             this.table =this.byId("table_territory");
             this.component =this.getOwnerComponent();
@@ -42,8 +41,8 @@ sap.ui.define([
                 }.bind(this)
             });      
         },
-        onExit(){
-            console.log("dashboard exit");
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);

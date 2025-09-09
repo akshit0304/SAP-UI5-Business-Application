@@ -32,7 +32,7 @@ sap.ui.define([
             SET_selectionSet(ss){
                 if(Array.isArray(ss) && ss[0].isA("sap.ui.core.Control")){
                 this.selection_set =ss;
-                console.log("selection-set set");
+
                 }
             },
             configureFilter(jsonConfig){
@@ -175,7 +175,7 @@ sap.ui.define([
             c_Input(control,jsonConfig){
                 let control_data =control.getValue();
                 let {code ,numbers} =this._parseInput(control_data);
-                // console.log(code);
+
                 if(!code || !(Array.isArray(numbers) && numbers.length)){control.setValue();return 441;}
                 if(typeof code ==="string" && ["BT","NB"].includes(code)){
                     if(Array.isArray(numbers) && numbers.length!==2){console.log("error in beetween operation");control.setValue();return 441;}

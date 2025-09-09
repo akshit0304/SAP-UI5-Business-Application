@@ -9,3 +9,8 @@
     font-optical-sizing: auto;
     opacity: 0.75;
 }
+
+.noHoverTile:hover {
+  box-shadow: none !important;
+  cursor: default !important;
+}

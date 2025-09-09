@@ -18,10 +18,16 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Officials" wrapping="false" titleStyle="H1" />
+                   <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Officials" wrapping="false" titleStyle="H5" />
+                    </Toolbar>
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Officials" wrapping="false" titleStyle="H3" />
+                    <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Officials" wrapping="false" titleStyle="H5" />
+                    </Toolbar>
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>

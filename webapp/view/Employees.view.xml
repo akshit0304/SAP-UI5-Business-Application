@@ -8,7 +8,6 @@
     >
     <uxap:ObjectPageLayout id="employee_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
     enableLazyLoading="true"
-    beforeNavigate=".navbuttonPressed"
     useIconTabBar="true"
     showTitleInHeaderContent="true"
     upperCaseAnchorBar="true"
@@ -18,10 +17,16 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Employees" wrapping="false" titleStyle="H1" />
+                     <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title  tooltip="Employees" class="sapUiNoMarginBegin" text="Employees" wrapping="false" level="H5" />
+                    </Toolbar>
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Employees" wrapping="false" titleStyle="H3" />
+                   <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title  tooltip="Employees" class="sapUiNoMarginBegin" text="Employees" wrapping="false" level="H5" />
+                    </Toolbar>
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>
