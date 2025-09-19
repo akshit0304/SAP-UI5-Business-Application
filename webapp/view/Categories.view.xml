@@ -3,31 +3,28 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
-    xmlns:uxap="sap.uxap"
     controllerName="bd.businessportal.controller.Categories"
 >
+    <f:DynamicPage id="category_page" >
+        <f:title>
+            <f:DynamicPageTitle >
+                <f:heading>
+                     <Toolbar style="Clear">
+                         <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                         <Title class="sapUiNoMarginBegin" text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H3" />
+                        </Toolbar>
+                </f:heading>
 
-    <Page
-        id="category_page"
-        title="{nav>/pageTitles/category}"
-        busyIndicatorDelay="100"
-        showNavButton="true"
-        navButtonPress=".navButtonPressed"
-        class="sapUiResponsiveMargin--content sapUiResponsivePadding--content"
-            
-    >
-    <!-- <subHeader>
-        <Bar design="SubHeader" >
-            <contentLeft>
-                <Breadcrumbs id="c_breadcrumb">
-                    <links>
-                        
-                    </links>
-                </Breadcrumbs>
-            </contentLeft>
-        </Bar>
-    </subHeader> -->
-        <Panel expandable="false" stickyHeader="false" width="auto">
+                <f:snappedHeading>
+                    <Toolbar style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin" text="{nav>/pageTitles/category}" wrapping="false" titleStyle="H3" />
+                    </Toolbar>
+                        </f:snappedHeading>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:content>
+             <Panel expandable="false" stickyHeader="false" width="auto">
 
             <List mode="None" id="table_category"
                 itemPress="overViewPage" items="{/results}">
@@ -42,10 +39,7 @@
                 </ObjectListItem>
 
             </List>
-
-
-            
-
         </Panel>
-    </Page>
+        </f:content>
+    </f:DynamicPage>
 </mvc:View>

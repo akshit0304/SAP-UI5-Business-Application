@@ -14,3 +14,7 @@
   box-shadow: none !important;
   cursor: default !important;
 }
+
+.gridPadding-remove{
+  padding:0 0 !important
+}

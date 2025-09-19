@@ -12,7 +12,7 @@
     controllerName="bd.businessportal.controller.Dashboard" 
     >
 
-    <f:DynamicPage  id="dashboard_page" class="sapUiResponsiveMargin--content sapUiResponsiveContentPadding" headerExpanded="true" >
+    <f:DynamicPage  id="dashboard_page" class="sapUiResponsiveMargin--content sapUiResponsivePadding--content" headerExpanded="true" >
         <f:title>
             <f:DynamicPageTitle backgroundDesign="Transparent"  > 
                 <f:heading>
@@ -79,7 +79,7 @@
 
         <f:content>
              <l:Grid id="main_grid" hSpacing="1" vSpacing="1"
-                class="sapUiSmallMarginTopBottom"
+                class="sapUiSmallMarginTopBottom sapUiNoContentPadding gridPadding-remove"
        >
                             <!-- card-1 -->
                 <!-- <f:Card height="400px"  id="product_manage">
@@ -120,7 +120,7 @@
                         </f:content>
                     </f:Card> -->
                 <!-- card-2 -->
-                         <f:Card class="asset" height="400px" >
+                         <f:Card class="asset sapUiNoMargin" height="400px" >
                                 <f:layoutData>
                                             <l:GridData span="XL4 L4 M6 S12"/>
                                 
