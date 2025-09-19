@@ -12,6 +12,7 @@
     id="category_overview"  
     title="Category Details" 
     busyIndicatorDelay="100"
+    showNavButton="true"  navButtonPress=".navButtonPressed"
     class="sapUiResponsiveMargin--content 
             sapUiResponsiveContentPadding"
     >

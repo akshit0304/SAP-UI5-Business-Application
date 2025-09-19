@@ -143,7 +143,10 @@ sap.ui.define([
             return 1;
 
 
-        }
+        },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
 
     
 

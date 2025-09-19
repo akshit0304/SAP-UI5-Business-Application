@@ -11,7 +11,7 @@
         id="shipper_page"
         title="Shippers"
         busyIndicatorDelay="100"
-        showNavButton="false"
+        showNavButton="true"  navButtonPress=".navButtonPressed"
         class="sapUiResponsiveMargin--content"
     >
         <Panel expandable="false" stickyHeader="false" width="auto">

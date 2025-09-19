@@ -41,6 +41,9 @@ sap.ui.define([
                 }.bind(this)
             });      
         },
+        onExit(){
+            console.log("dashboard exit");
+        },
         overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
             var oContext = oEvent.getSource().getBindingContext().getPath();

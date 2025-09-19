@@ -63,7 +63,9 @@ sap.ui.define([
                 }.bind(this),
             });
         },
-
+         navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
          detailPress:function(oEvent){
             this.oNavContainer.setBusy(true);
             var id = oEvent.getSource().getBindingContext('od').getProperty("EmployeeID");
@@ -72,7 +74,6 @@ sap.ui.define([
             // set id in nav model in idOfBindElementSecond
             this.model.setProperty("/idOfBindElementSecond",id);
              this.root_element.getController()._loadView("OrdersOverview");
-
         }
         
 

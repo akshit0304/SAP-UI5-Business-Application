@@ -17,11 +17,17 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Orders" wrapping="false" titleStyle="H1" />
+                  <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Orders" wrapping="false" titleStyle="H5" />
+                    </Toolbar>
                 </uxap:snappedHeading>
                 <uxap:expandedHeading>
-                    <Title text="Orders" wrapping="false" titleStyle="H3" />
-                </uxap:expandedHeading>
+                    <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title class="sapUiNoMarginBegin"  text="Orders" wrapping="false" titleStyle="H5" />
+                    </Toolbar>              
+                      </uxap:expandedHeading>
 
                 <uxap:snappedContent>
                     <Text text="" wrapping="true" maxLines="3" />

@@ -11,13 +11,15 @@
         id="region_page"
         title="Regions"
         busyIndicatorDelay="100"
-        showNavButton="false"
+        showNavButton="true"
+        navButtonPress=".navButtonPressed"
         class="sapUiResponsiveMargin--content"
     >
 
     <Panel expandable="false" width="auto" height="100%">
         <IconTabBar id="region_tabBar" headerMode="Standard" selectedKey="{:=${null}}" expanded="false" select=".regionExpand"> 
             <items>
+                <!-- set fragments -->
                 <!-- <IconTabFilter text="{RegionDescription}" icon="sap-icon://world" iconColor="Default" tooltip="total territories" key="{RegionID}" count="{=${Territories/results}.length}"/> -->
 
                 <!-- <IconTabSeparator icon="sap-icon://world" /> -->

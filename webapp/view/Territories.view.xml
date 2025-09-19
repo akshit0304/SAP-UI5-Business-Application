@@ -7,7 +7,6 @@
     >
     <uxap:ObjectPageLayout id="territory_page" class="sapUiSmallMarginBottom sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer"
     enableLazyLoading="true"
-    beforeNavigate=".navbuttonPressed"
     useIconTabBar="true"
     showTitleInHeaderContent="true"
     upperCaseAnchorBar="true"
@@ -17,10 +16,17 @@
         <uxap:headerTitle>
             <uxap:ObjectPageDynamicHeaderTitle >
                 <uxap:snappedHeading>
-                    <Title text="Territories" wrapping="false" titleStyle="H1" />
+                   <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title  tooltip="Territories" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H5" />
+                    </Toolbar>
                 </uxap:snappedHeading>
+                
                 <uxap:expandedHeading>
-                    <Title text="Territories" wrapping="false" titleStyle="H3" />
+                     <Toolbar  style="Clear">
+                        <Button icon="sap-icon://nav-back" accessibleRole="Link" ariaDescribedBy="back button" press=".navButtonPressed"/>
+                        <Title  tooltip="Territories" class="sapUiNoMarginBegin" text="{TitleOfCourtesy} {FirstName}" wrapping="false" level="H5" />
+                    </Toolbar>
                 </uxap:expandedHeading>
 
                 <uxap:snappedContent>

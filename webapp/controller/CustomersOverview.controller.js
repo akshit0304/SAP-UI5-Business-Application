@@ -58,6 +58,9 @@ sap.ui.define([
             // set id in nav model in idOfBindElementSecond
             this.model.setProperty("/idOfBindElementSecond",id);
             this.root_element.getController()._loadView("OrdersOverview");
+        },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         }
         
 

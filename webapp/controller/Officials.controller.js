@@ -92,7 +92,7 @@ sap.ui.define([
             }
             return 1;
         },
-       overViewPage:function(oEvent){
+        overViewPage:function(oEvent){
             this.oNavContainer.setBusy(true);
             var oContext = oEvent.getSource().getBindingContext().getPath();
             // console.log(oContext);
@@ -100,6 +100,9 @@ sap.ui.define([
             const model =this.component.getModel("nav");
             model.setProperty("/idOfBindElement",oContext);
             this.root_element.getController()._loadView("OfficialsOverview");
-          },
+        },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
     });
 })

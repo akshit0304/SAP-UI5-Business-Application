@@ -30,8 +30,6 @@ sap.ui.define([
 
                 }
             },
-
-
             configureModel2: function (fileName) {
                 const component = this.component;
                 const table = this.table;

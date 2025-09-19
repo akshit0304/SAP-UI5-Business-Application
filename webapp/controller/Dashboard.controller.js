@@ -39,15 +39,15 @@ sap.ui.define([
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     
-    const oData = {
-        customers: [
-            { customerName: "Customer A", orderAmount: 1200 },
-            { customerName: "Customer B", orderAmount: 950 },
-            { customerName: "Customer C", orderAmount: 875 },
-            { customerName: "Customer D", orderAmount: 600 },
-            { customerName: "Customer E", orderAmount: 450 }
-        ]
-    };
+    // const oData = {
+    //     customers: [
+    //         { customerName: "Customer A", orderAmount: 1200 },
+    //         { customerName: "Customer B", orderAmount: 950 },
+    //         { customerName: "Customer C", orderAmount: 875 },
+    //         { customerName: "Customer D", orderAmount: 600 },
+    //         { customerName: "Customer E", orderAmount: 450 }
+    //     ]
+    // };
     return Controller.extend("bd.businessportal.controller.Dashboard", {
         formatter: Formatter,
         onInit: function () {
@@ -56,13 +56,13 @@ sap.ui.define([
             // console.log(this.component);
             this.component = this.getOwnerComponent();
             const expandFlag = this.component.expandFlag;
-            this.oNavContainer = this.component.byId("App--navContainer");
             this.root_element = this.component.byId("App");
-            this.main_page = this.byId("dashboard_container");
+            this.oNavContainer = this.root_element.byId("navContainer");
+            this.main_page = this.byId("dashboard_page");
 
             // temp function ---
-            const oModel = new sap.ui.model.json.JSONModel(oData);
-            this.getView().setModel(oModel);
+            // const oModel = new sap.ui.model.json.JSONModel(oData);
+            // this.getView().setModel(oModel);
             // set media ---
             Device.media.attachHandler((oEvent) => {
                 if (oEvent.name == 'Phone' || oEvent.name == 'Tablet') {
@@ -97,10 +97,13 @@ sap.ui.define([
             oVizColumnFrame.setVizScales([{
                 // color: {
                     feed:'color',
-                    palette:['#f1c232','#ff0000','#993333']
+                    palette:['#003a7d','#ff0000','#993333']
                 // }
             }])
              oPopover.connect(oVizColumnFrame.getVizUid());
+        },
+        onBeforeRendering:function(){
+            this.getView().addStyleClass(this.component._sContentDensityClass);
         },
         onAfterRendering: function () {
             BusyIndicator.hide();
@@ -117,6 +120,15 @@ sap.ui.define([
         onExit() {
             console.log("dashboard exit");
         },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
+        /**
+         * 
+         * @param {string} list_id - list id in which items placed (kpi data)
+         * @param {object} params - addition data (set_number id is not implemented.)
+         * @param {Number} index - index of item in list
+         */
         countSpecificParameterValue: async function (list_id, params, index = 0) {
             try {
 

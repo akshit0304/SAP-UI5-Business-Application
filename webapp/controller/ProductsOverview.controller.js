@@ -2,8 +2,9 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/utils/setModel",
+    "bd/businessportal/utils/Breadcrumb",
     "bd/businessportal/model/Formatter"
-], (BaseController, JSONModel, setModel, Formatter) => {
+], (BaseController, JSONModel, setModel,Breadcrumb, Formatter) => {
     "use strict";
     // function checkProductId(fileName,key,value) {
     //     this.main_page.setBusy(true);
@@ -90,7 +91,16 @@ sap.ui.define([
                     })
                     this.component._buttonExpandLogic(1, 0);
                 }.bind(this),
+                
             });
+        },
+        // onBeforeRendering:function(){
+        //     console.log("Product rendered");
+        //     const list =this.root_element.getController().getBreadcrumbAr();
+        //     Breadcrumb.createDynamicBreadcrumb(this,"po_breadcrumb",list);
+        // },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
         },
         // _load_order_table: function () {
         //     // load data in json model

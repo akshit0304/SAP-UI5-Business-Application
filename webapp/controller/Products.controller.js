@@ -3,6 +3,7 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "bd/businessportal/model/Formatter",
     "bd/businessportal/utils/setModel",
+    "bd/businessportal/utils/Breadcrumb",
     "sap/ui/Device",
     // "sap/ui/core/BusyIndicator",
     "sap/ui/model/Filter",
@@ -12,6 +13,7 @@ sap.ui.define([
     JSONModel,
     Formatter,
     setModel,
+    Breadcrumb,
     Device,
     // BusyIndicator,
     Filter,
@@ -79,6 +81,14 @@ sap.ui.define([
                 else console.log("exists fast load");
             })
         },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
+        // onBeforeRendering:function(){
+        //     console.log("Product rendered");
+        //     const list =this.root_element.getController().getBreadcrumbAr();
+        //     Breadcrumb.createDynamicBreadcrumb(this,"p_breadcrumb",list);
+        // },
         overViewPage: function (oEvent) {
             this.oNavContainer.setBusy(true);
             var oContext_path = oEvent.getSource().getBindingContext().getPath();

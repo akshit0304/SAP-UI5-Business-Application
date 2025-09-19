@@ -51,6 +51,9 @@ sap.ui.define([
                     // else {console.log("exists fast load");}
                 })
         },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
          filterSearch: function (oEvent) {
             const configuration = {
                 configurationProperty: [
@@ -115,6 +118,10 @@ sap.ui.define([
             let filterEnum =sap.ui.model.FilterOperator;
             let query =oEvent.getParameter("query")?.trim();
             const params =[];
+            params.push({
+                    "key":"CompanyName",
+                    "expression":filterEnum.Contains
+            });
             params.push({
                     "key":"ContactName",
                     "expression":filterEnum.Contains

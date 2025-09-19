@@ -42,6 +42,9 @@ sap.ui.define([
         searchSuggest:function(oEvent){
             this.byId("emp_search_field").suggest(true);
         },
+        navButtonPressed:function(oEvent){
+            this.root_element.getController().backButton(oEvent);
+        },
         searchPressed:function(oEvent){
             let filterEnum =sap.ui.model.FilterOperator;
             let query =oEvent.getParameter("query")?.trim();

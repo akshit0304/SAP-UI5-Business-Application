@@ -53,6 +53,8 @@ xmlns:form="sap.ui.layout.form"
                         busy="false"
                         busyIndicatorDelay="500"
                         items="{Territories/results}"
+                        rememberSelections="true"
+                        
                         
                     >
                     <columns>
@@ -66,7 +68,7 @@ xmlns:form="sap.ui.layout.form"
                     </columns>
                     <items>
 
-                        <ColumnListItem type="Inactive">
+                        <ColumnListItem type="Navigation" press=".overViewPage">
                             <cells>
                                 <ObjectNumber number="{TerritoryID}" unit="" state="None" ></ObjectNumber>
                                 <Text text="{TerritoryDescription}" maxLines="3"/>
